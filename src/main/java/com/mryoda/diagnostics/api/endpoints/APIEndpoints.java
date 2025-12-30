@@ -37,7 +37,9 @@ public class APIEndpoints {
     // ========== ORDER MANAGEMENT ==========
     public static final String CREATE_ORDER = "/gateway/v2/CreateOrder";
     public static final String VERIFY_PAYMENT = "/gateway/v2/VerifyPayment";
-    public static final String RAZORPAY_WEBHOOK = "/gateway/razorpay/webhook";
     public static final String GET_PAYMENT_BY_ID = "/gateway/getPaymentById";
+    public static final String GET_ORDER_BY_ID = "/order/getOrderById/";
+    public static final String PHLEBO_LOGIN = "/phlebo/loginPhlebo";
+    public static final String RAZORPAY_WEBHOOK = "/gateway/razorpay/webhook";
 
 }

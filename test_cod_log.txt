@@ -1,0 +1,2063 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< MrYodaAPINew:MrYodaAPINew >----------------------
+[INFO] Building MrYodaAPINew 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MrYodaAPINew ---
+[INFO] skip non existing resourceDirectory C:\Users\RANJITH\Pictures\MrYodaAPINew\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MrYodaAPINew ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ MrYodaAPINew ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+...
+... TestNG 7.8.0 by CΘdric Beust (cedric@beust.com)
+...
+
+
+==========================================================
+           USER REGISTRATION TEST
+==========================================================
+
+? Generated Mobile: 9342075619
+
+?? USER REGISTRATION REQUEST:
+{
+  "country_code": "+91",
+  "gender": "female",
+  "dob": "2001-04-27",
+  "mobile": "9342075619",
+  "profile_pic": "https://cdn.test.com/img/6b61d3.png",
+  "last_name": "Patel",
+  "middle_name": "R",
+  "first_name": "Rahul",
+  "alt_mobile": "8232524305",
+  "email": "auto_59016344@test.com"
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/users/addUser
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "gender": "female",
+    "dob": "2001-04-27",
+    "mobile": "9342075619",
+    "profile_pic": "https://cdn.test.com/img/6b61d3.png",
+    "last_name": "Patel",
+    "middle_name": "R",
+    "first_name": "Rahul",
+    "alt_mobile": "8232524305",
+    "email": "auto_59016344@test.com"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /users/addUser
+   Time    : ? 822 ms
+----------------------------
+
+
+? USER REGISTRATION RESPONSE RECEIVED
+
+? ===== EXTRACTED USER REGISTRATION DATA =====
+? User ID (GUID)  : eba56ad0-2011-4466-9360-93b1ef7b1a83
+? First Name      : Rahul
+? Last Name       : Patel
+? Email           : auto_59016344@test.com
+?  Gender          : female
+? DOB             : 2001-04-27
+? Mobile          : 9342075619
+? Country Code    : +91
+? Status          : null
+? Created At      : null
+? Updated At      : null
+==============================================
+
+? STORED IN RequestContext (GENERIC):
+? User ID: eba56ad0-2011-4466-9360-93b1ef7b1a83
+? First Name: Rahul
+? Last Name: Patel
+? Mobile: 9342075619 (already stored)
+
+==========================================================
+        USER REGISTRATION COMPLETED
+==========================================================
+
+==========================================================
+            MEMBER LOGIN TEST (Paid Member)
+==========================================================
+
+==================================================
+========== TOKEN GENERATION START (MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 90 ms
+----------------------------
+
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394",
+    "otp": "123456"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 92 ms
+----------------------------
+
+Token generated for MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+? MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+   Mobile: 9003730394 (Member Benefits Enabled)
+   Stored in: RequestContext.getMemberToken()
+   First Name: Ranjith
+   Last Name: Kumar
+   User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+
+==========================================================
+         NON-MEMBER LOGIN TEST (No Membership)
+==========================================================
+
+==================================================
+========== TOKEN GENERATION START (NON_MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9666666665"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 74 ms
+----------------------------
+
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9666666665",
+    "otp": "123456"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 86 ms
+----------------------------
+
+Token generated for NON_MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+? NON-MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+   Mobile: 8220220227 (NOT a paid member)
+   Stored in: RequestContext.getNonMemberToken()
+   First Name: Ranjith
+   Last Name: kumar
+   User ID: db682abb-31d1-44df-bf19-557b003a5c69
+
+==========================================================
+            NEW USER LOGIN TEST
+==========================================================
+
+==================================================
+========== TOKEN GENERATION START (NEW_USER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9342075619"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 87 ms
+----------------------------
+
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9342075619",
+    "otp": "123456"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 91 ms
+----------------------------
+
+Token generated for NEW_USER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+? NEW USER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+   Stored in: RequestContext.getNewUserToken()
+   First Name: Rahul
+   Last Name: Patel
+   User ID: eba56ad0-2011-4466-9360-93b1ef7b1a83
+
+===== LOCATION API ù MEMBER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /tests/getlocations
+   Time    : ? 80 ms
+----------------------------
+
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Ameerpet (HQ)' found and stored: 64870066842708a0d5ae6c77
+   ? Ameerpet (HQ) Coordinates: Lat=17.4358447, Long=78.452737
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== LOCATION API ù NON-MEMBER (8220220227 - NOT a paid member) =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /tests/getlocations
+   Time    : ? 81 ms
+----------------------------
+
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Ameerpet (HQ)' found and stored: 64870066842708a0d5ae6c77
+   ? Ameerpet (HQ) Coordinates: Lat=17.4358447, Long=78.452737
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== LOCATION API ù NEW USER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /tests/getlocations
+   Time    : ? 67 ms
+----------------------------
+
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Ameerpet (HQ)' found and stored: 64870066842708a0d5ae6c77
+   ? Ameerpet (HQ) Coordinates: Lat=17.4358447, Long=78.452737
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== BRAND API ù MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+   Time    : ? 113 ms
+----------------------------
+
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+
+===== BRAND API ù NON-MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+   Time    : ? 50 ms
+----------------------------
+
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+
+===== BRAND API ù NEW USER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+   Time    : ? 50 ms
+----------------------------
+
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+Running Global Search as part of MEMBER flow...
+
+==========================================================
+         GLOBAL SEARCH API TEST - COMPLETE FLOW
+==========================================================
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Ameerpet (HQ)' validated from LocationAPI: 64870066842708a0d5ae6c77
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Glucose (Urine), Diabetes Monitor
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Ameerpet (HQ) ? 64870066842708a0d5ae6c77
+
+? Searching: Glucose (Urine)
+
+   ? Attempt 1/5
+   Search String: "Glucose (Urine)"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Glucose (Urine)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 914 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Glucose (Urine)":
+      Result 1:
+         test_name: Glucose (Urine)
+         _id: 675921110856fe1e1e992d5a
+         test_id: PATH006
+         slug: glucose-urine
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Glucose (Urine)
+      Test ID: PATH006
+      Product ID: 675921110856fe1e1e992d5a
+      ? SUCCESS with search variation: "Glucose (Urine)"
+
+? Searching: Diabetes Monitor
+
+   ? Attempt 1/5
+   Search String: "Diabetes Monitor"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 221 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Diabetes Monitor":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bee4
+         test_id: null
+         slug: diabetes-monitor
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bee4
+      Checking alternative fields...
+      ??  Constructed name from slug: Diabetes Monitor
+      ? Found alternative name: Diabetes Monitor
+   ? EXACT MATCH FOUND: Diabetes Monitor
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bee4
+      ? SUCCESS with search variation: "Diabetes Monitor"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 214 ms
+----------------------------
+
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Glucose (Urine)
+   Test ID       : PATH006
+   Product ID    : 675921110856fe1e1e992d5a
+   Price         : ?3
+   Original Price: ?60
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? MATCHED & STORED TEST: Diabetes Monitor
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bee4
+   Price         : ?800
+   Original Price: ?800
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Diabetes Monitor
+   ? Expected test: Glucose (Urine)
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Diabetes Monitor - Home Collection: AVAILABLE (type='home')
+   ? Glucose (Urine) - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 2
+   Tests WITHOUT home collection: 0
+
+? Validated stored test: Glucose (Urine)
+   Test ID: PATH006
+   Product ID: 675921110856fe1e1e992d5a
+
+? Validated stored test: Diabetes Monitor
+   Test ID: null
+   Product ID: 675921b2ba6f16b8c0d7bee4
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+Running Global Search as part of NON-MEMBER flow...
+
+==========================================================
+         GLOBAL SEARCH API TEST - COMPLETE FLOW
+==========================================================
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Ameerpet (HQ)' validated from LocationAPI: 64870066842708a0d5ae6c77
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Glucose (Urine), Diabetes Monitor
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Ameerpet (HQ) ? 64870066842708a0d5ae6c77
+
+? Searching: Glucose (Urine)
+
+   ? Attempt 1/5
+   Search String: "Glucose (Urine)"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Glucose (Urine)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 148 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Glucose (Urine)":
+      Result 1:
+         test_name: Glucose (Urine)
+         _id: 675921110856fe1e1e992d5a
+         test_id: PATH006
+         slug: glucose-urine
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Glucose (Urine)
+      Test ID: PATH006
+      Product ID: 675921110856fe1e1e992d5a
+      ? SUCCESS with search variation: "Glucose (Urine)"
+
+? Searching: Diabetes Monitor
+
+   ? Attempt 1/5
+   Search String: "Diabetes Monitor"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 155 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Diabetes Monitor":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bee4
+         test_id: null
+         slug: diabetes-monitor
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bee4
+      Checking alternative fields...
+      ??  Constructed name from slug: Diabetes Monitor
+      ? Found alternative name: Diabetes Monitor
+   ? EXACT MATCH FOUND: Diabetes Monitor
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bee4
+      ? SUCCESS with search variation: "Diabetes Monitor"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 164 ms
+----------------------------
+
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Glucose (Urine)
+   Test ID       : PATH006
+   Product ID    : 675921110856fe1e1e992d5a
+   Price         : ?3
+   Original Price: ?60
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? MATCHED & STORED TEST: Diabetes Monitor
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bee4
+   Price         : ?800
+   Original Price: ?800
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Diabetes Monitor
+   ? Expected test: Glucose (Urine)
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Diabetes Monitor - Home Collection: AVAILABLE (type='home')
+   ? Glucose (Urine) - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 2
+   Tests WITHOUT home collection: 0
+
+? Validated stored test: Glucose (Urine)
+   Test ID: PATH006
+   Product ID: 675921110856fe1e1e992d5a
+
+? Validated stored test: Diabetes Monitor
+   Test ID: null
+   Product ID: 675921b2ba6f16b8c0d7bee4
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+Running Global Search as part of NEW USER flow...
+
+==========================================================
+         GLOBAL SEARCH API TEST - COMPLETE FLOW
+==========================================================
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Ameerpet (HQ)' validated from LocationAPI: 64870066842708a0d5ae6c77
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Glucose (Urine), Diabetes Monitor
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Ameerpet (HQ) ? 64870066842708a0d5ae6c77
+
+? Searching: Glucose (Urine)
+
+   ? Attempt 1/5
+   Search String: "Glucose (Urine)"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Glucose (Urine)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 168 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Glucose (Urine)":
+      Result 1:
+         test_name: Glucose (Urine)
+         _id: 675921110856fe1e1e992d5a
+         test_id: PATH006
+         slug: glucose-urine
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Glucose (Urine)
+      Test ID: PATH006
+      Product ID: 675921110856fe1e1e992d5a
+      ? SUCCESS with search variation: "Glucose (Urine)"
+
+? Searching: Diabetes Monitor
+
+   ? Attempt 1/5
+   Search String: "Diabetes Monitor"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 173 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Diabetes Monitor":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bee4
+         test_id: null
+         slug: diabetes-monitor
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bee4
+      Checking alternative fields...
+      ??  Constructed name from slug: Diabetes Monitor
+      ? Found alternative name: Diabetes Monitor
+   ? EXACT MATCH FOUND: Diabetes Monitor
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bee4
+      ? SUCCESS with search variation: "Diabetes Monitor"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 178 ms
+----------------------------
+
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Glucose (Urine)
+   Test ID       : PATH006
+   Product ID    : 675921110856fe1e1e992d5a
+   Price         : ?3
+   Original Price: ?60
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? MATCHED & STORED TEST: Diabetes Monitor
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bee4
+   Price         : ?800
+   Original Price: ?800
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Diabetes Monitor
+   ? Expected test: Glucose (Urine)
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Diabetes Monitor - Home Collection: AVAILABLE (type='home')
+   ? Glucose (Urine) - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 2
+   Tests WITHOUT home collection: 0
+
+? Validated stored test: Glucose (Urine)
+   Test ID: PATH006
+   Product ID: 675921110856fe1e1e992d5a
+
+? Validated stored test: Diabetes Monitor
+   Test ID: null
+   Product ID: 675921b2ba6f16b8c0d7bee4
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+
+--- AddToCart For Member ---
+
+? CLEARING PREVIOUS CART for User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 77 ms
+----------------------------
+
+   ? Cart clear API call successful.
+   ? Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":155,"guid":"d1455e07-a759-4598-8df6-1120e77dbae9","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e992d5a","quantity":0,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":[],"location_id":"64870066842708a0d5ae6c77"},{"product_id":"675921b2ba6f16b8c0d7bee4","quantity":0,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":[],"location_id":"64870066842708a0d5ae6c77"}],"screen_reason":"lab_location_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-09-04T14:10:07.596Z","updated_at":"2025-12-30T17:53:38.940Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":"79064968-3f0a-4027-9a68-4227b86d701a","rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","total_orders":100}}
+
+? CUSTOM PAYLOAD BUILDER for 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+      ? Added test to payload: Diabetes Monitor (Type: home)
+      ? Added test to payload: Glucose (Urine) (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 78 ms
+----------------------------
+
+   ? Cart Data Stored for MEMBER (GUID: d1455e07-a759-4598-8df6-1120e77dbae9)
+
+--- AddToCart For Non-Member ---
+
+? CLEARING PREVIOUS CART for User ID: db682abb-31d1-44df-bf19-557b003a5c69
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 61 ms
+----------------------------
+
+   ? Cart clear API call successful.
+   ? Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":490,"guid":"bb89d801-01f3-4a57-9df0-a1be84bb12cd","user_id":"db682abb-31d1-44df-bf19-557b003a5c69","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e992d5a","quantity":0,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":[],"location_id":"64870066842708a0d5ae6c77"},{"product_id":"675921b2ba6f16b8c0d7bee4","quantity":0,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":[],"location_id":"64870066842708a0d5ae6c77"}],"screen_reason":"lab_location_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-12-01T14:08:26.496Z","updated_at":"2025-12-30T17:53:39.129Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":"79064968-3f0a-4027-9a68-4227b86d701a","rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":"99cfd160-72e2-4fcf-b2f4-56e5bbb49fea","total_orders":98}}
+
+? CUSTOM PAYLOAD BUILDER for db682abb-31d1-44df-bf19-557b003a5c69
+      ? Added test to payload: Diabetes Monitor (Type: home)
+      ? Added test to payload: Glucose (Urine) (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "db682abb-31d1-44df-bf19-557b003a5c69"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "db682abb-31d1-44df-bf19-557b003a5c69"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 78 ms
+----------------------------
+
+   ? Cart Data Stored for NON_MEMBER (GUID: bb89d801-01f3-4a57-9df0-a1be84bb12cd)
+
+--- AddToCart For New User ---
+
+? CLEARING PREVIOUS CART for User ID: eba56ad0-2011-4466-9360-93b1ef7b1a83
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "eba56ad0-2011-4466-9360-93b1ef7b1a83",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 57 ms
+----------------------------
+
+   ? Cart clear API call successful.
+   ? Response Body: {"status":201,"success":true,"msg":"Cart saved successfully","total_amount":0,"data":{"id":984,"guid":"f5a7f0ff-7cf7-4528-9340-1047a9dc1aaf","user_id":"eba56ad0-2011-4466-9360-93b1ef7b1a83","_user_id":null,"product_details":[],"screen_reason":"home_or_lab_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-12-30T17:53:39.340Z","updated_at":"2025-12-30T17:53:39.340Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":null,"rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":null,"total_orders":0}}
+
+? CUSTOM PAYLOAD BUILDER for eba56ad0-2011-4466-9360-93b1ef7b1a83
+      ? Added test to payload: Diabetes Monitor (Type: home)
+      ? Added test to payload: Glucose (Urine) (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "eba56ad0-2011-4466-9360-93b1ef7b1a83",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "eba56ad0-2011-4466-9360-93b1ef7b1a83"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "eba56ad0-2011-4466-9360-93b1ef7b1a83"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 63 ms
+----------------------------
+
+   ? Cart Data Stored for NEW_USER (GUID: f5a7f0ff-7cf7-4528-9340-1047a9dc1aaf)
+
+>>> STARTING COD FLOW FOR NEW USER <<<
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/eba56ad0-2011-4466-9360-93b1ef7b1a83?location=64870066842708a0d5ae6c77&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=64870066842708a0d5ae6c77
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/eba56ad0-2011-4466-9360-93b1ef7b1a83
+   Time    : ? 273 ms
+----------------------------
+
+Response Status: 200
+Cart Total Price: 1053
+Cart ID: f5a7f0ff-7cf7-4528-9340-1047a9dc1aaf
+Slot GUID: null
+Lab Location ID: 64870066842708a0d5ae6c77
+Order Type: home
+? COD Eligibility Check Passed (Total < 2500)
+
+==========================================================
+      ADD ADDRESS API (Required for Home Order)
+==========================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9999999999",
+    "latitude": "17.4358447",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "eba56ad0-2011-4466-9360-93b1ef7b1a83",
+    "address_line1": "Hyderabad",
+    "name": "Ameerpet (HQ)",
+    "receiver_name": "Test User",
+    "state": "Telangana",
+    "postal_code": "500016",
+    "longitude": "78.452737"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /address/addAddress
+   Time    : ? 98 ms
+----------------------------
+
+Response Status: 201
+Response Body: {"status":201,"success":true,"msg":"Address saved successfully","total_amount":0,"data":{"id":781,"guid":"4e157eeb-839e-4f0f-83d2-2aa8771f75ec","user_id":"eba56ad0-2011-4466-9360-93b1ef7b1a83","_user_id":995,"receiver_name":"Test User","recipient_mobile_number":"9999999999","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500016","name":"Ameerpet (HQ)","type":"home","latitude":"17.4358447","longitude":"78.452737","is_default":true,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-30T17:53:39.909Z","updated_at":"2025-12-30T17:53:39.909Z","deleted_at":null}}
+Created Address ID: 781
+
+==========================================================
+      GET CENTRES BY ADDRESS API
+==========================================================
+Request Payload: {lab_id=64870066842708a0d5ae6c77, addressid=4e157eeb-839e-4f0f-83d2-2aa8771f75ec}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/slot/getCentersByadd
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getCentersByadd
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lab_id": "64870066842708a0d5ae6c77",
+    "addressid": "4e157eeb-839e-4f0f-83d2-2aa8771f75ec"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getCentersByadd
+   Time    : ? 59 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Valid Location","total_amount":0}
+? Centres fetched successfully for address: 4e157eeb-839e-4f0f-83d2-2aa8771f75ec
+
+==========================================================
+      ADD TO CART API (With Address ID)
+==========================================================
+Request Payload: {user_id=eba56ad0-2011-4466-9360-93b1ef7b1a83, address_id=4e157eeb-839e-4f0f-83d2-2aa8771f75ec, product_details=[{quantity=1, product_id=675921b2ba6f16b8c0d7bee4, type=home, location_id=64870066842708a0d5ae6c77, brand_id=efb159ac-db7c-4b06-a79b-021a8b6d67e8, family_member_id=[eba56ad0-2011-4466-9360-93b1ef7b1a83]}, {quantity=1, product_id=675921110856fe1e1e992d5a, type=home, location_id=64870066842708a0d5ae6c77, brand_id=efb159ac-db7c-4b06-a79b-021a8b6d67e8, family_member_id=[eba56ad0-2011-4466-9360-93b1ef7b1a83]}]}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImViYTU2YWQwLTIwMTEtNDQ2Ni05MzYwLTkzYjFlZjdiMWE4MyIsIm1vYmlsZSI6IjkzNDIwNzU2MTkiLCJmaXJzdF9uYW1lIjoiUmFodWwiLCJsYXN0X25hbWUiOiJQYXRlbCIsImVtYWlsIjoiYXV0b181OTAxNjM0NEB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3NjcxMTcyMTIsImV4cCI6MTc4MjkwMzQ1Mn0.0KGhcOUfrZTP23D2uJvJ1AhOPl-3chHI1hhOrGQhGf8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "eba56ad0-2011-4466-9360-93b1ef7b1a83",
+    "address_id": "4e157eeb-839e-4f0f-83d2-2aa8771f75ec",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "eba56ad0-2011-4466-9360-93b1ef7b1a83"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "eba56ad0-2011-4466-9360-93b1ef7b1a83"
+            ]
+        }
+    ]
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 91 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":984,"guid":"f5a7f0ff-7cf7-4528-9340-1047a9dc1aaf","user_id":"eba56ad0-2011-4466-9360-93b1ef7b1a83","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e992d5a","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["eba56ad0-2011-4466-9360-93b1ef7b1a83"],"location_id":"64870066842708a0d5ae6c77"},{"product_id":"675921b2ba6f16b8c0d7bee4","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["eba56ad0-2011-4466-9360-93b1ef7b1a83"],"location_id":"64870066842708a0d5ae6c77"}],"screen_reason":"home_or_lab_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-12-30T17:53:39.340Z","updated_at":"2025-12-30T17:53:40.104Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":null,"rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":"4e157eeb-839e-4f0f-83d2-2aa8771f75ec","total_orders":0}}
+? Cart updated successfully with address_id: 4e157eeb-839e-4f0f-83d2-2aa8771f75ec
+   Updated Cart GUID: f5a7f0ff-7cf7-4528-9340-1047a9dc1aaf
+
+>>> STARTING COD FLOW FOR MEMBER <<<
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3?location=64870066842708a0d5ae6c77&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=64870066842708a0d5ae6c77
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 196 ms
+----------------------------
+
+Response Status: 200
+Cart Total Price: 722
+Cart ID: d1455e07-a759-4598-8df6-1120e77dbae9
+Slot GUID: 79064968-3f0a-4027-9a68-4227b86d701a
+Lab Location ID: 64870066842708a0d5ae6c77
+Order Type: home
+? COD Eligibility Check Passed (Total < 2500)
+
+==========================================================
+      ADD ADDRESS API (Required for Home Order)
+==========================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9999999999",
+    "latitude": "17.4358447",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "address_line1": "Hyderabad",
+    "name": "Ameerpet (HQ)",
+    "receiver_name": "Test User",
+    "state": "Telangana",
+    "postal_code": "500016",
+    "longitude": "78.452737"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /address/addAddress
+   Time    : ? 69 ms
+----------------------------
+
+Response Status: 409
+Response Body: {"status":409,"success":false,"msg":"Address already exists!"}
+Address already exists (409). Fetching existing address...
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 62 ms
+----------------------------
+
+Get Address Response Status: 200
+Using existing Address ID: 459
+
+==========================================================
+      GET CENTRES BY ADDRESS API
+==========================================================
+Request Payload: {lab_id=64870066842708a0d5ae6c77, addressid=3e7f93b5-6013-4385-995b-dfecc866c549}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/slot/getCentersByadd
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getCentersByadd
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lab_id": "64870066842708a0d5ae6c77",
+    "addressid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getCentersByadd
+   Time    : ? 63 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Valid Location","total_amount":0}
+? Centres fetched successfully for address: 3e7f93b5-6013-4385-995b-dfecc866c549
+
+==========================================================
+      ADD TO CART API (With Address ID)
+==========================================================
+Request Payload: {user_id=6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3, address_id=3e7f93b5-6013-4385-995b-dfecc866c549, product_details=[{quantity=1, product_id=675921b2ba6f16b8c0d7bee4, type=home, location_id=64870066842708a0d5ae6c77, brand_id=efb159ac-db7c-4b06-a79b-021a8b6d67e8, family_member_id=[6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3]}, {quantity=1, product_id=675921110856fe1e1e992d5a, type=home, location_id=64870066842708a0d5ae6c77, brand_id=efb159ac-db7c-4b06-a79b-021a8b6d67e8, family_member_id=[6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3]}]}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "address_id": "3e7f93b5-6013-4385-995b-dfecc866c549",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ]
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 76 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":155,"guid":"d1455e07-a759-4598-8df6-1120e77dbae9","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e992d5a","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"],"location_id":"64870066842708a0d5ae6c77"},{"product_id":"675921b2ba6f16b8c0d7bee4","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"],"location_id":"64870066842708a0d5ae6c77"}],"screen_reason":"lab_location_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-09-04T14:10:07.596Z","updated_at":"2025-12-30T17:53:40.874Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":"79064968-3f0a-4027-9a68-4227b86d701a","rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","total_orders":100}}
+? Cart updated successfully with address_id: 3e7f93b5-6013-4385-995b-dfecc866c549
+   Updated Cart GUID: d1455e07-a759-4598-8df6-1120e77dbae9
+
+>>> STARTING COD FLOW FOR NON-MEMBER (EXISTING USER) <<<
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/db682abb-31d1-44df-bf19-557b003a5c69?location=64870066842708a0d5ae6c77&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=64870066842708a0d5ae6c77
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/db682abb-31d1-44df-bf19-557b003a5c69
+   Time    : ? 202 ms
+----------------------------
+
+Response Status: 200
+Cart Total Price: 1053
+Cart ID: bb89d801-01f3-4a57-9df0-a1be84bb12cd
+Slot GUID: 79064968-3f0a-4027-9a68-4227b86d701a
+Lab Location ID: 64870066842708a0d5ae6c77
+Order Type: home
+? COD Eligibility Check Passed (Total < 2500)
+
+==========================================================
+      ADD ADDRESS API (Required for Home Order)
+==========================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9999999999",
+    "latitude": "17.4358447",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "address_line1": "Hyderabad",
+    "name": "Ameerpet (HQ)",
+    "receiver_name": "Test User",
+    "state": "Telangana",
+    "postal_code": "500016",
+    "longitude": "78.452737"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /address/addAddress
+   Time    : ? 55 ms
+----------------------------
+
+Response Status: 409
+Response Body: {"status":409,"success":false,"msg":"Address already exists!"}
+Address already exists (409). Fetching existing address...
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/getAddressByUserId/db682abb-31d1-44df-bf19-557b003a5c69
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /address/getAddressByUserId/db682abb-31d1-44df-bf19-557b003a5c69
+   Time    : ? 67 ms
+----------------------------
+
+Get Address Response Status: 200
+Using existing Address ID: 471
+
+==========================================================
+      GET CENTRES BY ADDRESS API
+==========================================================
+Request Payload: {lab_id=64870066842708a0d5ae6c77, addressid=99cfd160-72e2-4fcf-b2f4-56e5bbb49fea}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/slot/getCentersByadd
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getCentersByadd
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lab_id": "64870066842708a0d5ae6c77",
+    "addressid": "99cfd160-72e2-4fcf-b2f4-56e5bbb49fea"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getCentersByadd
+   Time    : ? 65 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Valid Location","total_amount":0}
+? Centres fetched successfully for address: 99cfd160-72e2-4fcf-b2f4-56e5bbb49fea
+
+==========================================================
+      ADD TO CART API (With Address ID)
+==========================================================
+Request Payload: {user_id=db682abb-31d1-44df-bf19-557b003a5c69, address_id=99cfd160-72e2-4fcf-b2f4-56e5bbb49fea, product_details=[{quantity=1, product_id=675921b2ba6f16b8c0d7bee4, type=home, location_id=64870066842708a0d5ae6c77, brand_id=efb159ac-db7c-4b06-a79b-021a8b6d67e8, family_member_id=[db682abb-31d1-44df-bf19-557b003a5c69]}, {quantity=1, product_id=675921110856fe1e1e992d5a, type=home, location_id=64870066842708a0d5ae6c77, brand_id=efb159ac-db7c-4b06-a79b-021a8b6d67e8, family_member_id=[db682abb-31d1-44df-bf19-557b003a5c69]}]}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.CKVR_M5Psk0HsUdmicmQps51GFrMaUl_W5tlh8kZxik
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "address_id": "99cfd160-72e2-4fcf-b2f4-56e5bbb49fea",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "db682abb-31d1-44df-bf19-557b003a5c69"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "db682abb-31d1-44df-bf19-557b003a5c69"
+            ]
+        }
+    ]
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 88 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":490,"guid":"bb89d801-01f3-4a57-9df0-a1be84bb12cd","user_id":"db682abb-31d1-44df-bf19-557b003a5c69","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e992d5a","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["db682abb-31d1-44df-bf19-557b003a5c69"],"location_id":"64870066842708a0d5ae6c77"},{"product_id":"675921b2ba6f16b8c0d7bee4","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["db682abb-31d1-44df-bf19-557b003a5c69"],"location_id":"64870066842708a0d5ae6c77"}],"screen_reason":"lab_location_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-12-01T14:08:26.496Z","updated_at":"2025-12-30T17:53:41.540Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":"79064968-3f0a-4027-9a68-4227b86d701a","rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":"99cfd160-72e2-4fcf-b2f4-56e5bbb49fea","total_orders":98}}
+? Cart updated successfully with address_id: 99cfd160-72e2-4fcf-b2f4-56e5bbb49fea
+   Updated Cart GUID: bb89d801-01f3-4a57-9df0-a1be84bb12cd
+[ERROR] Tests run: 19, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 14.10 s <<< FAILURE! -- in TestSuite
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNewUser -- Time elapsed: 0.689 s <<< FAILURE!
+java.lang.Error: 
+Unresolved compilation problems: 
+	LocalDate cannot be resolved to a type
+	LocalDate cannot be resolved
+	LocalDate cannot be resolved to a type
+	DateTimeFormatter cannot be resolved
+	requestSpec cannot be resolved to a variable
+
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.findAvailableSlot(CreateOrderCODAPITest.java:638)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.executeCODFlow(CreateOrderCODAPITest.java:769)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNewUser(CreateOrderCODAPITest.java:697)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForMember -- Time elapsed: 0.766 s <<< FAILURE!
+java.lang.Error: 
+Unresolved compilation problems: 
+	LocalDate cannot be resolved to a type
+	LocalDate cannot be resolved
+	LocalDate cannot be resolved to a type
+	DateTimeFormatter cannot be resolved
+	requestSpec cannot be resolved to a variable
+
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.findAvailableSlot(CreateOrderCODAPITest.java:638)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.executeCODFlow(CreateOrderCODAPITest.java:769)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForMember(CreateOrderCODAPITest.java:710)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNonMember -- Time elapsed: 0.662 s <<< FAILURE!
+java.lang.Error: 
+Unresolved compilation problems: 
+	LocalDate cannot be resolved to a type
+	LocalDate cannot be resolved
+	LocalDate cannot be resolved to a type
+	DateTimeFormatter cannot be resolved
+	requestSpec cannot be resolved to a variable
+
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.findAvailableSlot(CreateOrderCODAPITest.java:638)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.executeCODFlow(CreateOrderCODAPITest.java:769)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNonMember(CreateOrderCODAPITest.java:723)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CreateOrderCODAPITest.testCOD_Flow_ForMember:710->executeCODFlow:769->findAvailableSlot:638  Unresolved compilation problems: 
+	LocalDate cannot be resolved to a type
+	LocalDate cannot be resolved
+	LocalDate cannot be resolved to a type
+	DateTimeFormatter cannot be resolved
+	requestSpec cannot be resolved to a variable
+
+[ERROR]   CreateOrderCODAPITest.testCOD_Flow_ForNewUser:697->executeCODFlow:769->findAvailableSlot:638  Unresolved compilation problems: 
+	LocalDate cannot be resolved to a type
+	LocalDate cannot be resolved
+	LocalDate cannot be resolved to a type
+	DateTimeFormatter cannot be resolved
+	requestSpec cannot be resolved to a variable
+
+[ERROR]   CreateOrderCODAPITest.testCOD_Flow_ForNonMember:723->executeCODFlow:769->findAvailableSlot:638  Unresolved compilation problems: 
+	LocalDate cannot be resolved to a type
+	LocalDate cannot be resolved
+	LocalDate cannot be resolved to a type
+	DateTimeFormatter cannot be resolved
+	requestSpec cannot be resolved to a variable
+
+[INFO] 
+[ERROR] Tests run: 19, Failures: 3, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.643 s
+[INFO] Finished at: 2025-12-30T23:23:42+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project MrYodaAPINew: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\RANJITH\Pictures\MrYodaAPINew\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

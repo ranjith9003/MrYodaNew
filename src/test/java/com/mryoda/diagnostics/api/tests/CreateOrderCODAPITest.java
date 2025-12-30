@@ -8,12 +8,15 @@ import com.mryoda.diagnostics.api.builders.RequestBuilder;
 import com.mryoda.diagnostics.api.payloads.OrderPayloadBuilder;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class CreateOrderCODAPITest extends BaseTest {
 
@@ -57,15 +60,16 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Verify Payment API
     // -------------------------------
-    private Map<String, String> callVerifyPaymentAPI(String token, String userId, String cartId, String addressId, String slotGuid,
+    private Map<String, String> callVerifyPaymentAPI(String token, String userId, String cartId, String addressId,
+            String slotGuid,
             String labLocationId, String orderType, int totalAmount, String date, String time, String source) {
         System.out.println("\n==========================================================");
         System.out.println("      VERIFY PAYMENT API (COD PRE-CHECK)");
         System.out.println("==========================================================");
 
-        // Use OrderPayloadBuilder to construct the payload
-        Map<String, Object> payload = OrderPayloadBuilder.buildVerifyPaymentPayload(cartId, "cash", source, userId,
-                String.valueOf(addressId), slotGuid, date, time, totalAmount, orderType, labLocationId);
+        // Build the payload with only the necessary parameters
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("user_id", userId);
 
         System.out.println("Request Payload: " + payload);
         System.out.println("Target URL: " + RestAssured.baseURI + APIEndpoints.VERIFY_PAYMENT);
@@ -82,22 +86,35 @@ public class CreateOrderCODAPITest extends BaseTest {
         // Verify 200 OK
         AssertionUtil.verifyEquals(response.getStatusCode(), 200, "VerifyPayment HTTP status should be 200");
 
+        // Check if data array is empty
+        Object dataArray = response.jsonPath().get("data");
+        if (dataArray == null || (dataArray instanceof java.util.List && ((java.util.List<?>) dataArray).isEmpty())) {
+            Assert.fail("❌ VerifyPayment returned empty data array. Payment creation failed.");
+        }
+
         // Extract Payment ID (assuming data.guid or data.id)
         String paymentId = response.jsonPath().getString("data.guid");
-        if (paymentId == null || "null".equals(paymentId) || "[null]".equals(paymentId)) {
+        if (paymentId == null || "null".equals(paymentId) || "[null]".equals(paymentId) || "[]".equals(paymentId)) {
             paymentId = response.jsonPath().getString("data.id");
         }
         // Handle nested structure: data[0].orderDetails[0].payment_id
-        if (paymentId == null || "null".equals(paymentId) || "[null]".equals(paymentId)) {
+        if (paymentId == null || "null".equals(paymentId) || "[null]".equals(paymentId) || "[]".equals(paymentId)) {
             paymentId = response.jsonPath().getString("data[0].orderDetails[0].payment_id");
         }
-        
+
         // Extract Order ID from the same response
         String orderId = response.jsonPath().getString("data[0].orderDetails[0].guid");
-        
+
         System.out.println("Extracted Payment ID: " + paymentId);
         System.out.println("Extracted Order ID: " + orderId);
-        
+
+        if (paymentId == null) {
+            Assert.fail("❌ Payment ID is null in VerifyPayment response");
+        }
+        if (orderId == null) {
+            Assert.fail("❌ Order ID is null in VerifyPayment response");
+        }
+
         Map<String, String> result = new HashMap<>();
         result.put("paymentId", paymentId);
         result.put("orderId", orderId);
@@ -132,144 +149,177 @@ public class CreateOrderCODAPITest extends BaseTest {
 
         // Verify 200 OK
         AssertionUtil.verifyEquals(response.getStatusCode(), 200, "GetPaymentById HTTP status should be 200");
-        
+
+        return response;
+    }
+
+    // -------------------------------
+    // HELPER: Call Get Order By ID API
+    // -------------------------------
+    private Response callGetOrderByIdAPI(String token, String orderId) {
+        System.out.println("\n==========================================================");
+        System.out.println("      GET ORDER BY ID API");
+        System.out.println("==========================================================");
+
+        if (orderId == null || orderId.isEmpty() || "EMPTY_DATA".equals(orderId)) {
+            System.out.println("⚠️ Skipping Get Order By ID API call due to invalid orderId.");
+            return null;
+        }
+
+        String endpoint = APIEndpoints.GET_ORDER_BY_ID + orderId;
+        System.out.println("Target URL: " + RestAssured.baseURI + endpoint);
+
+        Response response = new RequestBuilder()
+                .setEndpoint(endpoint)
+                .addHeader("Authorization", token)
+                .get();
+
+        System.out.println("Response Status: " + response.getStatusCode());
+        System.out.println("Response Body: " + response.getBody().asString());
+
+        // Verify 200 OK
+        AssertionUtil.verifyEquals(response.getStatusCode(), 200, "GetOrderById HTTP status should be 200");
+
+        // Validate success response
+        boolean success = response.jsonPath().getBoolean("success");
+        if (success) {
+            System.out.println("✅ Order details fetched successfully for Order ID: " + orderId);
+        } else {
+            System.out.println("❌ Failed to fetch order details: " + response.jsonPath().getString("msg"));
+        }
+
         return response;
     }
 
     // -------------------------------
     // CROSS-API VALIDATIONS
     // -------------------------------
-    private void performCrossAPIValidations(Response cartResponse, Response paymentResponse, 
-            int expectedTotalPrice, String expectedCartId, String expectedPaymentId, 
+    private void performCrossAPIValidations(Response cartResponse, Response paymentResponse,
+            int expectedTotalPrice, String expectedCartId, String expectedPaymentId,
             String expectedUserId, String expectedAddressId, String expectedSlotGuid) {
-        
+
         System.out.println("\n🔍 ==========================================================");
         System.out.println("         CROSS-API VALIDATION REPORT");
         System.out.println("🔍 ==========================================================");
-        
+
         // Extract payment data
         Map<String, Object> paymentData = paymentResponse.jsonPath().getMap("data.payments");
         List<Map<String, Object>> orderItems = paymentResponse.jsonPath().getList("data.order_items");
-        
+
         // 1. CART VS PAYMENT TOTAL VALIDATION
         System.out.println("\n📊 1. TOTAL AMOUNT CONSISTENCY CHECK:");
         System.out.println("   Expected Total (Cart): ₹" + expectedTotalPrice);
-        
+
         Object paymentAmountObj = paymentData.get("amount");
-        int paymentAmount = paymentAmountObj instanceof String ? 
-            Integer.parseInt((String) paymentAmountObj) : 
-            ((Number) paymentAmountObj).intValue();
-            
+        int paymentAmount = paymentAmountObj instanceof String ? Integer.parseInt((String) paymentAmountObj)
+                : ((Number) paymentAmountObj).intValue();
+
         System.out.println("   Payment Total (GetPayment): ₹" + paymentAmount);
-        
+
         if (paymentAmount == expectedTotalPrice) {
             System.out.println("   ✅ PASS: Cart total matches Payment total");
         } else {
             System.out.println("   ❌ FAIL: Total mismatch! Cart=" + expectedTotalPrice + ", Payment=" + paymentAmount);
             throw new RuntimeException("Cross-API validation failed: Total amount mismatch");
         }
-        
+
         // 2. PAYMENT ID CONSISTENCY
         System.out.println("\n🆔 2. PAYMENT ID CONSISTENCY CHECK:");
         String actualPaymentGuid = (String) paymentData.get("guid");
         System.out.println("   Expected Payment ID: " + expectedPaymentId);
         System.out.println("   Actual Payment GUID: " + actualPaymentGuid);
-        
+
         if (expectedPaymentId.equals(actualPaymentGuid)) {
             System.out.println("   ✅ PASS: Payment ID matches across APIs");
         } else {
             System.out.println("   ❌ FAIL: Payment ID mismatch!");
             throw new RuntimeException("Cross-API validation failed: Payment ID mismatch");
         }
-        
+
         // 3. PAYMENT TYPE VALIDATION
         System.out.println("\n💳 3. PAYMENT TYPE VALIDATION:");
         String paymentType = (String) paymentData.get("payment_type");
         System.out.println("   Payment Type: " + paymentType);
-        
+
         if ("COD".equals(paymentType)) {
             System.out.println("   ✅ PASS: Payment type is COD as expected");
         } else {
             System.out.println("   ❌ FAIL: Expected COD but got: " + paymentType);
             throw new RuntimeException("Cross-API validation failed: Invalid payment type");
         }
-        
+
         // 4. ORDER ITEMS VALIDATION
         System.out.println("\n📦 4. ORDER ITEMS VALIDATION:");
         if (orderItems != null && !orderItems.isEmpty()) {
             System.out.println("   Total Order Items: " + orderItems.size());
-            
+
             int calculatedTotal = 0;
             for (int i = 0; i < orderItems.size(); i++) {
                 Map<String, Object> item = orderItems.get(i);
                 String productName = (String) item.get("product_name");
                 Object finalPriceObj = item.get("final_price");
                 Object quantityObj = item.get("quantity");
-                
-                int finalPrice = finalPriceObj instanceof String ? 
-                    Integer.parseInt((String) finalPriceObj) : 
-                    ((Number) finalPriceObj).intValue();
-                    
-                int quantity = quantityObj instanceof String ? 
-                    Integer.parseInt((String) quantityObj) : 
-                    ((Number) quantityObj).intValue();
-                
+
+                int finalPrice = finalPriceObj instanceof String ? Integer.parseInt((String) finalPriceObj)
+                        : ((Number) finalPriceObj).intValue();
+
+                int quantity = quantityObj instanceof String ? Integer.parseInt((String) quantityObj)
+                        : ((Number) quantityObj).intValue();
+
                 int itemTotal = finalPrice * quantity;
                 calculatedTotal += itemTotal;
-                
-                System.out.println("   Item " + (i+1) + ": " + productName + 
-                    " | Qty: " + quantity + " | Price: ₹" + finalPrice + " | Total: ₹" + itemTotal);
+
+                System.out.println("   Item " + (i + 1) + ": " + productName +
+                        " | Qty: " + quantity + " | Price: ₹" + finalPrice + " | Total: ₹" + itemTotal);
             }
-            
+
             System.out.println("   Calculated Items Total: ₹" + calculatedTotal);
-            
+
             // Note: For COD orders, home collection charges might be added separately
             Object netPayableObj = paymentData.get("net_payable");
-            int netPayable = netPayableObj instanceof String ? 
-                Integer.parseInt((String) netPayableObj) : 
-                ((Number) netPayableObj).intValue();
-                
+            int netPayable = netPayableObj instanceof String ? Integer.parseInt((String) netPayableObj)
+                    : ((Number) netPayableObj).intValue();
+
             System.out.println("   Net Payable (API): ₹" + netPayable);
-            
+
             if (calculatedTotal == netPayable) {
                 System.out.println("   ✅ PASS: Calculated total matches net payable");
             } else {
                 System.out.println("   ⚠️  INFO: Total difference may include delivery charges or discounts");
             }
         }
-        
+
         // 5. PAYMENT STATUS VALIDATION
         System.out.println("\n📋 5. PAYMENT STATUS VALIDATION:");
         String paymentStatus = (String) paymentData.get("payment_status");
         System.out.println("   Payment Status: " + paymentStatus);
-        
+
         if ("Pending".equals(paymentStatus)) {
             System.out.println("   ✅ PASS: Payment status is Pending (expected for COD)");
         } else {
             System.out.println("   ⚠️  WARNING: Unexpected payment status for COD: " + paymentStatus);
         }
-        
+
         // 6. DISCOUNT AND MEMBERSHIP VALIDATION
         System.out.println("\n💰 6. DISCOUNT & MEMBERSHIP VALIDATION:");
         Object membershipDiscountObj = paymentData.get("membership_discount");
-        int membershipDiscount = membershipDiscountObj instanceof String ? 
-            Integer.parseInt((String) membershipDiscountObj) : 
-            ((Number) membershipDiscountObj).intValue();
-            
+        int membershipDiscount = membershipDiscountObj instanceof String
+                ? Integer.parseInt((String) membershipDiscountObj)
+                : ((Number) membershipDiscountObj).intValue();
+
         Object totalDiscountObj = paymentData.get("total_discount");
-        int totalDiscount = totalDiscountObj instanceof String ? 
-            Integer.parseInt((String) totalDiscountObj) : 
-            ((Number) totalDiscountObj).intValue();
-            
+        int totalDiscount = totalDiscountObj instanceof String ? Integer.parseInt((String) totalDiscountObj)
+                : ((Number) totalDiscountObj).intValue();
+
         System.out.println("   Membership Discount: ₹" + membershipDiscount);
         System.out.println("   Total Discount: ₹" + totalDiscount);
-        
+
         if (membershipDiscount > 0) {
             System.out.println("   ✅ INFO: Membership discount applied");
         } else {
             System.out.println("   ✅ INFO: No membership discount (expected for non-members)");
         }
-        
+
         System.out.println("🎉 ==========================================================");
         System.out.println("         CROSS-API VALIDATION COMPLETED SUCCESSFULLY");
         System.out.println("🎉 ==========================================================");
@@ -284,7 +334,7 @@ public class CreateOrderCODAPITest extends BaseTest {
         System.out.println("==========================================================");
 
         Map<String, Object> payload = new HashMap<>();
-        payload.put("mobile", 9360651932L);  // Use Long for mobile number
+        payload.put("mobile", 9360651932L); // Use Long for mobile number
         payload.put("password", "12345678");
 
         String phlebotomistLoginUrl = "https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo";
@@ -309,14 +359,14 @@ public class CreateOrderCODAPITest extends BaseTest {
                 String phlebotomistToken = response.jsonPath().getString("data.token");
                 String phlebotomistId = response.jsonPath().getString("data.id");
                 String phlebotomistName = response.jsonPath().getString("data.first_name");
-                phlebotomistGuid = response.jsonPath().getString("data.guid");  // Extract GUID
-                
+                phlebotomistGuid = response.jsonPath().getString("data.guid"); // Extract GUID
+
                 System.out.println("✅ Phlebotomist Login Successful");
                 System.out.println("   Phlebo Name: " + phlebotomistName);
                 System.out.println("   Phlebo ID: " + phlebotomistId);
                 System.out.println("   Phlebo GUID: " + phlebotomistGuid);
                 System.out.println("   Phlebo Token: " + phlebotomistToken);
-                
+
                 // Store for potential future use
                 System.setProperty("phlebo.token", phlebotomistToken != null ? phlebotomistToken : "");
                 System.setProperty("phlebo.id", phlebotomistId != null ? phlebotomistId : "");
@@ -327,8 +377,8 @@ public class CreateOrderCODAPITest extends BaseTest {
         } else {
             System.out.println("❌ Phlebotomist Login API Failed with status: " + response.getStatusCode());
         }
-        
-        return phlebotomistGuid;  // Return the extracted GUID
+
+        return phlebotomistGuid; // Return the extracted GUID
     }
 
     // -------------------------------
@@ -345,7 +395,7 @@ public class CreateOrderCODAPITest extends BaseTest {
         System.out.println("==========================================================");
 
         Map<String, Object> payload = new HashMap<>();
-        payload.put("order_id", Arrays.asList(orderId));  // Array with single order ID
+        payload.put("order_id", Arrays.asList(orderId)); // Array with single order ID
         payload.put("phlebo_id", phlebotomistGuid);
 
         String assignOrderUrl = "https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/assignOrder";
@@ -402,12 +452,12 @@ public class CreateOrderCODAPITest extends BaseTest {
 
         // Verify 200 OK
         AssertionUtil.verifyEquals(response.getStatusCode(), 200, "GetCentresByAddress HTTP status should be 200");
-        
+
         // Validate success response
         boolean success = response.jsonPath().getBoolean("success");
         if (success) {
             System.out.println("✅ Centres fetched successfully for address: " + addressId);
-            
+
             // Extract and display centers info
             List<Map<String, Object>> centers = response.jsonPath().getList("data");
             if (centers != null && !centers.isEmpty()) {
@@ -416,13 +466,13 @@ public class CreateOrderCODAPITest extends BaseTest {
                     Map<String, Object> center = centers.get(i);
                     String centerName = (String) center.get("name");
                     String centerCode = (String) center.get("center_code");
-                    System.out.println("   " + (i+1) + ". " + centerName + " (Code: " + centerCode + ")");
+                    System.out.println("   " + (i + 1) + ". " + centerName + " (Code: " + centerCode + ")");
                 }
             }
         } else {
             System.out.println("❌ Failed to fetch centres: " + response.jsonPath().getString("msg"));
         }
-        
+
         return response;
     }
 
@@ -434,22 +484,51 @@ public class CreateOrderCODAPITest extends BaseTest {
         System.out.println("      ADD TO CART API (With Address ID)");
         System.out.println("==========================================================");
 
-        // Create simple payload with basic product details (reuse existing tests)
-        Map<String, Object> productDetail1 = new HashMap<>();
-        productDetail1.put("product_id", "675921110856fe1e1e992d5a"); // Glucose (Urine)
-        productDetail1.put("quantity", 1);
-        productDetail1.put("type", "home");
-        productDetail1.put("brand_id", "efb159ac-db7c-4b06-a79b-021a8b6d67e8");
-        productDetail1.put("location_id", "64870066842708a0d5ae6c77");
+        // Dynamically build product details from RequestContext (populated by
+        // GlobalSearch)
+        Map<String, Map<String, Object>> allTests = RequestContext.getAllTests();
+        if (allTests == null || allTests.isEmpty()) {
+            throw new RuntimeException(
+                    "No tests found in RequestContext. Ensure GlobalSearchAPITest runs before this.");
+        }
 
-        Map<String, Object> productDetail2 = new HashMap<>();
-        productDetail2.put("product_id", "675921b2ba6f16b8c0d7bee4"); // Diabetes Monitor
-        productDetail2.put("quantity", 1);
-        productDetail2.put("type", "home");
-        productDetail2.put("brand_id", "efb159ac-db7c-4b06-a79b-021a8b6d67e8");
-        productDetail2.put("location_id", "64870066842708a0d5ae6c77");
+        List<Map<String, Object>> productDetails = new java.util.ArrayList<>();
+        String brandId = RequestContext.getBrandId("Diagnostics"); // Defaulting to Diagnostics
+        String locationId = RequestContext.getLocationId(DEFAULT_LOCATION);
 
-        List<Map<String, Object>> productDetails = Arrays.asList(productDetail1, productDetail2);
+        // Add only home collection tests (up to 2)
+        int count = 0;
+        for (Map.Entry<String, Map<String, Object>> entry : allTests.entrySet()) {
+            if (count >= 2)
+                break;
+
+            Map<String, Object> testData = entry.getValue();
+            // Check home collection availability
+            Object homeCollectionObj = testData.get("home_collection");
+            boolean isHome = false;
+            if (homeCollectionObj != null) {
+                String s = homeCollectionObj.toString().trim();
+                isHome = s.equalsIgnoreCase("AVAILABLE") || s.equalsIgnoreCase("YES") || s.equalsIgnoreCase("TRUE")
+                        || s.equals("1") || (homeCollectionObj instanceof Boolean && (Boolean) homeCollectionObj);
+            }
+
+            if (isHome) {
+                Map<String, Object> product = new HashMap<>();
+                product.put("product_id", testData.get("_id"));
+                product.put("quantity", 1);
+                product.put("type", "home");
+                product.put("brand_id", brandId);
+                product.put("location_id", locationId);
+                product.put("family_member_id", java.util.Collections.singletonList(userId));
+
+                productDetails.add(product);
+                count++;
+            }
+        }
+
+        if (productDetails.isEmpty()) {
+            throw new RuntimeException("No suitable HOME COLLECTION tests found to add to cart.");
+        }
 
         Map<String, Object> payload = new HashMap<>();
         payload.put("user_id", userId);
@@ -473,7 +552,7 @@ public class CreateOrderCODAPITest extends BaseTest {
             boolean success = response.jsonPath().getBoolean("success");
             if (success) {
                 System.out.println("✅ Cart updated successfully with address_id: " + addressId);
-                
+
                 // Extract updated cart GUID
                 String cartGuid = response.jsonPath().getString("data.guid");
                 if (cartGuid != null) {
@@ -485,7 +564,7 @@ public class CreateOrderCODAPITest extends BaseTest {
         } else {
             System.out.println("❌ Add to Cart with Address API Failed with status: " + response.getStatusCode());
         }
-        
+
         return response;
     }
 
@@ -526,12 +605,12 @@ public class CreateOrderCODAPITest extends BaseTest {
             // We'll take the first one's ID
             String existingAddressId = getAddressResponse.jsonPath().getString("data[0].id");
             String existingAddressGuid = getAddressResponse.jsonPath().getString("data[0].guid");
-            
+
             if (existingAddressId == null) {
                 existingAddressId = getAddressResponse.jsonPath().getString("data[0].guid");
             }
             System.out.println("Using existing Address ID: " + existingAddressId);
-            
+
             addressDetails.put("id", existingAddressId);
             addressDetails.put("guid", existingAddressGuid);
             return addressDetails;
@@ -542,7 +621,7 @@ public class CreateOrderCODAPITest extends BaseTest {
         // Extract Address ID (Try Numeric ID first, then GUID)
         String addressId = response.jsonPath().getString("data.id");
         String addressGuid = response.jsonPath().getString("data.guid");
-        
+
         if (addressId == null) {
             addressId = response.jsonPath().getString("data.guid");
         }
@@ -550,7 +629,7 @@ public class CreateOrderCODAPITest extends BaseTest {
             addressId = response.jsonPath().getString("data._id");
         }
         System.out.println("Created Address ID: " + addressId);
-        
+
         addressDetails.put("id", addressId);
         addressDetails.put("guid", addressGuid);
         return addressDetails;
@@ -560,42 +639,121 @@ public class CreateOrderCODAPITest extends BaseTest {
     // HELPER: Find Available Slot
     // -------------------------------
     private Map<String, String> findAvailableSlot(String token, String addressGuid) {
-        System.out.println("\n📅 SEARCHING FOR AVAILABLE SLOTS...");
-        java.time.LocalDate today = java.time.LocalDate.now();
-        int maxDaysToCheck = 7;
+        System.out.println("? SEARCHING FOR AVAILABLE SLOTS...");
+        LocalDate today = LocalDate.now();
 
-        for (int i = 0; i < maxDaysToCheck; i++) {
-            String checkDate = today.plusDays(i).toString();
-            Map<String, Object> payload = OrderPayloadBuilder.buildSlotSearchPayload(checkDate, 1, 100, "home", addressGuid);
+        for (int i = 0; i < 7; i++) { // Check for the next 7 days
+            LocalDate date = today.plusDays(i);
+            String dateString = date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
             Response response = new RequestBuilder()
-                    .setEndpoint(APIEndpoints.GET_SLOT_COUNT_BY_TIME)
+                    .setEndpoint("/slot/getSlotCountByTime")
                     .addHeader("Authorization", token)
-                    .setRequestBody(payload)
+                    .setRequestBody(String.format(
+                            "{\"slot_start_time\":\"%s\",\"limit\":100,\"page\":1,\"type\":\"home\",\"addressguid\":\"%s\"}",
+                            dateString, addressGuid))
                     .post();
+
+            // Log the full response for debugging
+            System.out.println("--- Slot Search ---");
+            System.out.println("Date Searched: " + dateString);
+            System.out.println("Status Code: " + response.getStatusCode());
+            System.out.println("Response Body: " + response.getBody().asString());
 
             if (response.getStatusCode() == 200) {
                 List<Map<String, Object>> slots = response.jsonPath().getList("data");
                 if (slots != null) {
                     for (Map<String, Object> slot : slots) {
+                        // Check slot availability safely
                         Object countObj = slot.get("count");
                         int count = 0;
-                        if (countObj instanceof Number) count = ((Number) countObj).intValue();
-                        else if (countObj instanceof String) count = Integer.parseInt((String) countObj);
+                        if (countObj instanceof Number) {
+                            count = ((Number) countObj).intValue();
+                        } else if (countObj instanceof String) {
+                            try {
+                                count = Integer.parseInt((String) countObj);
+                            } catch (NumberFormatException e) {
+                                count = 0;
+                            }
+                        }
 
                         if (count > 0) {
-                            Map<String, String> slotDetails = new HashMap<>();
-                            slotDetails.put("date", checkDate);
-                            slotDetails.put("time", (String) slot.get("starttime") + " - " + (String) slot.get("endtime"));
-                            slotDetails.put("guid", (String) slot.get("guid"));
-                            System.out.println("   ✅ Found Slot: " + checkDate + " " + slotDetails.get("time"));
-                            return slotDetails;
+                            String guid = (String) slot.get("guid");
+                            String startTime = (String) slot.get("starttime");
+                            String endTime = (String) slot.get("endtime");
+
+                            Map<String, String> result = new HashMap<>();
+                            result.put("guid", guid);
+                            result.put("date", dateString);
+                            result.put("time", startTime + " - " + endTime);
+
+                            System.out.println("--- End Slot Search ---");
+                            System.out.println("   ✅ Found Slot: " + startTime + " - " + endTime);
+                            return result;
                         }
                     }
                 }
             }
+            System.out.println("--- End Slot Search ---");
         }
-        throw new RuntimeException("❌ No available slots found in the next " + maxDaysToCheck + " days.");
+
+        throw new RuntimeException("No available slots found in the next 7 days.");
+    }
+
+    private void updateCartWithSlot(String token, String userId, String slotGuid, String addressId) {
+        System.out.println("\n? UPDATING CART WITH SLOT...");
+
+        // Dynamically build product details from RequestContext
+        Map<String, Map<String, Object>> allTests = RequestContext.getAllTests();
+        if (allTests == null || allTests.isEmpty()) {
+            throw new RuntimeException("No tests found in RequestContext.");
+        }
+
+        List<Map<String, Object>> productDetails = new java.util.ArrayList<>();
+        String brandId = RequestContext.getBrandId("Diagnostics");
+        String locationId = RequestContext.getLocationId(DEFAULT_LOCATION);
+
+        int count = 0;
+        for (Map.Entry<String, Map<String, Object>> entry : allTests.entrySet()) {
+            if (count >= 2)
+                break;
+            Map<String, Object> testData = entry.getValue();
+            Object homeCollectionObj = testData.get("home_collection");
+            boolean isHome = false;
+            if (homeCollectionObj != null) {
+                String s = homeCollectionObj.toString().trim();
+                isHome = s.equalsIgnoreCase("AVAILABLE") || s.equalsIgnoreCase("YES") || s.equalsIgnoreCase("TRUE")
+                        || s.equals("1") || (homeCollectionObj instanceof Boolean && (Boolean) homeCollectionObj);
+            }
+            if (isHome) {
+                Map<String, Object> product = new HashMap<>();
+                product.put("product_id", testData.get("_id"));
+                product.put("quantity", 1);
+                product.put("type", "home");
+                product.put("brand_id", brandId);
+                product.put("location_id", locationId);
+                product.put("family_member_id", java.util.Collections.singletonList(userId));
+                productDetails.add(product);
+                count++;
+            }
+        }
+
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("user_id", userId);
+        payload.put("product_details", productDetails);
+        payload.put("slot_guid", slotGuid);
+        payload.put("lab_location_id", locationId);
+        payload.put("order_type", "home");
+        payload.put("address_id", addressId);
+
+        Response response = new RequestBuilder()
+                .setEndpoint(APIEndpoints.ADD_TO_CART)
+                .addHeader("Authorization", token)
+                .setRequestBody(payload)
+                .post();
+
+        AssertionUtil.verifyEquals(response.getStatusCode(), 200, "Update Cart with Slot HTTP 200");
+        System.out.println("✅ Cart updated successfully with Slot: " + slotGuid);
     }
 
     @Test(priority = 1)
@@ -680,28 +838,39 @@ public class CreateOrderCODAPITest extends BaseTest {
         String slotTime = slotDetails.get("time");
         String selectedSlotGuid = slotDetails.get("guid");
 
+        // 1.9 UPDATE CART WITH SLOT (CRITICAL STEP ADDED)
+        updateCartWithSlot(token, userId, selectedSlotGuid, addressGuid);
+
         // 2. Verify Payment (COD Pre-check) - Dev Env
         String source = "android"; // Not hardcoded in method, but passed as param
-        Map<String, String> verifyPaymentResult = callVerifyPaymentAPI(token, userId, cartId, addressId, selectedSlotGuid, labLocationId, orderType, totalPrice, slotDate, slotTime, source);
+        Map<String, String> verifyPaymentResult = callVerifyPaymentAPI(token, userId, cartId, addressId,
+                selectedSlotGuid, labLocationId, orderType, totalPrice, slotDate, slotTime, source);
         String paymentId = verifyPaymentResult.get("paymentId");
         String orderId = verifyPaymentResult.get("orderId");
 
         // 3. Get Payment By ID - Dev Env
-        if (paymentId != null) {
+        if (paymentId != null && !"EMPTY_DATA".equals(paymentId)) {
             Response paymentResponse = callGetPaymentByIdAPI(token, paymentId);
-            
-            // 4. CROSS-API VALIDATIONS
-            performCrossAPIValidations(getCartResponse, paymentResponse, totalPrice, cartId, paymentId, userId, addressId, selectedSlotGuid);
-            
-            // 5. Phlebo Login API
-            String phlebotomistGuid = callPhlebotomistLoginAPI();
-            
-            // 6. Assign Order API (NEW!)
-            if (phlebotomistGuid != null && orderId != null) {
-                callAssignOrderAPI(orderId, phlebotomistGuid);
-            }
+
+            // 4. Get Order By ID
+            callGetOrderByIdAPI(token, orderId);
+
+            // 5. CROSS-API VALIDATIONS
+            performCrossAPIValidations(getCartResponse, paymentResponse, totalPrice, cartId, paymentId, userId,
+                    addressId, selectedSlotGuid);
         } else {
-            System.out.println("WARNING: Skipping GetPaymentById because VerifyPayment failed to return an ID.");
+            System.out
+                    .println("⚠️ Skipping GetPaymentById and validations due to empty payment data from VerifyPayment");
+        }
+
+        // 6. Phlebo Login API
+        String phlebotomistGuid = callPhlebotomistLoginAPI();
+
+        // 7. Assign Order API
+        if (phlebotomistGuid != null && orderId != null && !"EMPTY_DATA".equals(orderId)) {
+            callAssignOrderAPI(orderId, phlebotomistGuid);
+        } else {
+            System.out.println("⚠️ Skipping AssignOrder due to missing order ID or phlebo GUID");
         }
 
         /*

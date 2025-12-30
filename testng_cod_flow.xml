@@ -1,113 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="COD Flow Suite" verbose="2">
-    <test name="COD End-to-End Flow" preserve-order="true">
+    <test name="Complete COD Flow" preserve-order="true">
         <classes>
-            <!-- STEP 1: REGISTRATION -->
-            <class name="com.mryoda.diagnostics.api.tests.UserCreateAPITest">
-                <methods>
-                    <include name="testUserRegistration_CreateNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 2: LOGIN -->
-            <class name="com.mryoda.diagnostics.api.tests.LoginAPITest">
-                <methods>
-                    <include name="testLoginWithOTP"/>
-                    <include name="testLoginWithOTP_NonMember"/>
-                    <include name="testLoginWithOTP_NewlyRegisteredUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 3: LOCATION -->
-            <class name="com.mryoda.diagnostics.api.tests.LocationAPITest">
-                <methods>
-                    <include name="testGetLocations_ForMember"/>
-                    <include name="testGetLocations_ForNonMember"/>
-                    <include name="testGetLocations_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 4: BRAND -->
-            <class name="com.mryoda.diagnostics.api.tests.BrandAPITest">
-                <methods>
-                    <include name="testGetBrands_ForMember"/>
-                    <include name="testGetBrands_ForNonMember"/>
-                    <include name="testGetBrands_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 5: GLOBAL SEARCH -->
-            <class name="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest">
-                <methods>
-                    <include name="testGlobalSearch_ForMember"/>
-                    <include name="testGlobalSearch_ForNonMember"/>
-                    <include name="testGlobalSearch_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 6: ADD TO CART -->
-            <class name="com.mryoda.diagnostics.api.tests.AddToCartAPITest">
-                <methods>
-                    <include name="testAddToCart_ForMember"/>
-                    <include name="testAddToCart_ForNonMember"/>
-                    <include name="testAddToCart_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 7: ADDRESS -->
-            <class name="com.mryoda.diagnostics.api.tests.AddressAPITest">
-                <methods>
-                    <include name="testAddAddress_ForMember"/>
-                    <include name="testAddAddress_ForNonMember"/>
-                    <include name="testAddAddress_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 7.1: GET ADDRESS BY USER ID -->
-            <class name="com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest">
-                <methods>
-                    <include name="testGetAddressByUserId_ForMember"/>
-                    <include name="testGetAddressByUserId_ForNonMember"/>
-                    <include name="testGetAddressByUserId_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 7.2: GET CENTERS BY ADDRESS -->
-            <class name="com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest">
-                <methods>
-                    <include name="testGetCentersByAddress_ForMember"/>
-                    <include name="testGetCentersByAddress_ForNonMember"/>
-                    <include name="testGetCentersByAddress_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 8: SLOT -->
-            <class name="com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest">
-                <methods>
-                    <include name="testSlotAndCartUpdate_ForMember"/>
-                    <include name="testSlotAndCartUpdate_ForNonMember"/>
-                    <include name="testSlotAndCartUpdate_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 9: GET CART -->
-            <class name="com.mryoda.diagnostics.api.tests.GetCartByIdAPITest">
-                <methods>
-                    <include name="testGetCartById_ForMember"/>
-                    <include name="testGetCartById_ForNonMember"/>
-                    <include name="testGetCartById_ForNewUser"/>
-                </methods>
-            </class>
-
-            <!-- STEP 10: COD FLOW (Verify -> GetPayment) -->
-            <class name="com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest">
-                <methods>
-                    <include name="testCOD_Flow_ForMember"/>
-                    <include name="testCOD_Flow_ForNonMember"/>
-                    <include name="testCOD_Flow_ForNewUser"/>
-                </methods>
-            </class>
+            <class name="com.mryoda.diagnostics.api.tests.UserCreateAPITest"/>
+            <class name="com.mryoda.diagnostics.api.tests.LoginAPITest"/>
+            <class name="com.mryoda.diagnostics.api.tests.LocationAPITest"/>
+            <class name="com.mryoda.diagnostics.api.tests.BrandAPITest"/>
+            <class name="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest"/>
+            <class name="com.mryoda.diagnostics.api.tests.AddToCartAPITest"/>
+            <class name="com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest"/>
         </classes>
     </test>
 </suite>

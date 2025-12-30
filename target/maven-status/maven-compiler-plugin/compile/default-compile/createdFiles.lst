@@ -1,4 +1,5 @@
 com\mryoda\diagnostics\api\payloads\UserPayloadBuilder.class
+com\mryoda\diagnostics\api\payloads\OrderPayloadBuilder.class
 com\mryoda\diagnostics\api\utils\TokenManager.class
 com\mryoda\diagnostics\api\utils\LoggerUtil.class
 com\mryoda\diagnostics\api\config\ConfigLoader.class

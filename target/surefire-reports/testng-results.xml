@@ -1,267 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="34" passed="34" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-30T20:02:02 IST" name="COD Flow Suite" finished-at="2025-12-30T20:02:26 IST" duration-ms="23502">
+  <suite started-at="2025-12-30T23:32:18 IST" name="COD Flow Suite" finished-at="2025-12-30T23:32:43 IST" duration-ms="25180">
     <groups>
     </groups>
-    <test started-at="2025-12-30T20:02:02 IST" name="COD End-to-End Flow" finished-at="2025-12-30T20:02:26 IST" duration-ms="23502">
-      <class name="com.mryoda.diagnostics.api.tests.AddressAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddressAPITest@77602954]" started-at="2025-12-30T20:02:12 IST" name="setUp" finished-at="2025-12-30T20:02:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testAddAddress_ForMember()[pri:11, instance:com.mryoda.diagnostics.api.tests.AddressAPITest@77602954]" started-at="2025-12-30T20:02:12 IST" name="testAddAddress_ForMember" finished-at="2025-12-30T20:02:12 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddToCartAPITest.testAddToCart_ForMember" duration-ms="80" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddAddress_ForMember -->
-        <test-method signature="testAddAddress_ForNonMember()[pri:11, instance:com.mryoda.diagnostics.api.tests.AddressAPITest@77602954]" started-at="2025-12-30T20:02:12 IST" name="testAddAddress_ForNonMember" finished-at="2025-12-30T20:02:12 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddToCartAPITest.testAddToCart_ForNonMember" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddAddress_ForNonMember -->
-        <test-method signature="testAddAddress_ForNewUser()[pri:12, instance:com.mryoda.diagnostics.api.tests.AddressAPITest@77602954]" started-at="2025-12-30T20:02:12 IST" name="testAddAddress_ForNewUser" finished-at="2025-12-30T20:02:12 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddToCartAPITest.testAddToCart_ForNewUser" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddAddress_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddressAPITest@77602954]" started-at="2025-12-30T20:02:12 IST" name="tearDown" finished-at="2025-12-30T20:02:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mryoda.diagnostics.api.tests.AddressAPITest -->
+    <test started-at="2025-12-30T23:32:18 IST" name="Complete COD Flow" finished-at="2025-12-30T23:32:43 IST" duration-ms="25180">
       <class name="com.mryoda.diagnostics.api.tests.LocationAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d]" started-at="2025-12-30T20:02:06 IST" name="setUp" finished-at="2025-12-30T20:02:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@350ec41e]" started-at="2025-12-30T23:32:24 IST" name="setUp" finished-at="2025-12-30T23:32:24 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGetLocations_ForMember()[pri:5, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d]" started-at="2025-12-30T20:02:06 IST" name="testGetLocations_ForMember" finished-at="2025-12-30T20:02:07 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP" duration-ms="815" status="PASS">
+        <test-method signature="testGetLocations_ForMember()[pri:5, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@350ec41e]" started-at="2025-12-30T23:32:24 IST" name="testGetLocations_ForMember" finished-at="2025-12-30T23:32:26 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP" duration-ms="1703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetLocations_ForMember -->
-        <test-method signature="testGetLocations_ForNonMember()[pri:5, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d]" started-at="2025-12-30T20:02:07 IST" name="testGetLocations_ForNonMember" finished-at="2025-12-30T20:02:07 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP_NonMember" duration-ms="642" status="PASS">
+        <test-method signature="testGetLocations_ForNonMember()[pri:5, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@350ec41e]" started-at="2025-12-30T23:32:26 IST" name="testGetLocations_ForNonMember" finished-at="2025-12-30T23:32:27 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP_NonMember" duration-ms="1245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetLocations_ForNonMember -->
-        <test-method signature="testGetLocations_ForNewUser()[pri:6, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d]" started-at="2025-12-30T20:02:07 IST" name="testGetLocations_ForNewUser" finished-at="2025-12-30T20:02:08 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP_NewlyRegisteredUser" duration-ms="518" status="PASS">
+        <test-method signature="testGetLocations_ForNewUser()[pri:6, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@350ec41e]" started-at="2025-12-30T23:32:27 IST" name="testGetLocations_ForNewUser" finished-at="2025-12-30T23:32:29 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP_NewlyRegisteredUser" duration-ms="1385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetLocations_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d]" started-at="2025-12-30T20:02:08 IST" name="tearDown" finished-at="2025-12-30T20:02:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@350ec41e]" started-at="2025-12-30T23:32:29 IST" name="tearDown" finished-at="2025-12-30T23:32:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mryoda.diagnostics.api.tests.LocationAPITest -->
-      <class name="com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744]" started-at="2025-12-30T20:02:13 IST" name="setUp" finished-at="2025-12-30T20:02:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testSlotAndCartUpdate_ForMember()[pri:18, instance:com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744]" started-at="2025-12-30T20:02:13 IST" name="testSlotAndCartUpdate_ForMember" finished-at="2025-12-30T20:02:13 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForMember" duration-ms="190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSlotAndCartUpdate_ForMember -->
-        <test-method signature="testSlotAndCartUpdate_ForNonMember()[pri:18, instance:com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744]" started-at="2025-12-30T20:02:13 IST" name="testSlotAndCartUpdate_ForNonMember" finished-at="2025-12-30T20:02:13 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForNonMember" duration-ms="211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSlotAndCartUpdate_ForNonMember -->
-        <test-method signature="testSlotAndCartUpdate_ForNewUser()[pri:18, instance:com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744]" started-at="2025-12-30T20:02:13 IST" name="testSlotAndCartUpdate_ForNewUser" finished-at="2025-12-30T20:02:14 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForNewUser" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSlotAndCartUpdate_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744]" started-at="2025-12-30T20:02:14 IST" name="tearDown" finished-at="2025-12-30T20:02:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest -->
       <class name="com.mryoda.diagnostics.api.tests.BrandAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@51850751]" started-at="2025-12-30T20:02:08 IST" name="setUp" finished-at="2025-12-30T20:02:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@69637b10]" started-at="2025-12-30T23:32:29 IST" name="setUp" finished-at="2025-12-30T23:32:29 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGetBrands_ForMember()[pri:6, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@51850751]" started-at="2025-12-30T20:02:08 IST" name="testGetBrands_ForMember" finished-at="2025-12-30T20:02:08 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForMember" duration-ms="266" status="PASS">
+        <test-method signature="testGetBrands_ForMember()[pri:6, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@69637b10]" started-at="2025-12-30T23:32:29 IST" name="testGetBrands_ForMember" finished-at="2025-12-30T23:32:30 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForMember" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBrands_ForMember -->
-        <test-method signature="testGetBrands_ForNonMember()[pri:6, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@51850751]" started-at="2025-12-30T20:02:08 IST" name="testGetBrands_ForNonMember" finished-at="2025-12-30T20:02:08 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForNonMember" duration-ms="82" status="PASS">
+        <test-method signature="testGetBrands_ForNonMember()[pri:6, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@69637b10]" started-at="2025-12-30T23:32:30 IST" name="testGetBrands_ForNonMember" finished-at="2025-12-30T23:32:30 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForNonMember" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBrands_ForNonMember -->
-        <test-method signature="testGetBrands_ForNewUser()[pri:7, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@51850751]" started-at="2025-12-30T20:02:08 IST" name="testGetBrands_ForNewUser" finished-at="2025-12-30T20:02:08 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForNewUser" duration-ms="100" status="PASS">
+        <test-method signature="testGetBrands_ForNewUser()[pri:7, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@69637b10]" started-at="2025-12-30T23:32:30 IST" name="testGetBrands_ForNewUser" finished-at="2025-12-30T23:32:30 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForNewUser" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBrands_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@51850751]" started-at="2025-12-30T20:02:08 IST" name="tearDown" finished-at="2025-12-30T20:02:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@69637b10]" started-at="2025-12-30T23:32:30 IST" name="tearDown" finished-at="2025-12-30T23:32:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mryoda.diagnostics.api.tests.BrandAPITest -->
-      <class name="com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766]" started-at="2025-12-30T20:02:12 IST" name="setUp" finished-at="2025-12-30T20:02:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetAddressByUserId_ForMember()[pri:14, instance:com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766]" started-at="2025-12-30T20:02:12 IST" name="testGetAddressByUserId_ForMember" finished-at="2025-12-30T20:02:12 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForMember" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetAddressByUserId_ForMember -->
-        <test-method signature="testGetAddressByUserId_ForNonMember()[pri:14, instance:com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766]" started-at="2025-12-30T20:02:12 IST" name="testGetAddressByUserId_ForNonMember" finished-at="2025-12-30T20:02:13 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForNonMember" duration-ms="114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetAddressByUserId_ForNonMember -->
-        <test-method signature="testGetAddressByUserId_ForNewUser()[pri:15, instance:com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766]" started-at="2025-12-30T20:02:13 IST" name="testGetAddressByUserId_ForNewUser" finished-at="2025-12-30T20:02:13 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForNewUser" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetAddressByUserId_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766]" started-at="2025-12-30T20:02:13 IST" name="tearDown" finished-at="2025-12-30T20:02:13 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest -->
       <class name="com.mryoda.diagnostics.api.tests.UserCreateAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.UserCreateAPITest@50eca7c6]" started-at="2025-12-30T20:02:03 IST" name="setUp" finished-at="2025-12-30T20:02:03 IST" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.UserCreateAPITest@5b080f3a]" started-at="2025-12-30T23:32:19 IST" name="setUp" finished-at="2025-12-30T23:32:19 IST" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUserRegistration_CreateNewUser()[pri:1, instance:com.mryoda.diagnostics.api.tests.UserCreateAPITest@50eca7c6]" started-at="2025-12-30T20:02:03 IST" name="testUserRegistration_CreateNewUser" finished-at="2025-12-30T20:02:05 IST" duration-ms="2119" status="PASS">
+        <test-method signature="testUserRegistration_CreateNewUser()[pri:1, instance:com.mryoda.diagnostics.api.tests.UserCreateAPITest@5b080f3a]" started-at="2025-12-30T23:32:19 IST" name="testUserRegistration_CreateNewUser" finished-at="2025-12-30T23:32:23 IST" duration-ms="3500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUserRegistration_CreateNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.UserCreateAPITest@50eca7c6]" started-at="2025-12-30T20:02:05 IST" name="tearDown" finished-at="2025-12-30T20:02:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.UserCreateAPITest@5b080f3a]" started-at="2025-12-30T23:32:23 IST" name="tearDown" finished-at="2025-12-30T23:32:23 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mryoda.diagnostics.api.tests.UserCreateAPITest -->
-      <class name="com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30]" started-at="2025-12-30T20:02:13 IST" name="setUp" finished-at="2025-12-30T20:02:13 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetCentersByAddress_ForNonMember()[pri:1, instance:com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30]" started-at="2025-12-30T20:02:13 IST" name="testGetCentersByAddress_ForNonMember" finished-at="2025-12-30T20:02:13 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest.testGetAddressByUserId_ForNonMember" duration-ms="92" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCentersByAddress_ForNonMember -->
-        <test-method signature="testGetCentersByAddress_ForMember()[pri:2, instance:com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30]" started-at="2025-12-30T20:02:13 IST" name="testGetCentersByAddress_ForMember" finished-at="2025-12-30T20:02:13 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest.testGetAddressByUserId_ForMember" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCentersByAddress_ForMember -->
-        <test-method signature="testGetCentersByAddress_ForNewUser()[pri:3, instance:com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30]" started-at="2025-12-30T20:02:13 IST" name="testGetCentersByAddress_ForNewUser" finished-at="2025-12-30T20:02:13 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest.testGetAddressByUserId_ForNewUser" duration-ms="99" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCentersByAddress_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30]" started-at="2025-12-30T20:02:13 IST" name="tearDown" finished-at="2025-12-30T20:02:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest -->
       <class name="com.mryoda.diagnostics.api.tests.AddToCartAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61]" started-at="2025-12-30T20:02:11 IST" name="setUp" finished-at="2025-12-30T20:02:11 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@165b2f7f]" started-at="2025-12-30T23:32:33 IST" name="setUp" finished-at="2025-12-30T23:32:33 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddToCart_ForMember()[pri:8, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61]" started-at="2025-12-30T20:02:11 IST" name="testAddToCart_ForMember" finished-at="2025-12-30T20:02:12 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForMember" duration-ms="213" status="PASS">
+        <test-method signature="testAddToCart_ForMember()[pri:8, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@165b2f7f]" started-at="2025-12-30T23:32:33 IST" name="testAddToCart_ForMember" finished-at="2025-12-30T23:32:33 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForMember" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart_ForMember -->
-        <test-method signature="testAddToCart_ForNonMember()[pri:8, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61]" started-at="2025-12-30T20:02:12 IST" name="testAddToCart_ForNonMember" finished-at="2025-12-30T20:02:12 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForNonMember" duration-ms="227" status="PASS">
+        <test-method signature="testAddToCart_ForNonMember()[pri:8, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@165b2f7f]" started-at="2025-12-30T23:32:33 IST" name="testAddToCart_ForNonMember" finished-at="2025-12-30T23:32:33 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForNonMember" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart_ForNonMember -->
-        <test-method signature="testAddToCart_ForNewUser()[pri:9, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61]" started-at="2025-12-30T20:02:12 IST" name="testAddToCart_ForNewUser" finished-at="2025-12-30T20:02:12 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForNewUser" duration-ms="216" status="PASS">
+        <test-method signature="testAddToCart_ForNewUser()[pri:9, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@165b2f7f]" started-at="2025-12-30T23:32:33 IST" name="testAddToCart_ForNewUser" finished-at="2025-12-30T23:32:34 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForNewUser" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61]" started-at="2025-12-30T20:02:12 IST" name="tearDown" finished-at="2025-12-30T20:02:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@165b2f7f]" started-at="2025-12-30T23:32:34 IST" name="tearDown" finished-at="2025-12-30T23:32:34 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mryoda.diagnostics.api.tests.AddToCartAPITest -->
       <class name="com.mryoda.diagnostics.api.tests.LoginAPITest">
-        <test-method signature="testLoginWithOTP()[pri:1, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e]" started-at="2025-12-30T20:02:05 IST" name="testLoginWithOTP" finished-at="2025-12-30T20:02:05 IST" duration-ms="338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithOTP -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e]" started-at="2025-12-30T20:02:05 IST" name="setUp" finished-at="2025-12-30T20:02:05 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@2756c0a7]" started-at="2025-12-30T23:32:23 IST" name="setUp" finished-at="2025-12-30T23:32:23 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithOTP_NonMember()[pri:1, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e]" started-at="2025-12-30T20:02:05 IST" name="testLoginWithOTP_NonMember" finished-at="2025-12-30T20:02:06 IST" duration-ms="289" status="PASS">
+        <test-method signature="testLoginWithOTP()[pri:1, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@2756c0a7]" started-at="2025-12-30T23:32:23 IST" name="testLoginWithOTP" finished-at="2025-12-30T23:32:23 IST" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithOTP -->
+        <test-method signature="testLoginWithOTP_NonMember()[pri:1, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@2756c0a7]" started-at="2025-12-30T23:32:23 IST" name="testLoginWithOTP_NonMember" finished-at="2025-12-30T23:32:24 IST" duration-ms="537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithOTP_NonMember -->
-        <test-method signature="testLoginWithOTP_NewlyRegisteredUser()[pri:2, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e]" started-at="2025-12-30T20:02:06 IST" name="testLoginWithOTP_NewlyRegisteredUser" finished-at="2025-12-30T20:02:06 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.UserCreateAPITest.testUserRegistration_CreateNewUser" duration-ms="222" status="PASS">
+        <test-method signature="testLoginWithOTP_NewlyRegisteredUser()[pri:2, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@2756c0a7]" started-at="2025-12-30T23:32:24 IST" name="testLoginWithOTP_NewlyRegisteredUser" finished-at="2025-12-30T23:32:24 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.UserCreateAPITest.testUserRegistration_CreateNewUser" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithOTP_NewlyRegisteredUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e]" started-at="2025-12-30T20:02:06 IST" name="tearDown" finished-at="2025-12-30T20:02:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@2756c0a7]" started-at="2025-12-30T23:32:24 IST" name="tearDown" finished-at="2025-12-30T23:32:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mryoda.diagnostics.api.tests.LoginAPITest -->
       <class name="com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013]" started-at="2025-12-30T20:02:16 IST" name="setUp" finished-at="2025-12-30T20:02:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCOD_Flow_ForNewUser()[pri:1, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013]" started-at="2025-12-30T20:02:16 IST" name="testCOD_Flow_ForNewUser" finished-at="2025-12-30T20:02:18 IST" duration-ms="1883" status="PASS">
+        <test-method signature="testCOD_Flow_ForNewUser()[pri:1, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@5536379e]" started-at="2025-12-30T23:32:34 IST" name="testCOD_Flow_ForNewUser" finished-at="2025-12-30T23:32:37 IST" duration-ms="3282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCOD_Flow_ForNewUser -->
-        <test-method signature="testCOD_Flow_ForMember()[pri:2, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013]" started-at="2025-12-30T20:02:18 IST" name="testCOD_Flow_ForMember" finished-at="2025-12-30T20:02:21 IST" duration-ms="2415" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@5536379e]" started-at="2025-12-30T23:32:34 IST" name="setUp" finished-at="2025-12-30T23:32:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCOD_Flow_ForMember()[pri:2, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@5536379e]" started-at="2025-12-30T23:32:37 IST" name="testCOD_Flow_ForMember" finished-at="2025-12-30T23:32:40 IST" duration-ms="2699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCOD_Flow_ForMember -->
-        <test-method signature="testCOD_Flow_ForNonMember()[pri:3, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013]" started-at="2025-12-30T20:02:21 IST" name="testCOD_Flow_ForNonMember" finished-at="2025-12-30T20:02:26 IST" duration-ms="5356" status="PASS">
+        <test-method signature="testCOD_Flow_ForNonMember()[pri:3, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@5536379e]" started-at="2025-12-30T23:32:40 IST" name="testCOD_Flow_ForNonMember" finished-at="2025-12-30T23:32:43 IST" duration-ms="3761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCOD_Flow_ForNonMember -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013]" started-at="2025-12-30T20:02:26 IST" name="tearDown" finished-at="2025-12-30T20:02:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@5536379e]" started-at="2025-12-30T23:32:43 IST" name="tearDown" finished-at="2025-12-30T23:32:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest -->
       <class name="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41]" started-at="2025-12-30T20:02:08 IST" name="setUp" finished-at="2025-12-30T20:02:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@71984c3]" started-at="2025-12-30T23:32:30 IST" name="setUp" finished-at="2025-12-30T23:32:30 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGlobalSearch_ForMember()[pri:7, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41]" started-at="2025-12-30T20:02:08 IST" name="testGlobalSearch_ForMember" finished-at="2025-12-30T20:02:10 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForMember" duration-ms="1624" status="PASS">
+        <test-method signature="testGlobalSearch_ForMember()[pri:7, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@71984c3]" started-at="2025-12-30T23:32:30 IST" name="testGlobalSearch_ForMember" finished-at="2025-12-30T23:32:31 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForMember" duration-ms="1691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGlobalSearch_ForMember -->
-        <test-method signature="testGlobalSearch_ForNonMember()[pri:7, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41]" started-at="2025-12-30T20:02:10 IST" name="testGlobalSearch_ForNonMember" finished-at="2025-12-30T20:02:11 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNonMember" duration-ms="706" status="PASS">
+        <test-method signature="testGlobalSearch_ForNonMember()[pri:7, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@71984c3]" started-at="2025-12-30T23:32:31 IST" name="testGlobalSearch_ForNonMember" finished-at="2025-12-30T23:32:32 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNonMember" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGlobalSearch_ForNonMember -->
-        <test-method signature="testGlobalSearch_ForNewUser()[pri:8, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41]" started-at="2025-12-30T20:02:11 IST" name="testGlobalSearch_ForNewUser" finished-at="2025-12-30T20:02:11 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNewUser" duration-ms="559" status="PASS">
+        <test-method signature="testGlobalSearch_ForNewUser()[pri:8, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@71984c3]" started-at="2025-12-30T23:32:32 IST" name="testGlobalSearch_ForNewUser" finished-at="2025-12-30T23:32:33 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNewUser" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGlobalSearch_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41]" started-at="2025-12-30T20:02:11 IST" name="tearDown" finished-at="2025-12-30T20:02:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@71984c3]" started-at="2025-12-30T23:32:33 IST" name="tearDown" finished-at="2025-12-30T23:32:33 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mryoda.diagnostics.api.tests.GlobalSearchAPITest -->
-      <class name="com.mryoda.diagnostics.api.tests.GetCartByIdAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c]" started-at="2025-12-30T20:02:14 IST" name="setUp" finished-at="2025-12-30T20:02:14 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetCartById_ForMember()[pri:10, instance:com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c]" started-at="2025-12-30T20:02:14 IST" name="testGetCartById_ForMember" finished-at="2025-12-30T20:02:15 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForMember" duration-ms="911" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartById_ForMember -->
-        <test-method signature="testGetCartById_ForNonMember()[pri:10, instance:com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c]" started-at="2025-12-30T20:02:15 IST" name="testGetCartById_ForNonMember" finished-at="2025-12-30T20:02:16 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNonMember" duration-ms="1040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartById_ForNonMember -->
-        <test-method signature="testGetCartById_ForNewUser()[pri:11, instance:com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c]" started-at="2025-12-30T20:02:16 IST" name="testGetCartById_ForNewUser" finished-at="2025-12-30T20:02:16 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNewUser" duration-ms="717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetCartById_ForNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c]" started-at="2025-12-30T20:02:16 IST" name="tearDown" finished-at="2025-12-30T20:02:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mryoda.diagnostics.api.tests.GetCartByIdAPITest -->
-    </test> <!-- COD End-to-End Flow -->
+    </test> <!-- Complete COD Flow -->
   </suite> <!-- COD Flow Suite -->
 </testng-results>

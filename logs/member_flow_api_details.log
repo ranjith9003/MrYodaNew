@@ -3304,3 +3304,623 @@ Response Body:
 {"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTA1MTI1LCJleHAiOjE3ODI4OTEzNjV9.t0PHJ-KSq4KrsKmtbkdzti030GmndMA7lNWxEhN3KJw","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTA1MTI1LCJleHAiOjE3OTg2NjI3MjV9.bx0frTEhdqQ3YaEghyhCMQmB_wDCVIA7-IYTL11dKpA"}}
 ========================================
 
+========================================
+Timestamp: 2025-12-30 20:13:59.526
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 107 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 20:13:59.666
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 107 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTA1ODM5LCJleHAiOjE3ODI4OTIwNzl9.O3EgM0db8BXgDrPQaVCZC5J7XPXBaAPif4Sczjf3BJE","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTA1ODM5LCJleHAiOjE3OTg2NjM0Mzl9.3XwOJVpx7q0d11YIF2qxEfWtjT91Qs2B03WCziGSV_4"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:39:20.058
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 97 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:39:20.214
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 122 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEwOTU5LCJleHAiOjE3ODI4OTcxOTl9.myblHlGHMu6C5C3IOPOLfmagXdvwfrD8nmgDZ6UJdgE","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEwOTU5LCJleHAiOjE3OTg2Njg1NTl9.S9Lown6MSCaGtzuKqi8X33u9IlvOLnbNqgsx9Ko1Jbo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:41:31.817
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 117 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:41:31.981
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 125 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTExMDkxLCJleHAiOjE3ODI4OTczMzF9.uuvHE3VjWzoHqcBurk1ZAuQcHTZINwfglWCNzcdA-tc","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTExMDkxLCJleHAiOjE3OTg2Njg2OTF9.daLdmBEisgMwgBEgOH_agUugvSu7IR7JvoKWc2o5i44"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:44:59.520
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 122 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:44:59.738
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 167 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTExMjk5LCJleHAiOjE3ODI4OTc1Mzl9.U3FJv9kcvye8o9eKwjlcQ_jc3SiJYZK1iAHVO70upks","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTExMjk5LCJleHAiOjE3OTg2Njg4OTl9.abeQQqOBcdJtfm0s_TiznAdVBiB_cq-YGiRmnsFqa8Y"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:57:35.638
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 115 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 21:57:35.799
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 136 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEyMDU1LCJleHAiOjE3ODI4OTgyOTV9.onGMp9yrYnzn7el4dOf4c7Wule04guWT7h8uQ8aFEp4","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEyMDU1LCJleHAiOjE3OTg2Njk2NTV9.67S0ZH9CoZ82cY1-_IB79nfUaQiOTK7N-3ZfjVPA-7A"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:07:12.489
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 83 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:07:12.617
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 99 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEyNjMyLCJleHAiOjE3ODI4OTg4NzJ9.8nBZJBrwS7ERGy_9yuR1Z4TTtPS26Q2cyI1ND5FJRlA","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEyNjMyLCJleHAiOjE3OTg2NzAyMzJ9.Y95Q0T5leCGPGKC0nLX17xZie86FGK6pP4m1loaxdKI"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:09:18.714
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 73 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:09:18.860
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 127 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEyNzU4LCJleHAiOjE3ODI4OTg5OTh9.5nivm_cpDK54vlm7SKoqxFWrzDZOgz-j96ldXmJlFHo","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEyNzU4LCJleHAiOjE3OTg2NzAzNTh9.nBMLtiOrsFZp7c1kX0NkGaAK6hYrhA6xspSXnpT2Z2g"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:16:14.508
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 109 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:16:14.672
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 127 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzMTc0LCJleHAiOjE3ODI4OTk0MTR9.fGDwVbiVPF0xeFRnh_WB9Ck5LMt1IUQruJIgQ8c33dM","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzMTc0LCJleHAiOjE3OTg2NzA3NzR9.KmfXR3DJKgaehc3REIO03mh8rb6C_XqW8zlmpJ9zpiU"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:19:36.386
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 88 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:19:36.567
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 152 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzMzc2LCJleHAiOjE3ODI4OTk2MTZ9.rgRPnTumgAhek37Rx7qI4mvuj6NPB8lGsIy-b_pqlgs","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzMzc2LCJleHAiOjE3OTg2NzA5NzZ9.X4JzrC5KrkRxoDM9Y0sQyR0rM2zvICbd2H2xq8ULbEw"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:23:43.114
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 93 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:23:43.255
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 119 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzNjIyLCJleHAiOjE3ODI4OTk4NjJ9.fbV5fhO19X6TxbBD_gvCniPHgAJOTEIaeDVCRxmSrk4","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzNjIyLCJleHAiOjE3OTg2NzEyMjJ9.zJu3I_PUfF6Iph2niLvmTo11FuKjcPt6314RipNORXw"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:29:11.468
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 83 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:29:11.602
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 98 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzOTUxLCJleHAiOjE3ODI5MDAxOTF9.MiucnSW0v2J3wZgoWYWOoMSiTaw5AmwPsYcTMuBGDJ8","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTEzOTUxLCJleHAiOjE3OTg2NzE1NTF9.zkRNyJnKANZovTYoJvNKd85YKblKItx67Wndd1tz4vo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:30:34.811
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 91 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:30:34.963
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 117 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0MDM0LCJleHAiOjE3ODI5MDAyNzR9.mL1g7umBG_gShHT6kIMtdJGO5w0CBiU8Jfv0DtTtcPM","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0MDM0LCJleHAiOjE3OTg2NzE2MzR9.CgnrTFmcoh1WINBnMnr4syjBFxJ_W2sNkGWXnfaw_Mk"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:31:35.977
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 87 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:31:36.148
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 151 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0MDk1LCJleHAiOjE3ODI5MDAzMzV9.yctRfvGrtboPRuhRfbs3yYS-UiVaCPlGrhINu7Wf0iY","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0MDk1LCJleHAiOjE3OTg2NzE2OTV9.oEQjKX6fFwE55U2nplNaGHbZ_2e_h72U2bfP-dN0IA4"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:33:46.970
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 81 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:33:47.095
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 93 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0MjI2LCJleHAiOjE3ODI5MDA0NjZ9.fMTlTXhr52dC1DGbPCzAonO0XeA1p1w5GpqmWQ-q358","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0MjI2LCJleHAiOjE3OTg2NzE4MjZ9.SgYSEkccG4LiN17nkrq-fmgRMNwOIjgyb4LCXttAxro"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:34:55.579
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 110 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:34:55.716
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 111 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0Mjk1LCJleHAiOjE3ODI5MDA1MzV9.Y0CAvIOzTalh_mofAoNECag9HiWWi25_xWazMufMDZk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0Mjk1LCJleHAiOjE3OTg2NzE4OTV9.pvO2KDzgT3hW7YaORpHO_tq77bq_VKh3gUdDxrxbMCo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:38:08.586
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 104 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:38:08.734
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 133 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0NDg4LCJleHAiOjE3ODI5MDA3Mjh9.bv9SIwNWC-vMRnSzIBcEEbG29utOzEdNYEu3x7bJkH0","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0NDg4LCJleHAiOjE3OTg2NzIwODh9.1DkN5M9fpcMHnPto1WPEiqGbChSjx9jB5aM-jKAG7dc"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:39:10.910
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 99 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:39:11.116
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 161 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0NTUwLCJleHAiOjE3ODI5MDA3OTB9.n5YyJ4IMy5KJKcDkf_2pl5xBDa1gUvqLLX8M0lr68_g","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0NTUwLCJleHAiOjE3OTg2NzIxNTB9.K8wHPUTrUuSBg19iAVFPzFqsSH1JMopEyrgiRCzTMtM"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:42:27.755
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 88 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:42:27.897
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 110 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0NzQ3LCJleHAiOjE3ODI5MDA5ODd9.C6dAnNgXQE_teZYgKLm5-hb-yVZCO6x5BpbC5I7nAng","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE0NzQ3LCJleHAiOjE3OTg2NzIzNDd9.-Rqvt8W14MrVcEjsMeoDPweVR0jNBzGzi6fHmI5uwoI"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:47:02.675
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 83 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:47:02.833
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 138 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MDIyLCJleHAiOjE3ODI5MDEyNjJ9.l_McWgV2MgkQ9xYIcc3jzxwnJytzS0Dl3SzhgNc8ad8","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MDIyLCJleHAiOjE3OTg2NzI2MjJ9.6cf-rmUJ6VLlfGEYcea3wa5D4VKsDRNUZjcLUijNzOA"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:49:40.067
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 87 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:49:40.215
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 120 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MTc5LCJleHAiOjE3ODI5MDE0MTl9.8D3DGXAB5wvNESQ3pZEGeNKqZJ_BJZtGvc_HGFT6hiE","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MTc5LCJleHAiOjE3OTg2NzI3Nzl9.Ci0Gd2MAkbYwbKHREhzoCKMhN41drPNHJ70DvaxzdA0"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:51:33.472
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 109 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:51:33.595
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 104 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MjkzLCJleHAiOjE3ODI5MDE1MzN9.vog5w1tHnzBBBs7wDJGU-oQuclFl5mH10jTax3EG9Zs","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MjkzLCJleHAiOjE3OTg2NzI4OTN9.we1BhO1G87cguctoPYNa0UGl2jBRu3qhyy9-0TbA0j4"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:52:38.547
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 87 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:52:38.666
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 94 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MzU4LCJleHAiOjE3ODI5MDE1OTh9.kX_Dp3_R3w4qTOAJPU91Lwqei1g7VPAXhTmGc7mnUP4","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1MzU4LCJleHAiOjE3OTg2NzI5NTh9.NVnb6tGVV614LLXc0RkZoyUUW1jvfJwNYG8eybqFgF8"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:57:11.197
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 84 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 22:57:11.300
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 84 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1NjMwLCJleHAiOjE3ODI5MDE4NzB9.LfGMx8I86CBDm-5QIAdKqhj2WoQPauiJZui6PTa1JMM","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1NjMwLCJleHAiOjE3OTg2NzMyMzB9.VRbXQviX2vTq1us4_zdl3oVCJdBwF5cyPL04cIN1TOQ"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:01:18.783
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 104 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:01:18.969
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 145 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1ODc4LCJleHAiOjE3ODI5MDIxMTh9.fOvJc467pEsE0cPlyCZn3IzwyCS5o4g3TTwVnDnpRMo","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE1ODc4LCJleHAiOjE3OTg2NzM0Nzh9.6bW-RyXiJYa1UbGfZ1uy-uvuCAKpDZFaN64M51V1td8"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:04:51.695
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 94 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:04:51.864
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 145 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE2MDkxLCJleHAiOjE3ODI5MDIzMzF9.AKckAv8DFVt4XBnZtzrNkzH3iUXdI8v7MYQCSBeWl80","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE2MDkxLCJleHAiOjE3OTg2NzM2OTF9.1dX49PwvYOmxs1qoSrgF7_h8y7OWmANysgbz3DDy1TM"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:23:32.582
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 90 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:23:32.695
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 92 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3ODI5MDM0NTJ9.Xzk7oOHG-MdVvoR95Bew3Mkttd0XGoBtXE3qrUMMyGw","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3MjEyLCJleHAiOjE3OTg2NzQ4MTJ9.DdcKdb3RhjxJUIuwpDksoVgJbWBxRHTKxT7epIjqhWk"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:24:59.657
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 89 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:24:59.793
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 111 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3Mjk5LCJleHAiOjE3ODI5MDM1Mzl9.Q5LX1PW1pqZAY0GguNoKT53H8cZ2LGjCBbL1tz7R6zg","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3Mjk5LCJleHAiOjE3OTg2NzQ4OTl9.WqybN4oe56GSRXepJzf1cP5hxFg49fu41E4CSs54y6s"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:27:07.490
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 79 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:27:07.617
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 106 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NDI3LCJleHAiOjE3ODI5MDM2Njd9.s074Xno_aYGzRUBhvP2uM3bkxkgYz10o6ghk2OT9-uc","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NDI3LCJleHAiOjE3OTg2NzUwMjd9.a12Joj7AC6z5wroBJpxTFQ_AQNYIFU6yrud5Jdkaviw"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:29:51.017
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 102 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:29:51.160
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 123 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NTkwLCJleHAiOjE3ODI5MDM4MzB9.4GM-OtTJsOXLdl2ZEcKpn6YuPxuZ373sq__ZkhKGng4","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NTkwLCJleHAiOjE3OTg2NzUxOTB9.E9IxDMrULbaj2bK8fdQ4kQkSGL_6ItH4pxoE4bxH3ak"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:30:55.597
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 171 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:30:55.724
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 97 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NjU1LCJleHAiOjE3ODI5MDM4OTV9.wxFPoWcD-Ty6KMfEEGE2zzBRoUeMzZi7y9XTFz_PIOA","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NjU1LCJleHAiOjE3OTg2NzUyNTV9.28JkEU346oWjLd42xnLVvziTNr-c-v5q1TcocYbawRo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:32:23.570
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 132 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-30 23:32:23.790
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 194 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NzQzLCJleHAiOjE3ODI5MDM5ODN9.xfT81OwWI_azCiVyK7Jg1QTVSxlEo_R_b6mbvUvhCK4","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NzQzLCJleHAiOjE3OTg2NzUzNDN9.eqakoV6CW9oqKLhrtw6vs474grFIa9NYKnDwCIV2-NE"}}
+========================================
+
