@@ -1,0 +1,1822 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< MrYodaAPINew:MrYodaAPINew >----------------------
+[INFO] Building MrYodaAPINew 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MrYodaAPINew ---
+[INFO] skip non existing resourceDirectory C:\Users\RANJITH\Pictures\MrYodaAPINew\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MrYodaAPINew ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ MrYodaAPINew ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 12 source files with javac [debug release 11] to target\test-classes
+[WARNING] /C:/Users/RANJITH/Pictures/MrYodaAPINew/src/test/java/com/mryoda/diagnostics/api/tests/AddToCartAPITest.java:[111,85] unchecked cast
+  required: java.util.List<java.util.Map<java.lang.String,java.lang.Object>>
+  found:    java.lang.Object
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ MrYodaAPINew ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+...
+... TestNG 7.8.0 by CΘdric Beust (cedric@beust.com)
+...
+
+
+????????????????????????????????????????????????????????????
+?            MEMBER LOGIN TEST (Paid Member)               ?
+????????????????????????????????????????????????????????????
+
+==================================================
+========== TOKEN GENERATION START (MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394"
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394",
+    "otp": "123456"
+}
+Token generated for MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+? MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+   Mobile: 9003730394 (Paid member - gets 10% discount)
+   Stored in: RequestContext.getMemberToken()
+   First Name: Ranjith
+   Last Name: Kumar
+   User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+
+????????????????????????????????????????????????????????????
+?         NON-MEMBER LOGIN TEST (No Membership)            ?
+????????????????????????????????????????????????????????????
+
+==================================================
+========== TOKEN GENERATION START (NON_MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9666666665"
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9666666665",
+    "otp": "123456"
+}
+Token generated for NON_MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQxLCJleHAiOjE3ODI1NTExODF9.lqK-LpK7qlF9LbIfNb_wfGNuIyprxv3rSA7AsiC9eSQ
+? NON-MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQxLCJleHAiOjE3ODI1NTExODF9.lqK-LpK7qlF9LbIfNb_wfGNuIyprxv3rSA7AsiC9eSQ
+   Mobile: 8220220227 (NOT a paid member)
+   Stored in: RequestContext.getNonMemberToken()
+   First Name: Ranjith
+   Last Name: kumar
+   User ID: db682abb-31d1-44df-bf19-557b003a5c69
+
+????????????????????????????????????????????????????????????
+?           USER REGISTRATION TEST                         ?
+????????????????????????????????????????????????????????????
+
+? Generated Mobile: 9997114604
+
+?? USER REGISTRATION REQUEST:
+{
+  "country_code": "+91",
+  "gender": "female",
+  "dob": "1984-06-09",
+  "mobile": "9997114604",
+  "profile_pic": "https://cdn.test.com/img/34f8e3.png",
+  "last_name": "Patel",
+  "middle_name": "L",
+  "first_name": "Alex",
+  "alt_mobile": "7278104412",
+  "email": "auto_9f6d0b7f@test.com"
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/users/addUser
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "gender": "female",
+    "dob": "1984-06-09",
+    "mobile": "9997114604",
+    "profile_pic": "https://cdn.test.com/img/34f8e3.png",
+    "last_name": "Patel",
+    "middle_name": "L",
+    "first_name": "Alex",
+    "alt_mobile": "7278104412",
+    "email": "auto_9f6d0b7f@test.com"
+}
+
+? USER REGISTRATION RESPONSE RECEIVED
+
+? ===== EXTRACTED USER REGISTRATION DATA =====
+? User ID (GUID)  : 72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24
+? First Name      : Alex
+? Last Name       : Patel
+? Email           : auto_9f6d0b7f@test.com
+?  Gender          : female
+? DOB             : 1984-06-09
+? Mobile          : 9997114604
+? Country Code    : +91
+? Status          : null
+? Created At      : null
+? Updated At      : null
+==============================================
+
+? STORED IN RequestContext (GENERIC):
+? User ID: 72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24
+? First Name: Alex
+? Last Name: Patel
+? Mobile: 9997114604 (already stored)
+
+????????????????????????????????????????????????????????????
+?        USER REGISTRATION COMPLETED ?                     ?
+????????????????????????????????????????????????????????????
+
+????????????????????????????????????????????????????????????
+?            NEW USER LOGIN TEST                           ?
+????????????????????????????????????????????????????????????
+
+==================================================
+========== TOKEN GENERATION START (NEW_USER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9997114604"
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9997114604",
+    "otp": "123456"
+}
+Token generated for NEW_USER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjcyYjJjYzNiLTBjMmItNGJjZS05ZTJlLTIzMDFjZjk0YWIyNCIsIm1vYmlsZSI6Ijk5OTcxMTQ2MDQiLCJmaXJzdF9uYW1lIjoiQWxleCIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZW1haWwiOiJhdXRvXzlmNmQwYjdmQHRlc3QuY29tIiwicm9sZSI6InVzZXJfb25seSIsImlhdCI6MTc2Njc2NDk0MSwiZXhwIjoxNzgyNTUxMTgxfQ.ADIhUMMNI7VgmnrZdkEtq_6Vs9ORr8sb5z9wm7kGHTU
+? NEW USER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjcyYjJjYzNiLTBjMmItNGJjZS05ZTJlLTIzMDFjZjk0YWIyNCIsIm1vYmlsZSI6Ijk5OTcxMTQ2MDQiLCJmaXJzdF9uYW1lIjoiQWxleCIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZW1haWwiOiJhdXRvXzlmNmQwYjdmQHRlc3QuY29tIiwicm9sZSI6InVzZXJfb25seSIsImlhdCI6MTc2Njc2NDk0MSwiZXhwIjoxNzgyNTUxMTgxfQ.ADIhUMMNI7VgmnrZdkEtq_6Vs9ORr8sb5z9wm7kGHTU
+   Stored in: RequestContext.getNewUserToken()
+   First Name: Alex
+   Last Name: Patel
+   User ID: 72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24
+
+===== LOCATION API ù MEMBER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Madhapur' found and stored: 676a5fa720093d2807af03a5
+   ? Madhapur Coordinates: Lat=17.4406327, Long=78.3900194
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== LOCATION API ù NON-MEMBER (8220220227 - NOT a paid member) =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQxLCJleHAiOjE3ODI1NTExODF9.lqK-LpK7qlF9LbIfNb_wfGNuIyprxv3rSA7AsiC9eSQ
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Madhapur' found and stored: 676a5fa720093d2807af03a5
+   ? Madhapur Coordinates: Lat=17.4406327, Long=78.3900194
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== LOCATION API ù NEW USER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjcyYjJjYzNiLTBjMmItNGJjZS05ZTJlLTIzMDFjZjk0YWIyNCIsIm1vYmlsZSI6Ijk5OTcxMTQ2MDQiLCJmaXJzdF9uYW1lIjoiQWxleCIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZW1haWwiOiJhdXRvXzlmNmQwYjdmQHRlc3QuY29tIiwicm9sZSI6InVzZXJfb25seSIsImlhdCI6MTc2Njc2NDk0MSwiZXhwIjoxNzgyNTUxMTgxfQ.ADIhUMMNI7VgmnrZdkEtq_6Vs9ORr8sb5z9wm7kGHTU
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Madhapur' found and stored: 676a5fa720093d2807af03a5
+   ? Madhapur Coordinates: Lat=17.4406327, Long=78.3900194
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== BRAND API ù MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+===== BRAND API ù NON-MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+===== BRAND API ù NEW USER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Running Global Search as part of MEMBER flow...
+
+????????????????????????????????????????????????????????????
+?        GLOBAL SEARCH API TEST - COMPLETE FLOW           ?
+????????????????????????????????????????????????????????????
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Madhapur' validated from LocationAPI: 676a5fa720093d2807af03a5
+   ? Confirmed: Using correct Madhapur location ID (676a5fa720093d2807af03a5)
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Blood Coagulation, Bone Profile -1
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Madhapur ? 676a5fa720093d2807af03a5
+
+? Searching: Blood Coagulation
+
+   ? Attempt 1/5
+   Search String: "Blood Coagulation"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Blood Coagulation"
+}
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Blood Coagulation":
+      Result 1:
+         test_name: Blood Coagulation
+         _id: 675921110856fe1e1e992ec9
+         test_id: GEN110
+         slug: blood-coagulation
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Blood Coagulation
+      Test ID: GEN110
+      Product ID: 675921110856fe1e1e992ec9
+      ? SUCCESS with search variation: "Blood Coagulation"
+
+? Searching: Bone Profile -1
+
+   ? Attempt 1/6
+   Search String: "Bone Profile -1"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Bone Profile -1":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bed1
+         test_id: null
+         slug: bone-profile-1
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bed1
+      Checking alternative fields...
+      ??  Constructed name from slug: Bone Profile 1
+      ? Found alternative name: Bone Profile 1
+   ? EXACT MATCH FOUND: Bone Profile 1
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bed1
+      ? SUCCESS with search variation: "Bone Profile -1"
+      ??  Matched by removing dash: "Bone Profile -1" ? "Bone Profile 1"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Blood Coagulation
+   Test ID       : GEN110
+   Product ID    : 675921110856fe1e1e992ec9
+   Price         : ?25000
+   Original Price: ?25000
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? NOT AVAILABLE
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+   ? Stored under actual name only: "Bone Profile 1" (prevents duplicate cart entries)
+
+? MATCHED & STORED TEST: Bone Profile 1
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bed1
+   Price         : ?650
+   Original Price: ?650
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Blood Coagulation
+   ? Expected test: Bone Profile 1
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Blood Coagulation - Home Collection: NOT AVAILABLE (type='lab')
+   ? Bone Profile 1 - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 1
+   Tests WITHOUT home collection: 1
+
+? Validated stored test: Blood Coagulation
+   Test ID: GEN110
+   Product ID: 675921110856fe1e1e992ec9
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+Running Global Search as part of NON-MEMBER flow...
+
+????????????????????????????????????????????????????????????
+?        GLOBAL SEARCH API TEST - COMPLETE FLOW           ?
+????????????????????????????????????????????????????????????
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Madhapur' validated from LocationAPI: 676a5fa720093d2807af03a5
+   ? Confirmed: Using correct Madhapur location ID (676a5fa720093d2807af03a5)
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Blood Coagulation, Bone Profile -1
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Madhapur ? 676a5fa720093d2807af03a5
+
+? Searching: Blood Coagulation
+
+   ? Attempt 1/5
+   Search String: "Blood Coagulation"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Blood Coagulation"
+}
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Blood Coagulation":
+      Result 1:
+         test_name: Blood Coagulation
+         _id: 675921110856fe1e1e992ec9
+         test_id: GEN110
+         slug: blood-coagulation
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Blood Coagulation
+      Test ID: GEN110
+      Product ID: 675921110856fe1e1e992ec9
+      ? SUCCESS with search variation: "Blood Coagulation"
+
+? Searching: Bone Profile -1
+
+   ? Attempt 1/6
+   Search String: "Bone Profile -1"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Bone Profile -1":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bed1
+         test_id: null
+         slug: bone-profile-1
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bed1
+      Checking alternative fields...
+      ??  Constructed name from slug: Bone Profile 1
+      ? Found alternative name: Bone Profile 1
+   ? EXACT MATCH FOUND: Bone Profile 1
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bed1
+      ? SUCCESS with search variation: "Bone Profile -1"
+      ??  Matched by removing dash: "Bone Profile -1" ? "Bone Profile 1"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Blood Coagulation
+   Test ID       : GEN110
+   Product ID    : 675921110856fe1e1e992ec9
+   Price         : ?25000
+   Original Price: ?25000
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? NOT AVAILABLE
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+   ? Stored under actual name only: "Bone Profile 1" (prevents duplicate cart entries)
+
+? MATCHED & STORED TEST: Bone Profile 1
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bed1
+   Price         : ?650
+   Original Price: ?650
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Blood Coagulation
+   ? Expected test: Bone Profile 1
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Blood Coagulation - Home Collection: NOT AVAILABLE (type='lab')
+   ? Bone Profile 1 - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 1
+   Tests WITHOUT home collection: 1
+
+? Validated stored test: Blood Coagulation
+   Test ID: GEN110
+   Product ID: 675921110856fe1e1e992ec9
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+Running Global Search as part of NEW USER flow...
+
+????????????????????????????????????????????????????????????
+?        GLOBAL SEARCH API TEST - COMPLETE FLOW           ?
+????????????????????????????????????????????????????????????
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Madhapur' validated from LocationAPI: 676a5fa720093d2807af03a5
+   ? Confirmed: Using correct Madhapur location ID (676a5fa720093d2807af03a5)
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Blood Coagulation, Bone Profile -1
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Madhapur ? 676a5fa720093d2807af03a5
+
+? Searching: Blood Coagulation
+
+   ? Attempt 1/5
+   Search String: "Blood Coagulation"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Blood Coagulation"
+}
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Blood Coagulation":
+      Result 1:
+         test_name: Blood Coagulation
+         _id: 675921110856fe1e1e992ec9
+         test_id: GEN110
+         slug: blood-coagulation
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Blood Coagulation
+      Test ID: GEN110
+      Product ID: 675921110856fe1e1e992ec9
+      ? SUCCESS with search variation: "Blood Coagulation"
+
+? Searching: Bone Profile -1
+
+   ? Attempt 1/6
+   Search String: "Bone Profile -1"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Bone Profile -1":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bed1
+         test_id: null
+         slug: bone-profile-1
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bed1
+      Checking alternative fields...
+      ??  Constructed name from slug: Bone Profile 1
+      ? Found alternative name: Bone Profile 1
+   ? EXACT MATCH FOUND: Bone Profile 1
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bed1
+      ? SUCCESS with search variation: "Bone Profile -1"
+      ??  Matched by removing dash: "Bone Profile -1" ? "Bone Profile 1"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Blood Coagulation
+   Test ID       : GEN110
+   Product ID    : 675921110856fe1e1e992ec9
+   Price         : ?25000
+   Original Price: ?25000
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? NOT AVAILABLE
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+   ? Stored under actual name only: "Bone Profile 1" (prevents duplicate cart entries)
+
+? MATCHED & STORED TEST: Bone Profile 1
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bed1
+   Price         : ?650
+   Original Price: ?650
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Blood Coagulation
+   ? Expected test: Bone Profile 1
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Blood Coagulation - Home Collection: NOT AVAILABLE (type='lab')
+   ? Bone Profile 1 - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 1
+   Tests WITHOUT home collection: 1
+
+? Validated stored test: Blood Coagulation
+   Test ID: GEN110
+   Product ID: 675921110856fe1e1e992ec9
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+
+--- AddToCart For Member ---
+
+? CUSTOM PAYLOAD BUILDER for 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   ? Brand ID not found for 'Diagnostics'
+
+--- AddToCart For Non-Member ---
+
+? CUSTOM PAYLOAD BUILDER for db682abb-31d1-44df-bf19-557b003a5c69
+   ? Brand ID not found for 'Diagnostics'
+
+--- AddToCart For New User ---
+
+? CUSTOM PAYLOAD BUILDER for 72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24
+   ? Brand ID not found for 'Diagnostics'
+
+????????????????????????????????????????????????????????????
+?        ADD ADDRESS API ù MEMBER                          ?
+????????????????????????????????????????????????????????????
+
+? Using Location: Madhapur
+? User: Ranjith Kumar
+? Mobile: 9003730394
+
+? ADD ADDRESS REQUEST:
+User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Receiver Name: Ranjith Kumar
+Mobile: 9003730394
+Address Line 1: Hyderabad
+Name (Road/Area): Madhapur
+Type: home
+Country Code: +91
+City: Hyderabad
+State: Telangana
+Country: India
+Postal Code: 500033
+Coordinates: Lat=17.4406327, Long=78.3900194
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9003730394",
+    "latitude": "17.4406327",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "address_line1": "Hyderabad",
+    "name": "Madhapur",
+    "receiver_name": "Ranjith Kumar",
+    "state": "Telangana",
+    "postal_code": "500033",
+    "longitude": "78.3900194"
+}
+??  Address already exists (HTTP 409) - Skipping validation
+
+????????????????????????????????????????????????????????????
+?     ADD ADDRESS API ù EXISTING MEMBER                    ?
+????????????????????????????????????????????????????????????
+
+? Using Location: Madhapur
+? User: Ranjith kumar
+? Mobile: 8220220227
+
+? ADD ADDRESS REQUEST:
+User ID: db682abb-31d1-44df-bf19-557b003a5c69
+Receiver Name: Ranjith kumar
+Mobile: 8220220227
+Address Line 1: Hyderabad
+Name (Road/Area): Madhapur
+Type: home
+Country Code: +91
+City: Hyderabad
+State: Telangana
+Country: India
+Postal Code: 500033
+Coordinates: Lat=17.4406327, Long=78.3900194
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQxLCJleHAiOjE3ODI1NTExODF9.lqK-LpK7qlF9LbIfNb_wfGNuIyprxv3rSA7AsiC9eSQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "8220220227",
+    "latitude": "17.4406327",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "address_line1": "Hyderabad",
+    "name": "Madhapur",
+    "receiver_name": "Ranjith kumar",
+    "state": "Telangana",
+    "postal_code": "500033",
+    "longitude": "78.3900194"
+}
+??  Address already exists (HTTP 409) - Skipping validation
+
+????????????????????????????????????????????????????????????
+?       ADD ADDRESS API ù NEW USER                         ?
+????????????????????????????????????????????????????????????
+
+? Using Location: Madhapur
+? User: Alex Patel
+? Mobile: 9997114604
+
+? ADD ADDRESS REQUEST:
+User ID: 72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24
+Receiver Name: Alex Patel
+Mobile: 9997114604
+Address Line 1: Hyderabad
+Name (Road/Area): Madhapur
+Type: home
+Country Code: +91
+City: Hyderabad
+State: Telangana
+Country: India
+Postal Code: 500033
+Coordinates: Lat=17.4406327, Long=78.3900194
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjcyYjJjYzNiLTBjMmItNGJjZS05ZTJlLTIzMDFjZjk0YWIyNCIsIm1vYmlsZSI6Ijk5OTcxMTQ2MDQiLCJmaXJzdF9uYW1lIjoiQWxleCIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZW1haWwiOiJhdXRvXzlmNmQwYjdmQHRlc3QuY29tIiwicm9sZSI6InVzZXJfb25seSIsImlhdCI6MTc2Njc2NDk0MSwiZXhwIjoxNzgyNTUxMTgxfQ.ADIhUMMNI7VgmnrZdkEtq_6Vs9ORr8sb5z9wm7kGHTU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9997114604",
+    "latitude": "17.4406327",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24",
+    "address_line1": "Hyderabad",
+    "name": "Madhapur",
+    "receiver_name": "Alex Patel",
+    "state": "Telangana",
+    "postal_code": "500033",
+    "longitude": "78.3900194"
+}
+? Address created successfully (HTTP 201)
+
+??????????????????????????????????????????????????????????????
+?     COMPREHENSIVE ADDRESS VALIDATION
+??????????????????????????????????????????????????????????????
+
+? STEP 1: Validating API Response
+   ? Success flag: true
+   ? Response message: null
+
+? STEP 2: Validating Address Details
+   ? User ID matches: 72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24
+   ? Receiver Name matches: Alex Patel
+   ? Mobile Number matches: 9997114604
+   ? City matches: Hyderabad
+   ? State matches: Telangana
+   ? Latitude matches: 17.4406327
+   ? Longitude matches: 78.3900194
+
+========================================
+ALL ADDRESS VALIDATIONS PASSED ?
+Address ID: null
+Location: Hyderabad, Telangana
+Coordinates: 17.4406327, 78.3900194
+========================================
+
+? Stored New User Address ID: null
+
+? SEARCHING FOR AVAILABLE SLOTS FOR MEMBER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-26",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-27",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+   ? Found Slot: 2025-12-27 2025-12-27 00:00:00 - 2025-12-27 00:30:00
+
+? UPDATING CART WITH SLOT FOR MEMBER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQwLCJleHAiOjE3ODI1NTExODB9.U9Due85JgjwP97Ejg2UmDhkFW1FTfdu9VC4bTX9izJU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "slot_guid": "57c39a44-f37c-426a-a14d-5d3764b76baa",
+    "lab_location_id": "676a5fa720093d2807af03a5",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bed1",
+            "type": "home",
+            "location_id": "676a5fa720093d2807af03a5",
+            "brand_id": null,
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ]
+}
+
+? SEARCHING FOR AVAILABLE SLOTS FOR NON_MEMBER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQxLCJleHAiOjE3ODI1NTExODF9.lqK-LpK7qlF9LbIfNb_wfGNuIyprxv3rSA7AsiC9eSQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-26",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQxLCJleHAiOjE3ODI1NTExODF9.lqK-LpK7qlF9LbIfNb_wfGNuIyprxv3rSA7AsiC9eSQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-27",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+   ? Found Slot: 2025-12-27 2025-12-27 00:00:00 - 2025-12-27 00:30:00
+
+? UPDATING CART WITH SLOT FOR NON_MEMBER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzY0OTQxLCJleHAiOjE3ODI1NTExODF9.lqK-LpK7qlF9LbIfNb_wfGNuIyprxv3rSA7AsiC9eSQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "slot_guid": "57c39a44-f37c-426a-a14d-5d3764b76baa",
+    "lab_location_id": "676a5fa720093d2807af03a5",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bed1",
+            "type": "home",
+            "location_id": "676a5fa720093d2807af03a5",
+            "brand_id": null,
+            "family_member_id": [
+                "db682abb-31d1-44df-bf19-557b003a5c69"
+            ]
+        }
+    ]
+}
+
+? SEARCHING FOR AVAILABLE SLOTS FOR NEW_USER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjcyYjJjYzNiLTBjMmItNGJjZS05ZTJlLTIzMDFjZjk0YWIyNCIsIm1vYmlsZSI6Ijk5OTcxMTQ2MDQiLCJmaXJzdF9uYW1lIjoiQWxleCIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZW1haWwiOiJhdXRvXzlmNmQwYjdmQHRlc3QuY29tIiwicm9sZSI6InVzZXJfb25seSIsImlhdCI6MTc2Njc2NDk0MSwiZXhwIjoxNzgyNTUxMTgxfQ.ADIhUMMNI7VgmnrZdkEtq_6Vs9ORr8sb5z9wm7kGHTU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-26",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjcyYjJjYzNiLTBjMmItNGJjZS05ZTJlLTIzMDFjZjk0YWIyNCIsIm1vYmlsZSI6Ijk5OTcxMTQ2MDQiLCJmaXJzdF9uYW1lIjoiQWxleCIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZW1haWwiOiJhdXRvXzlmNmQwYjdmQHRlc3QuY29tIiwicm9sZSI6InVzZXJfb25seSIsImlhdCI6MTc2Njc2NDk0MSwiZXhwIjoxNzgyNTUxMTgxfQ.ADIhUMMNI7VgmnrZdkEtq_6Vs9ORr8sb5z9wm7kGHTU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-27",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+   ? Found Slot: 2025-12-27 2025-12-27 00:00:00 - 2025-12-27 00:30:00
+
+? UPDATING CART WITH SLOT FOR NEW_USER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjcyYjJjYzNiLTBjMmItNGJjZS05ZTJlLTIzMDFjZjk0YWIyNCIsIm1vYmlsZSI6Ijk5OTcxMTQ2MDQiLCJmaXJzdF9uYW1lIjoiQWxleCIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZW1haWwiOiJhdXRvXzlmNmQwYjdmQHRlc3QuY29tIiwicm9sZSI6InVzZXJfb25seSIsImlhdCI6MTc2Njc2NDk0MSwiZXhwIjoxNzgyNTUxMTgxfQ.ADIhUMMNI7VgmnrZdkEtq_6Vs9ORr8sb5z9wm7kGHTU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24",
+    "slot_guid": "57c39a44-f37c-426a-a14d-5d3764b76baa",
+    "lab_location_id": "676a5fa720093d2807af03a5",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bed1",
+            "type": "home",
+            "location_id": "676a5fa720093d2807af03a5",
+            "brand_id": null,
+            "family_member_id": [
+                "72b2cc3b-0c2b-4bce-9e2e-2301cf94ab24"
+            ]
+        }
+    ]
+}
+
+????????????????????????????????????????????????????????????
+?        CREATE ORDER API ù MEMBER                         ?
+????????????????????????????????????????????????????????????
+
+????????????????????????????????????????????????????????????
+?     CREATE ORDER API ù EXISTING MEMBER                   ?
+????????????????????????????????????????????????????????????
+
+????????????????????????????????????????????????????????????
+?       CREATE ORDER API ù NEW USER                        ?
+????????????????????????????????????????????????????????????
+[ERROR] Tests run: 25, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 10.80 s <<< FAILURE! -- in TestSuite
+[ERROR] com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForMember -- Time elapsed: 0.439 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected HTTP 200 but got 404 | Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Body:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /brand/getAllBrands</pre>
+</body>
+</html>
+
+	at com.mryoda.diagnostics.api.builders.RequestBuilder.assertExpectedStatus(RequestBuilder.java:176)
+	at com.mryoda.diagnostics.api.builders.RequestBuilder.get(RequestBuilder.java:151)
+	at com.mryoda.diagnostics.api.tests.BrandAPITest.callGetAllBrandsAPI(BrandAPITest.java:50)
+	at com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForMember(BrandAPITest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNonMember -- Time elapsed: 0.073 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected HTTP 200 but got 404 | Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Body:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /brand/getAllBrands</pre>
+</body>
+</html>
+
+	at com.mryoda.diagnostics.api.builders.RequestBuilder.assertExpectedStatus(RequestBuilder.java:176)
+	at com.mryoda.diagnostics.api.builders.RequestBuilder.get(RequestBuilder.java:151)
+	at com.mryoda.diagnostics.api.tests.BrandAPITest.callGetAllBrandsAPI(BrandAPITest.java:50)
+	at com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNonMember(BrandAPITest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNewUser -- Time elapsed: 0.085 s <<< FAILURE!
+java.lang.AssertionError: 
+Expected HTTP 200 but got 404 | Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Body:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /brand/getAllBrands</pre>
+</body>
+</html>
+
+	at com.mryoda.diagnostics.api.builders.RequestBuilder.assertExpectedStatus(RequestBuilder.java:176)
+	at com.mryoda.diagnostics.api.builders.RequestBuilder.get(RequestBuilder.java:151)
+	at com.mryoda.diagnostics.api.tests.BrandAPITest.callGetAllBrandsAPI(BrandAPITest.java:50)
+	at com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNewUser(BrandAPITest.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForMember -- Time elapsed: 0.290 s <<< FAILURE!
+java.lang.AssertionError: ? HTTP Status 200 mismatch ù expected: 200 but found: 422
+	at com.mryoda.diagnostics.api.utils.AssertionUtil.verifyEquals(AssertionUtil.java:84)
+	at com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.updateCartWithSlot(SlotAndCartUpdateAPITest.java:154)
+	at com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForMember(SlotAndCartUpdateAPITest.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNonMember -- Time elapsed: 0.311 s <<< FAILURE!
+java.lang.AssertionError: ? HTTP Status 200 mismatch ù expected: 200 but found: 422
+	at com.mryoda.diagnostics.api.utils.AssertionUtil.verifyEquals(AssertionUtil.java:84)
+	at com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.updateCartWithSlot(SlotAndCartUpdateAPITest.java:154)
+	at com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNonMember(SlotAndCartUpdateAPITest.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNewUser -- Time elapsed: 0.267 s <<< FAILURE!
+java.lang.AssertionError: ? HTTP Status 200 mismatch ù expected: 200 but found: 422
+	at com.mryoda.diagnostics.api.utils.AssertionUtil.verifyEquals(AssertionUtil.java:84)
+	at com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.updateCartWithSlot(SlotAndCartUpdateAPITest.java:154)
+	at com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNewUser(SlotAndCartUpdateAPITest.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderAPITest.testCreateOrder_ForMember -- Time elapsed: 0.008 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mryoda.diagnostics.api.utils.RequestContext.getMemberTotalAmount()" is null
+	at com.mryoda.diagnostics.api.tests.CreateOrderAPITest.testCreateOrder_ForMember(CreateOrderAPITest.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderAPITest.testCreateOrder_ForNonMember -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mryoda.diagnostics.api.utils.RequestContext.getNonMemberTotalAmount()" is null
+	at com.mryoda.diagnostics.api.tests.CreateOrderAPITest.testCreateOrder_ForNonMember(CreateOrderAPITest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderAPITest.testCreateOrder_ForNewUser -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mryoda.diagnostics.api.utils.RequestContext.getNewUserTotalAmount()" is null
+	at com.mryoda.diagnostics.api.tests.CreateOrderAPITest.testCreateOrder_ForNewUser(CreateOrderAPITest.java:215)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   BrandAPITest.testGetBrands_ForMember:59->callGetAllBrandsAPI:50 Expected HTTP 200 but got 404 | Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Body:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /brand/getAllBrands</pre>
+</body>
+</html>
+
+[ERROR]   BrandAPITest.testGetBrands_ForNewUser:79->callGetAllBrandsAPI:50 Expected HTTP 200 but got 404 | Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Body:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /brand/getAllBrands</pre>
+</body>
+</html>
+
+[ERROR]   BrandAPITest.testGetBrands_ForNonMember:69->callGetAllBrandsAPI:50 Expected HTTP 200 but got 404 | Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Body:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /brand/getAllBrands</pre>
+</body>
+</html>
+
+[ERROR]   CreateOrderAPITest.testCreateOrder_ForMember:184 NullPointer Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mryoda.diagnostics.api.utils.RequestContext.getMemberTotalAmount()" is null
+[ERROR]   CreateOrderAPITest.testCreateOrder_ForNewUser:215 NullPointer Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mryoda.diagnostics.api.utils.RequestContext.getNewUserTotalAmount()" is null
+[ERROR]   CreateOrderAPITest.testCreateOrder_ForNonMember:152 NullPointer Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mryoda.diagnostics.api.utils.RequestContext.getNonMemberTotalAmount()" is null
+[ERROR]   SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForMember:185->updateCartWithSlot:154 ? HTTP Status 200 mismatch ù expected: 200 but found: 422
+[ERROR]   SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNewUser:192->updateCartWithSlot:154 ? HTTP Status 200 mismatch ù expected: 200 but found: 422
+[ERROR]   SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNonMember:178->updateCartWithSlot:154 ? HTTP Status 200 mismatch ù expected: 200 but found: 422
+[INFO] 
+[ERROR] Tests run: 25, Failures: 9, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.173 s
+[INFO] Finished at: 2025-12-26T21:32:28+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project MrYodaAPINew: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\RANJITH\Pictures\MrYodaAPINew\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>TestNG:  COD End-to-End Flow</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>COD End-to-End Flow</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 30 20:02:02 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23502 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForMember()'><b>testGlobalSearch_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GlobalSearchAPITest</td>
+<td></td>
+<td>1</td>
+<td>com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForNewUser()'><b>testAddAddress_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.AddressAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.AddressAPITest@77602954</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForNewUser()'><b>testGetLocations_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.LocationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest.testGetAddressByUserId_ForMember()'><b>testGetAddressByUserId_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetCartByIdAPITest.testGetCartById_ForNonMember()'><b>testGetCartById_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GetCartByIdAPITest</td>
+<td></td>
+<td>1</td>
+<td>com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNonMember()'><b>testCOD_Flow_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest</td>
+<td></td>
+<td>5</td>
+<td>com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForMember()'><b>testSlotAndCartUpdate_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForNonMember()'><b>testGetLocations_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.LocationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP_NonMember()'><b>testLoginWithOTP_NonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.LoginAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest.testGetAddressByUserId_ForNewUser()'><b>testGetAddressByUserId_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetCartByIdAPITest.testGetCartById_ForNewUser()'><b>testGetCartById_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.GetCartByIdAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest.testGetAddressByUserId_ForNonMember()'><b>testGetAddressByUserId_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetAddressByUserIdAPITest@e260766</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP()'><b>testLoginWithOTP</b><br>Test class: com.mryoda.diagnostics.api.tests.LoginAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForMember()'><b>testGetLocations_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.LocationAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.LocationAPITest@38f57b3d</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNonMember()'><b>testGetBrands_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.BrandAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.BrandAPITest@51850751</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForMember()'><b>testAddAddress_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.AddressAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.AddressAPITest@77602954</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.AddressAPITest.testAddAddress_ForNonMember()'><b>testAddAddress_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.AddressAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.AddressAPITest@77602954</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNewUser()'><b>testSlotAndCartUpdate_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForNonMember()'><b>testGlobalSearch_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GlobalSearchAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForNewUser()'><b>testGlobalSearch_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.GlobalSearchAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@3ce3db41</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.AddToCartAPITest.testAddToCart_ForMember()'><b>testAddToCart_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.AddToCartAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest.testGetCentersByAddress_ForMember()'><b>testGetCentersByAddress_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForNewUser()'><b>testGetBrands_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.BrandAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.BrandAPITest@51850751</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForMember()'><b>testGetBrands_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.BrandAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.BrandAPITest@51850751</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForMember()'><b>testCOD_Flow_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest</td>
+<td></td>
+<td>2</td>
+<td>com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.AddToCartAPITest.testAddToCart_ForNonMember()'><b>testAddToCart_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.AddToCartAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetCartByIdAPITest.testGetCartById_ForMember()'><b>testGetCartById_ForMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GetCartByIdAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetCartByIdAPITest@4275c20c</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest.testSlotAndCartUpdate_ForNonMember()'><b>testSlotAndCartUpdate_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.SlotAndCartUpdateAPITest@34a97744</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.UserCreateAPITest.testUserRegistration_CreateNewUser()'><b>testUserRegistration_CreateNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.UserCreateAPITest</td>
+<td></td>
+<td>2</td>
+<td>com.mryoda.diagnostics.api.tests.UserCreateAPITest@50eca7c6</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP_NewlyRegisteredUser()'><b>testLoginWithOTP_NewlyRegisteredUser</b><br>Test class: com.mryoda.diagnostics.api.tests.LoginAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.LoginAPITest@5ef0d29e</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.AddToCartAPITest.testAddToCart_ForNewUser()'><b>testAddToCart_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.AddToCartAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.AddToCartAPITest@64df9a61</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest.testGetCentersByAddress_ForNonMember()'><b>testGetCentersByAddress_ForNonMember</b><br>Test class: com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest.testGetCentersByAddress_ForNewUser()'><b>testGetCentersByAddress_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.mryoda.diagnostics.api.tests.GetCentersByAddressAPITest@2c3dec30</td></tr>
+<tr>
+<td title='com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNewUser()'><b>testCOD_Flow_ForNewUser</b><br>Test class: com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest</td>
+<td></td>
+<td>1</td>
+<td>com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest@7c56e013</td></tr>
+</table><p>
+</body>
+</html>

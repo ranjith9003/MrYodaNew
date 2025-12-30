@@ -1,0 +1,2015 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< MrYodaAPINew:MrYodaAPINew >----------------------
+[INFO] Building MrYodaAPINew 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MrYodaAPINew ---
+[INFO] skip non existing resourceDirectory C:\Users\RANJITH\Pictures\MrYodaAPINew\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MrYodaAPINew ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ MrYodaAPINew ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+...
+... TestNG 7.8.0 by Cédric Beust (cedric@beust.com)
+...
+
+
+????????????????????????????????????????????????????????????
+?            MEMBER LOGIN TEST (Paid Member)               ?
+????????????????????????????????????????????????????????????
+
+==================================================
+========== TOKEN GENERATION START (MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394"
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394",
+    "otp": "123456"
+}
+Token generated for MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+? MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+   Mobile: 9003730394 (Paid member - gets 10% discount)
+   Stored in: RequestContext.getMemberToken()
+   First Name: Ranjith
+   Last Name: Kumar
+   User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+
+===== LOCATION API — MEMBER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Ameerpet (HQ)' found and stored: 64870066842708a0d5ae6c77
+   ? Ameerpet (HQ) Coordinates: Lat=17.4358447, Long=78.452737
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== BRAND API — MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+Running Global Search as part of MEMBER flow...
+
+????????????????????????????????????????????????????????????
+?        GLOBAL SEARCH API TEST - COMPLETE FLOW           ?
+????????????????????????????????????????????????????????????
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Ameerpet (HQ)' validated from LocationAPI: 64870066842708a0d5ae6c77
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Lipid Profile, Bone Profile -1
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Ameerpet (HQ) ? 64870066842708a0d5ae6c77
+
+? Searching: Lipid Profile
+
+   ? Attempt 1/5
+   Search String: "Lipid Profile"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Lipid Profile"
+}
+   ? API returned 3 results
+
+   ? DEBUG - ALL RESULTS for search "Lipid Profile":
+      Result 1:
+         test_name: LIPID PROFILE
+         _id: 675921110856fe1e1e992cb8
+         test_id: BIO219
+         slug: lipid-profile
+         Type: diagnostics
+      Result 2:
+         test_name: CHOLESTEROL - TOTAL SERUM
+         _id: 675921110856fe1e1e992c29
+         test_id: BIO108
+         slug: cholesterol-total-serum
+         Type: diagnostics
+      Result 3:
+         test_name: TRIGLYCERIDES- SERUM
+         _id: 675921110856fe1e1e992d2f
+         test_id: BIO308
+         slug: triglycerides-serum
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: LIPID PROFILE
+      Test ID: BIO219
+      Product ID: 675921110856fe1e1e992cb8
+      ? SUCCESS with search variation: "Lipid Profile"
+
+? Searching: Bone Profile -1
+
+   ? Attempt 1/6
+   Search String: "Bone Profile -1"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Bone Profile -1":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bed1
+         test_id: null
+         slug: bone-profile-1
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bed1
+      Checking alternative fields...
+      ??  Constructed name from slug: Bone Profile 1
+      ? Found alternative name: Bone Profile 1
+   ? EXACT MATCH FOUND: Bone Profile 1
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bed1
+      ? SUCCESS with search variation: "Bone Profile -1"
+      ??  Matched by removing dash: "Bone Profile -1" ? "Bone Profile 1"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Bone Profile -1"
+}
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: LIPID PROFILE
+   Test ID       : BIO219
+   Product ID    : 675921110856fe1e1e992cb8
+   Price         : ?660
+   Original Price: ?660
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+
+   ??  Note: Searching for "Bone Profile -1", found as "Bone Profile 1"
+   ? Stored under actual name only: "Bone Profile 1" (prevents duplicate cart entries)
+
+? MATCHED & STORED TEST: Bone Profile 1
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bed1
+   Price         : ?650
+   Original Price: ?650
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: LIPID PROFILE
+   ? Expected test: Bone Profile 1
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? LIPID PROFILE - Home Collection: AVAILABLE (type='home')
+   ? Bone Profile 1 - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 2
+   Tests WITHOUT home collection: 0
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+
+--- AddToCart For Member ---
+
+? AGGRESSIVE CLEARING PREVIOUS CART for User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   ? Found 2 items to remove.
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 0,
+            "product_id": "675921110856fe1e1e992cb8",
+            "type": null,
+            "location_id": "676a5fa720093d2807af03a5",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8"
+        },
+        {
+            "quantity": 0,
+            "product_id": "675921b2ba6f16b8c0d7bed1",
+            "type": null,
+            "location_id": "676a5fa720093d2807af03a5",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8"
+        }
+    ],
+    "order_type": "home"
+}
+   ??  Note: Cart clearing returned status 422
+   ? Response Body: {"status":422,"success":false,"msg":"Invalid data","error_data":{"product_details.0.quantity":["Quantity must be a number greater than one"],"product_details.1.quantity":["Quantity must be a number greater than one"]}}
+
+? CUSTOM PAYLOAD BUILDER for 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+      ? Added test to payload: LIPID PROFILE (Type: home)
+      ? Added test to payload: Bone Profile 1 (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992cb8",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bed1",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+   ? Cart Data Stored for MEMBER (GUID: d1455e07-a759-4598-8df6-1120e77dbae9)
+
+????????????????????????????????????????????????????????????
+?        ADD ADDRESS API — MEMBER                          ?
+????????????????????????????????????????????????????????????
+
+? Using Location: Ameerpet (HQ)
+? User: Ranjith Kumar
+? Mobile: 9003730394
+
+? ADD ADDRESS REQUEST:
+User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Receiver Name: Ranjith Kumar
+Mobile: 9003730394
+Address Line 1: Hyderabad
+Name (Road/Area): Ameerpet (HQ)
+Type: home
+Country Code: +91
+City: Hyderabad
+State: Telangana
+Country: India
+Postal Code: 500016
+Coordinates: Lat=17.4358447, Long=78.452737
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9003730394",
+    "latitude": "17.4358447",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "address_line1": "Hyderabad",
+    "name": "Ameerpet (HQ)",
+    "receiver_name": "Ranjith Kumar",
+    "state": "Telangana",
+    "postal_code": "500016",
+    "longitude": "78.452737"
+}
+??  Address already exists (HTTP 409) - Skipping validation
+
+? SEARCHING FOR AVAILABLE SLOTS FOR MEMBER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-26",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-27",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": null
+}
+   ? Found Slot: 2025-12-27 2025-12-27 00:00:00 - 2025-12-27 01:00:00
+
+? UPDATING CART WITH SLOT FOR MEMBER
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "slot_guid": "bcb26408-0e30-4777-abc8-45a7a7a60056",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992cb8",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bed1",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ]
+}
+   ? Cart Updated with Slot. Cart GUID: d1455e07-a759-4598-8df6-1120e77dbae9
+
+????????????????????????????????????????????????????????????
+?        GET CART BY ID API — MEMBER                       ?
+????????????????????????????????????????????????????????????
+
+? GET CART BY ID REQUEST:
+   User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Order Type: home
+   Location: Ameerpet (HQ) (64870066842708a0d5ae6c77)
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3?location=64870066842708a0d5ae6c77&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=64870066842708a0d5ae6c77
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+??????????????????????????????????????????????????????????????
+?     COMPREHENSIVE GET CART VALIDATION - MEMBER
+??????????????????????????????????????????????????????????????
+
+? ====== COMPLETE API RESPONSE (Pretty Print) ======
+{
+    "status": 200,
+    "success": true,
+    "msg": "Cart details fetched successfully",
+    "total_amount": 0,
+    "data": {
+        "id": 155,
+        "guid": "d1455e07-a759-4598-8df6-1120e77dbae9",
+        "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+        "_user_id": null,
+        "product_details": [
+            {
+                "product_id": "675921110856fe1e1e992cb8",
+                "quantity": 1,
+                "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                "family_member_id": [
+                    {
+                        "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                        "family_member_name": "Self",
+                        "relation": ""
+                    }
+                ],
+                "location_id": "676a5fa720093d2807af03a5",
+                "isTestAvailable": true,
+                "home_collection": "AVAILABLE",
+                "_id": "675921110856fe1e1e992cb8",
+                "test_id": "675921110856fe1e1e992cb8",
+                "test_name": "LIPID PROFILE",
+                "components": [
+                    "Total Cholesterol LDL (Low-Density Lipoprotein) HDL (High-Density Lipoprotein) Triglycerides VLDL (Very Low-Density Lipoprotein)"
+                ],
+                "turn_around_time": "12–24 hours",
+                "specimen": "3 mL (1.5 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                "slug": "lipid-profile",
+                "stability": [
+                    "Room = 3 HRS",
+                    "Refrigerated = 3 DAYS"
+                ],
+                "comment": "",
+                "usage": "Indians are at very high risk of developing Atherosclerotic Cardiovascular disease (ASCVD), they usually get the disease at an early age, have a more severe form of the disease and have poorer outcome as compared to the western populations. This is due to high prevalence of Atherogenic dyslipidemia, central abdominal adiposity & increased transfats in our diet. Among the various risk factors for ASCVD such as dyslipidemia, Diabetes mellitus, sedentary lifestyle, Hypertension, smoking, genetic predisposition etc., dyslipidemia has the highest population attributable risk for MI. Hence monitoring lipid profile regularly for effective management of dyslipidemia remains one of the most important healthcare targets for prevention of ASCVD. This monitoring should start as early as 20 years of age. Many individuals remain asymptomatic before they get heart attack. ASCVD risk helps to identify high risk individuals even when there is no symptom related to heart disease. ASCVD risk category helps clinician to decide when to consider therapy and what should be the treatment goal.",
+                "locations": [
+                    "64870066842708a0d5ae6c77",
+                    "64870066842708a0d5ae6c74",
+                    "676a5fa720093d2807af03a5",
+                    "64870066842708a0d5ae6c75",
+                    "67346a7655a51ec8ef586bb1",
+                    "6781186b658e894bfeb119e9",
+                    "67b4897b1c7d425d13943fb7",
+                    "67bc117b913541b6a689874d",
+                    "68258451d3452617c0860664",
+                    "6842790b3507e932fd14b0cc",
+                    "685a6d2b90c0456408d2ea5b",
+                    "68ecce703d573db19b650c76",
+                    "68f782b1a33e1fb109883fa8",
+                    "68f783e153d56d971fe0bc63",
+                    "68f784658d8708d8bab83dc9",
+                    "68f78da1a5274a337d2d10f8"
+                ],
+                "department": [
+                    "675697b0262d1460f8d55d2b"
+                ],
+                "doctor_speciality": [
+                    "675697b0262d1460f8d55e5b",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "method": [
+                    "675697b0262d1460f8d55d55"
+                ],
+                "organ": [
+                    "675697b0262d1460f8d55e96"
+                ],
+                "doctorsSpeciality": [
+                    "675697b0262d1460f8d55e5b",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "diseases": [
+                    "675697b0262d1460f8d55e96"
+                ],
+                "price": 660,
+                "original_price": 660,
+                "cpt_comment": "",
+                "cpt_price": 67,
+                "actual_cprt_price": 93.8,
+                "genders": [
+                    "MALE",
+                    "FEMALE"
+                ],
+                "b2b_price": 140,
+                "popular": true,
+                "speciality_tests": false,
+                "frequently_booked": false,
+                "pre_test_information": "Fasting for 9–12 hours is typically recommended, especially for accurate triglyceride measurement. Only water is allowed unless your doctor advises otherwise.",
+                "business_type": [
+                    "B2B",
+                    "B2C"
+                ],
+                "status": "ACTIVE",
+                "createdAt": "2024-12-11T05:20:17.841Z",
+                "updatedAt": "2025-10-21T13:41:54.304Z",
+                "description": "",
+                "courier_charges": 0,
+                "frequently_asked_questions": [
+                    {
+                        "question": "Why is the Lipid Profile test done?",
+                        "answer": "It helps evaluate blood fat levels to assess heart disease risk and monitor cholesterol-related treatment."
+                    },
+                    {
+                        "question": "Is fasting required?",
+                        "answer": "Yes, 9–12 hours of fasting is typically recommended for accurate triglyceride measurement."
+                    }
+                ],
+                "other_names": [
+                    "Lipid Panel",
+                    "Cholesterol Panel",
+                    "Coronary Risk Panel"
+                ],
+                "result_interpretation": "Total Cholesterol: <200 mg/dL desirable  LDL: <100 mg/dL optimal  HDL: >40 mg/dL (men), >50 mg/dL (women) desirable  Triglycerides: <150 mg/dL normal  High LDL or triglycerides ? increased heart disease risk  Low HDL ? reduced protective effect",
+                "index": 12,
+                "search_keywords": [
+                    "lipid profile test",
+                    "lipid profile near me",
+                    "lipid profile price",
+                    "lipid profile cost",
+                    "book lipid profile test",
+                    "lipid profile lab test",
+                    "lipid profile home collection",
+                    "lipid profile at home test",
+                    "lipid-profile-test",
+                    "lipid profile test for male",
+                    "lipid profile male test",
+                    "lipid profile test for female",
+                    "lipid profile female test",
+                    "LIPID PROFILE",
+                    "LIPID PROFILE test near me",
+                    "LIPID PROFILE package",
+                    "lpidprofile",
+                    "lipdprofile",
+                    "lipidprfile",
+                    "lipidprofle",
+                    "lipidprofil",
+                    "lipidprofile",
+                    "lipidprofilr",
+                    "lopodprofole"
+                ],
+                "sample_required_yoda": "Blood",
+                "turn_around_time_yoda": "8 Hrs",
+                "usage_yoda": "The Lipid Profile evaluates the levels of fats (lipids) in your blood, which are crucial indicators of heart health. High LDL and triglycerides increase the risk of atherosclerosis, while HDL helps remove excess cholesterol. The test is often part of routine health checkups or used to monitor treatment for high cholesterol.\n\nYou can easily schedule your Lipid Profile test in Hyderabad for quick, comfortable, and accurate testing.",
+                "result_interpretation_yoda": "Total Cholesterol: <200 mg/dL desirable\n \n LDL: <100 mg/dL optimal\n \n HDL: >40 mg/dL (men), >50 mg/dL (women) desirable\n \n Triglycerides: <150 mg/dL normal\n \n High LDL or triglycerides - increased heart disease risk\n \n Low HDL - reduced protective effect",
+                "genders_yoda": [
+                    "MALE",
+                    "FEMALE"
+                ],
+                "test_measures": "Total Cholesterol,\n LDL (Low-Density Lipoprotein),\n HDL (High-Density Lipoprotein),\n Triglycerides,\n VLDL (Very Low-Density Lipoprotein)",
+                "product_code": "BIO219",
+                "membership_price": 5000,
+                "membership_special_price": 999,
+                "membership_discount": 10,
+                "discount_rate": 594,
+                "rewards_percentage": "30",
+                "discount_percentage": 0,
+                "Type": "BIOCHEMISTRY",
+                "who_should_be_tested": [
+                    
+                ],
+                "membershipPrice": 594,
+                "isTestPartOfPackage": false,
+                "packageIds": [
+                    
+                ],
+                "isActive": true,
+                "is_pricing_applicable": true
+            },
+            {
+                "product_id": "675921b2ba6f16b8c0d7bed1",
+                "quantity": 1,
+                "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                "family_member_id": [
+                    {
+                        "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                        "family_member_name": "Self",
+                        "relation": ""
+                    }
+                ],
+                "location_id": "676a5fa720093d2807af03a5",
+                "isTestAvailable": true,
+                "home_collection": "NOT_AVAILABLE",
+                "_id": "675921b2ba6f16b8c0d7bed1",
+                "package_id": "675921b2ba6f16b8c0d7bed1",
+                "package_name": "Bone Profile -1",
+                "components": [
+                    "CALCIUM - TOTAL",
+                    "ALP(ALKALINE PHOSPHATASE)",
+                    "PHOSPHORUS SERUM"
+                ],
+                "turn_around_time": null,
+                "specimen": "3 mL (2 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                "slug": "bone-profile-1",
+                "tests_included": [
+                    "CALCIUM - TOTAL",
+                    "ALP(ALKALINE PHOSPHATASE)",
+                    "PHOSPHORUS SERUM"
+                ],
+                "stability": [
+                    "ROOM = 2 HRS",
+                    "REFRIGERATED = 48 HRS"
+                ],
+                "comment": "",
+                "usage": "This panel can help to investigate common bone and joint disorders Arthritis can be of various types mainly Rheumatoid arthritis, Osteoarthritis, Autoimmune disorders, Gout & Psoriatic arthritis.The laboratory testing helps to establish diagnosis and document the pathological process",
+                "locations": [
+                    "64870066842708a0d5ae6c77",
+                    "64870066842708a0d5ae6c74",
+                    "676a5fa720093d2807af03a5",
+                    "64870066842708a0d5ae6c75",
+                    "67346a7655a51ec8ef586bb1",
+                    "6781186b658e894bfeb119e9",
+                    "68ecce703d573db19b650c76",
+                    "68f78da1a5274a337d2d10f8"
+                ],
+                "department": [
+                    "675697b0262d1460f8d55d3b"
+                ],
+                "doctor_speciality": [
+                    "675697b0262d1460f8d55e5e",
+                    "675697b0262d1460f8d55e56",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "test_method": [
+                    "675697b0262d1460f8d55df2"
+                ],
+                "organ": [
+                    
+                ],
+                "doctorsSpeciality": [
+                    "675697b0262d1460f8d55e5e",
+                    "675697b0262d1460f8d55e56",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "diseases": [
+                    "675697b0262d1460f8d55e7e"
+                ],
+                "price": 0,
+                "original_price": 0,
+                "cpt_comment": "",
+                "cpt_price": 0,
+                "actual_cprt_price": 0,
+                "b2b_price": 180,
+                "popular": true,
+                "speciality_tests": false,
+                "frequently_booked": false,
+                "pre_test_information": "No special preparation required",
+                "business_type": [
+                    "B2C"
+                ],
+                "status": "ACTIVE",
+                "createdAt": "2024-12-11T05:22:58.332Z",
+                "updatedAt": "2025-11-14T08:50:13.051Z",
+                "gender": [
+                    "MALE",
+                    "FEMALE"
+                ],
+                "description": "",
+                "full_body_checkup": false,
+                "tests_id_included": [
+                    "675921110856fe1e1e992c1d",
+                    "675921110856fe1e1e992bd7",
+                    "675921110856fe1e1e992ce2"
+                ],
+                "frequently_asked_questions": [
+                    
+                ],
+                "other_names": [
+                    
+                ],
+                "result_interpretation": "",
+                "search_keywords": [
+                    
+                ],
+                "index": 3,
+                "method": [
+                    "675697b0262d1460f8d55df2"
+                ],
+                "product_code": "YDPK014",
+                "membership_price": 5000,
+                "membership_special_price": 999,
+                "membership_discount": 10,
+                "discount_rate": 585,
+                "discount_percentage": 0,
+                "rewards_percentage": "33",
+                "membershipPrice": 0,
+                "inactive_price": 650,
+                "inactive_original_price": 650,
+                "isTestPartOfPackage": false,
+                "packageIds": [
+                    
+                ],
+                "isActive": true,
+                "is_pricing_applicable": false
+            }
+        ],
+        "screen_reason": "home_or_lab_screen",
+        "conversion_status": "no",
+        "reason_for_drop_order": null,
+        "final_cart_status": "open",
+        "reason": null,
+        "created_at": "2025-09-04T14:10:07.596Z",
+        "updated_at": "2025-12-26T17:34:16.310Z",
+        "deleted_at": null,
+        "order_type": "home",
+        "coupon_guid": null,
+        "slot_guid": "bcb26408-0e30-4777-abc8-45a7a7a60056",
+        "rewards_used": 0,
+        "lab_location_id": "64870066842708a0d5ae6c77",
+        "referal_doctor": null,
+        "membership_id": null,
+        "address_id": null,
+        "total_orders": 30,
+        "family_member_details": [
+            {
+                "family_member_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                "product_details": [
+                    {
+                        "product_id": "675921110856fe1e1e992cb8",
+                        "quantity": 1,
+                        "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                        "family_member_id": [
+                            {
+                                "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                                "family_member_name": "Self",
+                                "relation": ""
+                            }
+                        ],
+                        "location_id": "676a5fa720093d2807af03a5",
+                        "isTestAvailable": true,
+                        "home_collection": "AVAILABLE",
+                        "_id": "675921110856fe1e1e992cb8",
+                        "test_id": "675921110856fe1e1e992cb8",
+                        "test_name": "LIPID PROFILE",
+                        "components": [
+                            "Total Cholesterol LDL (Low-Density Lipoprotein) HDL (High-Density Lipoprotein) Triglycerides VLDL (Very Low-Density Lipoprotein)"
+                        ],
+                        "turn_around_time": "12–24 hours",
+                        "specimen": "3 mL (1.5 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                        "slug": "lipid-profile",
+                        "stability": [
+                            "Room = 3 HRS",
+                            "Refrigerated = 3 DAYS"
+                        ],
+                        "comment": "",
+                        "usage": "Indians are at very high risk of developing Atherosclerotic Cardiovascular disease (ASCVD), they usually get the disease at an early age, have a more severe form of the disease and have poorer outcome as compared to the western populations. This is due to high prevalence of Atherogenic dyslipidemia, central abdominal adiposity & increased transfats in our diet. Among the various risk factors for ASCVD such as dyslipidemia, Diabetes mellitus, sedentary lifestyle, Hypertension, smoking, genetic predisposition etc., dyslipidemia has the highest population attributable risk for MI. Hence monitoring lipid profile regularly for effective management of dyslipidemia remains one of the most important healthcare targets for prevention of ASCVD. This monitoring should start as early as 20 years of age. Many individuals remain asymptomatic before they get heart attack. ASCVD risk helps to identify high risk individuals even when there is no symptom related to heart disease. ASCVD risk category helps clinician to decide when to consider therapy and what should be the treatment goal.",
+                        "locations": [
+                            "64870066842708a0d5ae6c77",
+                            "64870066842708a0d5ae6c74",
+                            "676a5fa720093d2807af03a5",
+                            "64870066842708a0d5ae6c75",
+                            "67346a7655a51ec8ef586bb1",
+                            "6781186b658e894bfeb119e9",
+                            "67b4897b1c7d425d13943fb7",
+                            "67bc117b913541b6a689874d",
+                            "68258451d3452617c0860664",
+                            "6842790b3507e932fd14b0cc",
+                            "685a6d2b90c0456408d2ea5b",
+                            "68ecce703d573db19b650c76",
+                            "68f782b1a33e1fb109883fa8",
+                            "68f783e153d56d971fe0bc63",
+                            "68f784658d8708d8bab83dc9",
+                            "68f78da1a5274a337d2d10f8"
+                        ],
+                        "department": [
+                            "675697b0262d1460f8d55d2b"
+                        ],
+                        "doctor_speciality": [
+                            "675697b0262d1460f8d55e5b",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "method": [
+                            "675697b0262d1460f8d55d55"
+                        ],
+                        "organ": [
+                            "675697b0262d1460f8d55e96"
+                        ],
+                        "doctorsSpeciality": [
+                            "675697b0262d1460f8d55e5b",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "diseases": [
+                            "675697b0262d1460f8d55e96"
+                        ],
+                        "price": 660,
+                        "original_price": 660,
+                        "cpt_comment": "",
+                        "cpt_price": 67,
+                        "actual_cprt_price": 93.8,
+                        "genders": [
+                            "MALE",
+                            "FEMALE"
+                        ],
+                        "b2b_price": 140,
+                        "popular": true,
+                        "speciality_tests": false,
+                        "frequently_booked": false,
+                        "pre_test_information": "Fasting for 9–12 hours is typically recommended, especially for accurate triglyceride measurement. Only water is allowed unless your doctor advises otherwise.",
+                        "business_type": [
+                            "B2B",
+                            "B2C"
+                        ],
+                        "status": "ACTIVE",
+                        "createdAt": "2024-12-11T05:20:17.841Z",
+                        "updatedAt": "2025-10-21T13:41:54.304Z",
+                        "description": "",
+                        "courier_charges": 0,
+                        "frequently_asked_questions": [
+                            {
+                                "question": "Why is the Lipid Profile test done?",
+                                "answer": "It helps evaluate blood fat levels to assess heart disease risk and monitor cholesterol-related treatment."
+                            },
+                            {
+                                "question": "Is fasting required?",
+                                "answer": "Yes, 9–12 hours of fasting is typically recommended for accurate triglyceride measurement."
+                            }
+                        ],
+                        "other_names": [
+                            "Lipid Panel",
+                            "Cholesterol Panel",
+                            "Coronary Risk Panel"
+                        ],
+                        "result_interpretation": "Total Cholesterol: <200 mg/dL desirable  LDL: <100 mg/dL optimal  HDL: >40 mg/dL (men), >50 mg/dL (women) desirable  Triglycerides: <150 mg/dL normal  High LDL or triglycerides ? increased heart disease risk  Low HDL ? reduced protective effect",
+                        "index": 12,
+                        "search_keywords": [
+                            "lipid profile test",
+                            "lipid profile near me",
+                            "lipid profile price",
+                            "lipid profile cost",
+                            "book lipid profile test",
+                            "lipid profile lab test",
+                            "lipid profile home collection",
+                            "lipid profile at home test",
+                            "lipid-profile-test",
+                            "lipid profile test for male",
+                            "lipid profile male test",
+                            "lipid profile test for female",
+                            "lipid profile female test",
+                            "LIPID PROFILE",
+                            "LIPID PROFILE test near me",
+                            "LIPID PROFILE package",
+                            "lpidprofile",
+                            "lipdprofile",
+                            "lipidprfile",
+                            "lipidprofle",
+                            "lipidprofil",
+                            "lipidprofile",
+                            "lipidprofilr",
+                            "lopodprofole"
+                        ],
+                        "sample_required_yoda": "Blood",
+                        "turn_around_time_yoda": "8 Hrs",
+                        "usage_yoda": "The Lipid Profile evaluates the levels of fats (lipids) in your blood, which are crucial indicators of heart health. High LDL and triglycerides increase the risk of atherosclerosis, while HDL helps remove excess cholesterol. The test is often part of routine health checkups or used to monitor treatment for high cholesterol.\n\nYou can easily schedule your Lipid Profile test in Hyderabad for quick, comfortable, and accurate testing.",
+                        "result_interpretation_yoda": "Total Cholesterol: <200 mg/dL desirable\n \n LDL: <100 mg/dL optimal\n \n HDL: >40 mg/dL (men), >50 mg/dL (women) desirable\n \n Triglycerides: <150 mg/dL normal\n \n High LDL or triglycerides - increased heart disease risk\n \n Low HDL - reduced protective effect",
+                        "genders_yoda": [
+                            "MALE",
+                            "FEMALE"
+                        ],
+                        "test_measures": "Total Cholesterol,\n LDL (Low-Density Lipoprotein),\n HDL (High-Density Lipoprotein),\n Triglycerides,\n VLDL (Very Low-Density Lipoprotein)",
+                        "product_code": "BIO219",
+                        "membership_price": 5000,
+                        "membership_special_price": 999,
+                        "membership_discount": 10,
+                        "discount_rate": 594,
+                        "rewards_percentage": "30",
+                        "discount_percentage": 0,
+                        "Type": "BIOCHEMISTRY",
+                        "who_should_be_tested": [
+                            
+                        ],
+                        "membershipPrice": 594,
+                        "isTestPartOfPackage": false,
+                        "packageIds": [
+                            
+                        ],
+                        "isActive": true,
+                        "is_pricing_applicable": true
+                    },
+                    {
+                        "product_id": "675921b2ba6f16b8c0d7bed1",
+                        "quantity": 1,
+                        "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                        "family_member_id": [
+                            {
+                                "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                                "family_member_name": "Self",
+                                "relation": ""
+                            }
+                        ],
+                        "location_id": "676a5fa720093d2807af03a5",
+                        "isTestAvailable": true,
+                        "home_collection": "NOT_AVAILABLE",
+                        "_id": "675921b2ba6f16b8c0d7bed1",
+                        "package_id": "675921b2ba6f16b8c0d7bed1",
+                        "package_name": "Bone Profile -1",
+                        "components": [
+                            "CALCIUM - TOTAL",
+                            "ALP(ALKALINE PHOSPHATASE)",
+                            "PHOSPHORUS SERUM"
+                        ],
+                        "turn_around_time": null,
+                        "specimen": "3 mL (2 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                        "slug": "bone-profile-1",
+                        "tests_included": [
+                            "CALCIUM - TOTAL",
+                            "ALP(ALKALINE PHOSPHATASE)",
+                            "PHOSPHORUS SERUM"
+                        ],
+                        "stability": [
+                            "ROOM = 2 HRS",
+                            "REFRIGERATED = 48 HRS"
+                        ],
+                        "comment": "",
+                        "usage": "This panel can help to investigate common bone and joint disorders Arthritis can be of various types mainly Rheumatoid arthritis, Osteoarthritis, Autoimmune disorders, Gout & Psoriatic arthritis.The laboratory testing helps to establish diagnosis and document the pathological process",
+                        "locations": [
+                            "64870066842708a0d5ae6c77",
+                            "64870066842708a0d5ae6c74",
+                            "676a5fa720093d2807af03a5",
+                            "64870066842708a0d5ae6c75",
+                            "67346a7655a51ec8ef586bb1",
+                            "6781186b658e894bfeb119e9",
+                            "68ecce703d573db19b650c76",
+                            "68f78da1a5274a337d2d10f8"
+                        ],
+                        "department": [
+                            "675697b0262d1460f8d55d3b"
+                        ],
+                        "doctor_speciality": [
+                            "675697b0262d1460f8d55e5e",
+                            "675697b0262d1460f8d55e56",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "test_method": [
+                            "675697b0262d1460f8d55df2"
+                        ],
+                        "organ": [
+                            
+                        ],
+                        "doctorsSpeciality": [
+                            "675697b0262d1460f8d55e5e",
+                            "675697b0262d1460f8d55e56",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "diseases": [
+                            "675697b0262d1460f8d55e7e"
+                        ],
+                        "price": 0,
+                        "original_price": 0,
+                        "cpt_comment": "",
+                        "cpt_price": 0,
+                        "actual_cprt_price": 0,
+                        "b2b_price": 180,
+                        "popular": true,
+                        "speciality_tests": false,
+                        "frequently_booked": false,
+                        "pre_test_information": "No special preparation required",
+                        "business_type": [
+                            "B2C"
+                        ],
+                        "status": "ACTIVE",
+                        "createdAt": "2024-12-11T05:22:58.332Z",
+                        "updatedAt": "2025-11-14T08:50:13.051Z",
+                        "gender": [
+                            "MALE",
+                            "FEMALE"
+                        ],
+                        "description": "",
+                        "full_body_checkup": false,
+                        "tests_id_included": [
+                            "675921110856fe1e1e992c1d",
+                            "675921110856fe1e1e992bd7",
+                            "675921110856fe1e1e992ce2"
+                        ],
+                        "frequently_asked_questions": [
+                            
+                        ],
+                        "other_names": [
+                            
+                        ],
+                        "result_interpretation": "",
+                        "search_keywords": [
+                            
+                        ],
+                        "index": 3,
+                        "method": [
+                            "675697b0262d1460f8d55df2"
+                        ],
+                        "product_code": "YDPK014",
+                        "membership_price": 5000,
+                        "membership_special_price": 999,
+                        "membership_discount": 10,
+                        "discount_rate": 585,
+                        "discount_percentage": 0,
+                        "rewards_percentage": "33",
+                        "membershipPrice": 0,
+                        "inactive_price": 650,
+                        "inactive_original_price": 650,
+                        "isTestPartOfPackage": false,
+                        "packageIds": [
+                            
+                        ],
+                        "isActive": true,
+                        "is_pricing_applicable": false
+                    }
+                ]
+            }
+        ],
+        "actual_delivery_fee": 250,
+        "delivery_fee": 0,
+        "total_benefit": 66,
+        "totalBenefitIncludingMembership": 66,
+        "unavailable_test": [
+            {
+                "product_id": "675921b2ba6f16b8c0d7bed1",
+                "testName": "Bone Profile -1"
+            }
+        ],
+        "totalPrice": 594,
+        "membershipDiscount": 66,
+        "rewards_percentage": 5,
+        "discount_rate": 10,
+        "couponResult": {
+            "discount": 0,
+            "valid": false,
+            "reason": ""
+        },
+        "discountPercentage": 10,
+        "originalPrice": 660,
+        "price": 660,
+        "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+        "membershipPrice": 0
+    }
+}
+{
+    "status": 200,
+    "success": true,
+    "msg": "Cart details fetched successfully",
+    "total_amount": 0,
+    "data": {
+        "id": 155,
+        "guid": "d1455e07-a759-4598-8df6-1120e77dbae9",
+        "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+        "_user_id": null,
+        "product_details": [
+            {
+                "product_id": "675921110856fe1e1e992cb8",
+                "quantity": 1,
+                "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                "family_member_id": [
+                    {
+                        "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                        "family_member_name": "Self",
+                        "relation": ""
+                    }
+                ],
+                "location_id": "676a5fa720093d2807af03a5",
+                "isTestAvailable": true,
+                "home_collection": "AVAILABLE",
+                "_id": "675921110856fe1e1e992cb8",
+                "test_id": "675921110856fe1e1e992cb8",
+                "test_name": "LIPID PROFILE",
+                "components": [
+                    "Total Cholesterol LDL (Low-Density Lipoprotein) HDL (High-Density Lipoprotein) Triglycerides VLDL (Very Low-Density Lipoprotein)"
+                ],
+                "turn_around_time": "12–24 hours",
+                "specimen": "3 mL (1.5 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                "slug": "lipid-profile",
+                "stability": [
+                    "Room = 3 HRS",
+                    "Refrigerated = 3 DAYS"
+                ],
+                "comment": "",
+                "usage": "Indians are at very high risk of developing Atherosclerotic Cardiovascular disease (ASCVD), they usually get the disease at an early age, have a more severe form of the disease and have poorer outcome as compared to the western populations. This is due to high prevalence of Atherogenic dyslipidemia, central abdominal adiposity & increased transfats in our diet. Among the various risk factors for ASCVD such as dyslipidemia, Diabetes mellitus, sedentary lifestyle, Hypertension, smoking, genetic predisposition etc., dyslipidemia has the highest population attributable risk for MI. Hence monitoring lipid profile regularly for effective management of dyslipidemia remains one of the most important healthcare targets for prevention of ASCVD. This monitoring should start as early as 20 years of age. Many individuals remain asymptomatic before they get heart attack. ASCVD risk helps to identify high risk individuals even when there is no symptom related to heart disease. ASCVD risk category helps clinician to decide when to consider therapy and what should be the treatment goal.",
+                "locations": [
+                    "64870066842708a0d5ae6c77",
+                    "64870066842708a0d5ae6c74",
+                    "676a5fa720093d2807af03a5",
+                    "64870066842708a0d5ae6c75",
+                    "67346a7655a51ec8ef586bb1",
+                    "6781186b658e894bfeb119e9",
+                    "67b4897b1c7d425d13943fb7",
+                    "67bc117b913541b6a689874d",
+                    "68258451d3452617c0860664",
+                    "6842790b3507e932fd14b0cc",
+                    "685a6d2b90c0456408d2ea5b",
+                    "68ecce703d573db19b650c76",
+                    "68f782b1a33e1fb109883fa8",
+                    "68f783e153d56d971fe0bc63",
+                    "68f784658d8708d8bab83dc9",
+                    "68f78da1a5274a337d2d10f8"
+                ],
+                "department": [
+                    "675697b0262d1460f8d55d2b"
+                ],
+                "doctor_speciality": [
+                    "675697b0262d1460f8d55e5b",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "method": [
+                    "675697b0262d1460f8d55d55"
+                ],
+                "organ": [
+                    "675697b0262d1460f8d55e96"
+                ],
+                "doctorsSpeciality": [
+                    "675697b0262d1460f8d55e5b",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "diseases": [
+                    "675697b0262d1460f8d55e96"
+                ],
+                "price": 660,
+                "original_price": 660,
+                "cpt_comment": "",
+                "cpt_price": 67,
+                "actual_cprt_price": 93.8,
+                "genders": [
+                    "MALE",
+                    "FEMALE"
+                ],
+                "b2b_price": 140,
+                "popular": true,
+                "speciality_tests": false,
+                "frequently_booked": false,
+                "pre_test_information": "Fasting for 9–12 hours is typically recommended, especially for accurate triglyceride measurement. Only water is allowed unless your doctor advises otherwise.",
+                "business_type": [
+                    "B2B",
+                    "B2C"
+                ],
+                "status": "ACTIVE",
+                "createdAt": "2024-12-11T05:20:17.841Z",
+                "updatedAt": "2025-10-21T13:41:54.304Z",
+                "description": "",
+                "courier_charges": 0,
+                "frequently_asked_questions": [
+                    {
+                        "question": "Why is the Lipid Profile test done?",
+                        "answer": "It helps evaluate blood fat levels to assess heart disease risk and monitor cholesterol-related treatment."
+                    },
+                    {
+                        "question": "Is fasting required?",
+                        "answer": "Yes, 9–12 hours of fasting is typically recommended for accurate triglyceride measurement."
+                    }
+                ],
+                "other_names": [
+                    "Lipid Panel",
+                    "Cholesterol Panel",
+                    "Coronary Risk Panel"
+                ],
+                "result_interpretation": "Total Cholesterol: <200 mg/dL desirable  LDL: <100 mg/dL optimal  HDL: >40 mg/dL (men), >50 mg/dL (women) desirable  Triglycerides: <150 mg/dL normal  High LDL or triglycerides ? increased heart disease risk  Low HDL ? reduced protective effect",
+                "index": 12,
+                "search_keywords": [
+                    "lipid profile test",
+                    "lipid profile near me",
+                    "lipid profile price",
+                    "lipid profile cost",
+                    "book lipid profile test",
+                    "lipid profile lab test",
+                    "lipid profile home collection",
+                    "lipid profile at home test",
+                    "lipid-profile-test",
+                    "lipid profile test for male",
+                    "lipid profile male test",
+                    "lipid profile test for female",
+                    "lipid profile female test",
+                    "LIPID PROFILE",
+                    "LIPID PROFILE test near me",
+                    "LIPID PROFILE package",
+                    "lpidprofile",
+                    "lipdprofile",
+                    "lipidprfile",
+                    "lipidprofle",
+                    "lipidprofil",
+                    "lipidprofile",
+                    "lipidprofilr",
+                    "lopodprofole"
+                ],
+                "sample_required_yoda": "Blood",
+                "turn_around_time_yoda": "8 Hrs",
+                "usage_yoda": "The Lipid Profile evaluates the levels of fats (lipids) in your blood, which are crucial indicators of heart health. High LDL and triglycerides increase the risk of atherosclerosis, while HDL helps remove excess cholesterol. The test is often part of routine health checkups or used to monitor treatment for high cholesterol.\n\nYou can easily schedule your Lipid Profile test in Hyderabad for quick, comfortable, and accurate testing.",
+                "result_interpretation_yoda": "Total Cholesterol: <200 mg/dL desirable\n \n LDL: <100 mg/dL optimal\n \n HDL: >40 mg/dL (men), >50 mg/dL (women) desirable\n \n Triglycerides: <150 mg/dL normal\n \n High LDL or triglycerides - increased heart disease risk\n \n Low HDL - reduced protective effect",
+                "genders_yoda": [
+                    "MALE",
+                    "FEMALE"
+                ],
+                "test_measures": "Total Cholesterol,\n LDL (Low-Density Lipoprotein),\n HDL (High-Density Lipoprotein),\n Triglycerides,\n VLDL (Very Low-Density Lipoprotein)",
+                "product_code": "BIO219",
+                "membership_price": 5000,
+                "membership_special_price": 999,
+                "membership_discount": 10,
+                "discount_rate": 594,
+                "rewards_percentage": "30",
+                "discount_percentage": 0,
+                "Type": "BIOCHEMISTRY",
+                "who_should_be_tested": [
+                    
+                ],
+                "membershipPrice": 594,
+                "isTestPartOfPackage": false,
+                "packageIds": [
+                    
+                ],
+                "isActive": true,
+                "is_pricing_applicable": true
+            },
+            {
+                "product_id": "675921b2ba6f16b8c0d7bed1",
+                "quantity": 1,
+                "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                "family_member_id": [
+                    {
+                        "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                        "family_member_name": "Self",
+                        "relation": ""
+                    }
+                ],
+                "location_id": "676a5fa720093d2807af03a5",
+                "isTestAvailable": true,
+                "home_collection": "NOT_AVAILABLE",
+                "_id": "675921b2ba6f16b8c0d7bed1",
+                "package_id": "675921b2ba6f16b8c0d7bed1",
+                "package_name": "Bone Profile -1",
+                "components": [
+                    "CALCIUM - TOTAL",
+                    "ALP(ALKALINE PHOSPHATASE)",
+                    "PHOSPHORUS SERUM"
+                ],
+                "turn_around_time": null,
+                "specimen": "3 mL (2 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                "slug": "bone-profile-1",
+                "tests_included": [
+                    "CALCIUM - TOTAL",
+                    "ALP(ALKALINE PHOSPHATASE)",
+                    "PHOSPHORUS SERUM"
+                ],
+                "stability": [
+                    "ROOM = 2 HRS",
+                    "REFRIGERATED = 48 HRS"
+                ],
+                "comment": "",
+                "usage": "This panel can help to investigate common bone and joint disorders Arthritis can be of various types mainly Rheumatoid arthritis, Osteoarthritis, Autoimmune disorders, Gout & Psoriatic arthritis.The laboratory testing helps to establish diagnosis and document the pathological process",
+                "locations": [
+                    "64870066842708a0d5ae6c77",
+                    "64870066842708a0d5ae6c74",
+                    "676a5fa720093d2807af03a5",
+                    "64870066842708a0d5ae6c75",
+                    "67346a7655a51ec8ef586bb1",
+                    "6781186b658e894bfeb119e9",
+                    "68ecce703d573db19b650c76",
+                    "68f78da1a5274a337d2d10f8"
+                ],
+                "department": [
+                    "675697b0262d1460f8d55d3b"
+                ],
+                "doctor_speciality": [
+                    "675697b0262d1460f8d55e5e",
+                    "675697b0262d1460f8d55e56",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "test_method": [
+                    "675697b0262d1460f8d55df2"
+                ],
+                "organ": [
+                    
+                ],
+                "doctorsSpeciality": [
+                    "675697b0262d1460f8d55e5e",
+                    "675697b0262d1460f8d55e56",
+                    "675697b0262d1460f8d55e53"
+                ],
+                "diseases": [
+                    "675697b0262d1460f8d55e7e"
+                ],
+                "price": 0,
+                "original_price": 0,
+                "cpt_comment": "",
+                "cpt_price": 0,
+                "actual_cprt_price": 0,
+                "b2b_price": 180,
+                "popular": true,
+                "speciality_tests": false,
+                "frequently_booked": false,
+                "pre_test_information": "No special preparation required",
+                "business_type": [
+                    "B2C"
+                ],
+                "status": "ACTIVE",
+                "createdAt": "2024-12-11T05:22:58.332Z",
+                "updatedAt": "2025-11-14T08:50:13.051Z",
+                "gender": [
+                    "MALE",
+                    "FEMALE"
+                ],
+                "description": "",
+                "full_body_checkup": false,
+                "tests_id_included": [
+                    "675921110856fe1e1e992c1d",
+                    "675921110856fe1e1e992bd7",
+                    "675921110856fe1e1e992ce2"
+                ],
+                "frequently_asked_questions": [
+                    
+                ],
+                "other_names": [
+                    
+                ],
+                "result_interpretation": "",
+                "search_keywords": [
+                    
+                ],
+                "index": 3,
+                "method": [
+                    "675697b0262d1460f8d55df2"
+                ],
+                "product_code": "YDPK014",
+                "membership_price": 5000,
+                "membership_special_price": 999,
+                "membership_discount": 10,
+                "discount_rate": 585,
+                "discount_percentage": 0,
+                "rewards_percentage": "33",
+                "membershipPrice": 0,
+                "inactive_price": 650,
+                "inactive_original_price": 650,
+                "isTestPartOfPackage": false,
+                "packageIds": [
+                    
+                ],
+                "isActive": true,
+                "is_pricing_applicable": false
+            }
+        ],
+        "screen_reason": "home_or_lab_screen",
+        "conversion_status": "no",
+        "reason_for_drop_order": null,
+        "final_cart_status": "open",
+        "reason": null,
+        "created_at": "2025-09-04T14:10:07.596Z",
+        "updated_at": "2025-12-26T17:34:16.310Z",
+        "deleted_at": null,
+        "order_type": "home",
+        "coupon_guid": null,
+        "slot_guid": "bcb26408-0e30-4777-abc8-45a7a7a60056",
+        "rewards_used": 0,
+        "lab_location_id": "64870066842708a0d5ae6c77",
+        "referal_doctor": null,
+        "membership_id": null,
+        "address_id": null,
+        "total_orders": 30,
+        "family_member_details": [
+            {
+                "family_member_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                "product_details": [
+                    {
+                        "product_id": "675921110856fe1e1e992cb8",
+                        "quantity": 1,
+                        "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                        "family_member_id": [
+                            {
+                                "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                                "family_member_name": "Self",
+                                "relation": ""
+                            }
+                        ],
+                        "location_id": "676a5fa720093d2807af03a5",
+                        "isTestAvailable": true,
+                        "home_collection": "AVAILABLE",
+                        "_id": "675921110856fe1e1e992cb8",
+                        "test_id": "675921110856fe1e1e992cb8",
+                        "test_name": "LIPID PROFILE",
+                        "components": [
+                            "Total Cholesterol LDL (Low-Density Lipoprotein) HDL (High-Density Lipoprotein) Triglycerides VLDL (Very Low-Density Lipoprotein)"
+                        ],
+                        "turn_around_time": "12–24 hours",
+                        "specimen": "3 mL (1.5 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                        "slug": "lipid-profile",
+                        "stability": [
+                            "Room = 3 HRS",
+                            "Refrigerated = 3 DAYS"
+                        ],
+                        "comment": "",
+                        "usage": "Indians are at very high risk of developing Atherosclerotic Cardiovascular disease (ASCVD), they usually get the disease at an early age, have a more severe form of the disease and have poorer outcome as compared to the western populations. This is due to high prevalence of Atherogenic dyslipidemia, central abdominal adiposity & increased transfats in our diet. Among the various risk factors for ASCVD such as dyslipidemia, Diabetes mellitus, sedentary lifestyle, Hypertension, smoking, genetic predisposition etc., dyslipidemia has the highest population attributable risk for MI. Hence monitoring lipid profile regularly for effective management of dyslipidemia remains one of the most important healthcare targets for prevention of ASCVD. This monitoring should start as early as 20 years of age. Many individuals remain asymptomatic before they get heart attack. ASCVD risk helps to identify high risk individuals even when there is no symptom related to heart disease. ASCVD risk category helps clinician to decide when to consider therapy and what should be the treatment goal.",
+                        "locations": [
+                            "64870066842708a0d5ae6c77",
+                            "64870066842708a0d5ae6c74",
+                            "676a5fa720093d2807af03a5",
+                            "64870066842708a0d5ae6c75",
+                            "67346a7655a51ec8ef586bb1",
+                            "6781186b658e894bfeb119e9",
+                            "67b4897b1c7d425d13943fb7",
+                            "67bc117b913541b6a689874d",
+                            "68258451d3452617c0860664",
+                            "6842790b3507e932fd14b0cc",
+                            "685a6d2b90c0456408d2ea5b",
+                            "68ecce703d573db19b650c76",
+                            "68f782b1a33e1fb109883fa8",
+                            "68f783e153d56d971fe0bc63",
+                            "68f784658d8708d8bab83dc9",
+                            "68f78da1a5274a337d2d10f8"
+                        ],
+                        "department": [
+                            "675697b0262d1460f8d55d2b"
+                        ],
+                        "doctor_speciality": [
+                            "675697b0262d1460f8d55e5b",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "method": [
+                            "675697b0262d1460f8d55d55"
+                        ],
+                        "organ": [
+                            "675697b0262d1460f8d55e96"
+                        ],
+                        "doctorsSpeciality": [
+                            "675697b0262d1460f8d55e5b",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "diseases": [
+                            "675697b0262d1460f8d55e96"
+                        ],
+                        "price": 660,
+                        "original_price": 660,
+                        "cpt_comment": "",
+                        "cpt_price": 67,
+                        "actual_cprt_price": 93.8,
+                        "genders": [
+                            "MALE",
+                            "FEMALE"
+                        ],
+                        "b2b_price": 140,
+                        "popular": true,
+                        "speciality_tests": false,
+                        "frequently_booked": false,
+                        "pre_test_information": "Fasting for 9–12 hours is typically recommended, especially for accurate triglyceride measurement. Only water is allowed unless your doctor advises otherwise.",
+                        "business_type": [
+                            "B2B",
+                            "B2C"
+                        ],
+                        "status": "ACTIVE",
+                        "createdAt": "2024-12-11T05:20:17.841Z",
+                        "updatedAt": "2025-10-21T13:41:54.304Z",
+                        "description": "",
+                        "courier_charges": 0,
+                        "frequently_asked_questions": [
+                            {
+                                "question": "Why is the Lipid Profile test done?",
+                                "answer": "It helps evaluate blood fat levels to assess heart disease risk and monitor cholesterol-related treatment."
+                            },
+                            {
+                                "question": "Is fasting required?",
+                                "answer": "Yes, 9–12 hours of fasting is typically recommended for accurate triglyceride measurement."
+                            }
+                        ],
+                        "other_names": [
+                            "Lipid Panel",
+                            "Cholesterol Panel",
+                            "Coronary Risk Panel"
+                        ],
+                        "result_interpretation": "Total Cholesterol: <200 mg/dL desirable  LDL: <100 mg/dL optimal  HDL: >40 mg/dL (men), >50 mg/dL (women) desirable  Triglycerides: <150 mg/dL normal  High LDL or triglycerides ? increased heart disease risk  Low HDL ? reduced protective effect",
+                        "index": 12,
+                        "search_keywords": [
+                            "lipid profile test",
+                            "lipid profile near me",
+                            "lipid profile price",
+                            "lipid profile cost",
+                            "book lipid profile test",
+                            "lipid profile lab test",
+                            "lipid profile home collection",
+                            "lipid profile at home test",
+                            "lipid-profile-test",
+                            "lipid profile test for male",
+                            "lipid profile male test",
+                            "lipid profile test for female",
+                            "lipid profile female test",
+                            "LIPID PROFILE",
+                            "LIPID PROFILE test near me",
+                            "LIPID PROFILE package",
+                            "lpidprofile",
+                            "lipdprofile",
+                            "lipidprfile",
+                            "lipidprofle",
+                            "lipidprofil",
+                            "lipidprofile",
+                            "lipidprofilr",
+                            "lopodprofole"
+                        ],
+                        "sample_required_yoda": "Blood",
+                        "turn_around_time_yoda": "8 Hrs",
+                        "usage_yoda": "The Lipid Profile evaluates the levels of fats (lipids) in your blood, which are crucial indicators of heart health. High LDL and triglycerides increase the risk of atherosclerosis, while HDL helps remove excess cholesterol. The test is often part of routine health checkups or used to monitor treatment for high cholesterol.\n\nYou can easily schedule your Lipid Profile test in Hyderabad for quick, comfortable, and accurate testing.",
+                        "result_interpretation_yoda": "Total Cholesterol: <200 mg/dL desirable\n \n LDL: <100 mg/dL optimal\n \n HDL: >40 mg/dL (men), >50 mg/dL (women) desirable\n \n Triglycerides: <150 mg/dL normal\n \n High LDL or triglycerides - increased heart disease risk\n \n Low HDL - reduced protective effect",
+                        "genders_yoda": [
+                            "MALE",
+                            "FEMALE"
+                        ],
+                        "test_measures": "Total Cholesterol,\n LDL (Low-Density Lipoprotein),\n HDL (High-Density Lipoprotein),\n Triglycerides,\n VLDL (Very Low-Density Lipoprotein)",
+                        "product_code": "BIO219",
+                        "membership_price": 5000,
+                        "membership_special_price": 999,
+                        "membership_discount": 10,
+                        "discount_rate": 594,
+                        "rewards_percentage": "30",
+                        "discount_percentage": 0,
+                        "Type": "BIOCHEMISTRY",
+                        "who_should_be_tested": [
+                            
+                        ],
+                        "membershipPrice": 594,
+                        "isTestPartOfPackage": false,
+                        "packageIds": [
+                            
+                        ],
+                        "isActive": true,
+                        "is_pricing_applicable": true
+                    },
+                    {
+                        "product_id": "675921b2ba6f16b8c0d7bed1",
+                        "quantity": 1,
+                        "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+                        "family_member_id": [
+                            {
+                                "guid": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+                                "family_member_name": "Self",
+                                "relation": ""
+                            }
+                        ],
+                        "location_id": "676a5fa720093d2807af03a5",
+                        "isTestAvailable": true,
+                        "home_collection": "NOT_AVAILABLE",
+                        "_id": "675921b2ba6f16b8c0d7bed1",
+                        "package_id": "675921b2ba6f16b8c0d7bed1",
+                        "package_name": "Bone Profile -1",
+                        "components": [
+                            "CALCIUM - TOTAL",
+                            "ALP(ALKALINE PHOSPHATASE)",
+                            "PHOSPHORUS SERUM"
+                        ],
+                        "turn_around_time": null,
+                        "specimen": "3 mL (2 mL min.) Serum from 1 SST. Ship refrigerated or frozen.",
+                        "slug": "bone-profile-1",
+                        "tests_included": [
+                            "CALCIUM - TOTAL",
+                            "ALP(ALKALINE PHOSPHATASE)",
+                            "PHOSPHORUS SERUM"
+                        ],
+                        "stability": [
+                            "ROOM = 2 HRS",
+                            "REFRIGERATED = 48 HRS"
+                        ],
+                        "comment": "",
+                        "usage": "This panel can help to investigate common bone and joint disorders Arthritis can be of various types mainly Rheumatoid arthritis, Osteoarthritis, Autoimmune disorders, Gout & Psoriatic arthritis.The laboratory testing helps to establish diagnosis and document the pathological process",
+                        "locations": [
+                            "64870066842708a0d5ae6c77",
+                            "64870066842708a0d5ae6c74",
+                            "676a5fa720093d2807af03a5",
+                            "64870066842708a0d5ae6c75",
+                            "67346a7655a51ec8ef586bb1",
+                            "6781186b658e894bfeb119e9",
+                            "68ecce703d573db19b650c76",
+                            "68f78da1a5274a337d2d10f8"
+                        ],
+                        "department": [
+                            "675697b0262d1460f8d55d3b"
+                        ],
+                        "doctor_speciality": [
+                            "675697b0262d1460f8d55e5e",
+                            "675697b0262d1460f8d55e56",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "test_method": [
+                            "675697b0262d1460f8d55df2"
+                        ],
+                        "organ": [
+                            
+                        ],
+                        "doctorsSpeciality": [
+                            "675697b0262d1460f8d55e5e",
+                            "675697b0262d1460f8d55e56",
+                            "675697b0262d1460f8d55e53"
+                        ],
+                        "diseases": [
+                            "675697b0262d1460f8d55e7e"
+                        ],
+                        "price": 0,
+                        "original_price": 0,
+                        "cpt_comment": "",
+                        "cpt_price": 0,
+                        "actual_cprt_price": 0,
+                        "b2b_price": 180,
+                        "popular": true,
+                        "speciality_tests": false,
+                        "frequently_booked": false,
+                        "pre_test_information": "No special preparation required",
+                        "business_type": [
+                            "B2C"
+                        ],
+                        "status": "ACTIVE",
+                        "createdAt": "2024-12-11T05:22:58.332Z",
+                        "updatedAt": "2025-11-14T08:50:13.051Z",
+                        "gender": [
+                            "MALE",
+                            "FEMALE"
+                        ],
+                        "description": "",
+                        "full_body_checkup": false,
+                        "tests_id_included": [
+                            "675921110856fe1e1e992c1d",
+                            "675921110856fe1e1e992bd7",
+                            "675921110856fe1e1e992ce2"
+                        ],
+                        "frequently_asked_questions": [
+                            
+                        ],
+                        "other_names": [
+                            
+                        ],
+                        "result_interpretation": "",
+                        "search_keywords": [
+                            
+                        ],
+                        "index": 3,
+                        "method": [
+                            "675697b0262d1460f8d55df2"
+                        ],
+                        "product_code": "YDPK014",
+                        "membership_price": 5000,
+                        "membership_special_price": 999,
+                        "membership_discount": 10,
+                        "discount_rate": 585,
+                        "discount_percentage": 0,
+                        "rewards_percentage": "33",
+                        "membershipPrice": 0,
+                        "inactive_price": 650,
+                        "inactive_original_price": 650,
+                        "isTestPartOfPackage": false,
+                        "packageIds": [
+                            
+                        ],
+                        "isActive": true,
+                        "is_pricing_applicable": false
+                    }
+                ]
+            }
+        ],
+        "actual_delivery_fee": 250,
+        "delivery_fee": 0,
+        "total_benefit": 66,
+        "totalBenefitIncludingMembership": 66,
+        "unavailable_test": [
+            {
+                "product_id": "675921b2ba6f16b8c0d7bed1",
+                "testName": "Bone Profile -1"
+            }
+        ],
+        "totalPrice": 594,
+        "membershipDiscount": 66,
+        "rewards_percentage": 5,
+        "discount_rate": 10,
+        "couponResult": {
+            "discount": 0,
+            "valid": false,
+            "reason": ""
+        },
+        "discountPercentage": 10,
+        "originalPrice": 660,
+        "price": 660,
+        "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+        "membershipPrice": 0
+    }
+}
+=====================================================
+
+
+? STEP 1: Validating API Response
+   ? Success flag: true
+   ? Response message: Cart details fetched successfully
+
+? STEP 2: Validating Cart Basic Fields
+   ? Cart GUID: d1455e07-a759-4598-8df6-1120e77dbae9
+   ? Cart ID: 155
+   ? User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   ? Lab Location ID: 64870066842708a0d5ae6c77
+   ? Total Price (from data.totalPrice): ?594
+   ? Cart Status: open
+   ? Order Type: home
+
+? STEP 3: Comparing with Add to Cart Response
+   ? Cart GUID matches Add to Cart: d1455e07-a759-4598-8df6-1120e77dbae9
+   ? Cart ID matches Add to Cart: 155
+   ??  AddToCart total_amount: ?0 (not calculated)
+   ??  GetCartById totalPrice: ?594 (calculated with delivery fees)
+   ? Total amounts validated (different APIs use different calculation logic)
+
+? STEP 4: Validating Cart Items
+   ? Total items in cart: 2
+
+? STEP 4.1: Validating Home Collection Availability
+   Since order_type=home, all tests in cart MUST have home_collection = true
+
+? STEP 5: Validating Each Cart Item
+   Using response field: data.product_details
+
+   ????? Item 1 Validation ?????
+   ? Product ID: 675921110856fe1e1e992cb8
+   ? Test Name: LIPID PROFILE
+   ? Price: ?660
+   ? Quantity: 1
+   ? Brand ID matches BrandAPI: efb159ac-db7c-4b06-a79b-021a8b6d67e8 = efb159ac-db7c-4b06-a79b-021a8b6d67e8
+
+????????????????????????????????????????????????????????????
+?        CREATE ORDER API — MEMBER                         ?
+????????????????????????????????????????????????????????????
+
+? CREATE ORDER REQUEST:
+   Cart ID: d1455e07-a759-4598-8df6-1120e77dbae9
+   User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Payment Mode: online
+   Total Amount: 0
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/gateway/v2/CreateOrder
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY2NzcwNDUxLCJleHAiOjE3ODI1NTY2OTF9.-RrEV79LxKrU6z0iuWDca6VATwyHNFZ4_jz461QAvaE
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "date": "2025-12-27",
+    "cart_id": "d1455e07-a759-4598-8df6-1120e77dbae9",
+    "payment_mode": "online",
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "total_amount": 0,
+    "slot_id": "bcb26408-0e30-4777-abc8-45a7a7a60056",
+    "address_id": null,
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "source": "android",
+    "time": "2025-12-27 00:00:00 - 2025-12-27 01:00:00"
+}
+
+??????????????????????????????????????????????????????????????
+?     COMPREHENSIVE CREATE ORDER VALIDATION - MEMBER
+??????????????????????????????????????????????????????????????
+
+? STEP 1: Validating API Response
+   ? HTTP Status: 200
+   ? Success flag: true
+   ? Response message: Order Created Successfully
+
+? STEP 2: Validating ALL Order Fields
+   ? Razorpay Order ID: order_RwJxMuOr0wPWel
+   ? Amount: ?594.0 (paise: 59400)
+   ? Amount Due: ?594.0 (paise: 59400)
+   ? Order Status: created
+   ? Razorpay Key ID: rzp_test_RPN3ukEkrXYo4b
+   ? Mobile: 9003730394
+
+? STEP 3: Validating Notes Object
+   ? Notes User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   ? Notes Mobile: 9003730394
+   ? Notes Slot GUID: bcb26408-0e30-4777-abc8-45a7a7a60056
+
+? STEP 4: Cross-validating with LoginAPI
+   ? User ID matches LoginAPI: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   ? Mobile matches LoginAPI: 9003730394
+
+? STEP 5: Cross-validating with SlotAPI
+   ? Slot GUID from SlotAPI: bcb26408-0e30-4777-abc8-45a7a7a60056
+   ? Slot GUID from CreateOrder: bcb26408-0e30-4777-abc8-45a7a7a60056
+   ? Slot GUID matches SlotAPI exactly
+
+========================================
+ALL CREATE ORDER VALIDATIONS PASSED FOR MEMBER
+========================================
+
+[ERROR] Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.742 s <<< FAILURE! -- in TestSuite
+[ERROR] com.mryoda.diagnostics.api.tests.GetCartByIdAPITest.testGetCartById_ForMember -- Time elapsed: 0.604 s <<< FAILURE!
+java.lang.AssertionError: ? GetCartById location_id must match LocationAPI for item: LIPID PROFILE mismatch — expected: 64870066842708a0d5ae6c77 but found: 676a5fa720093d2807af03a5
+	at com.mryoda.diagnostics.api.utils.AssertionUtil.verifyEquals(AssertionUtil.java:84)
+	at com.mryoda.diagnostics.api.tests.GetCartByIdAPITest.validateGetCartByIdResponse(GetCartByIdAPITest.java:372)
+	at com.mryoda.diagnostics.api.tests.GetCartByIdAPITest.testGetCartById_ForMember(GetCartByIdAPITest.java:1401)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   GetCartByIdAPITest.testGetCartById_ForMember:1401->validateGetCartByIdResponse:372 ? GetCartById location_id must match LocationAPI for item: LIPID PROFILE mismatch — expected: 64870066842708a0d5ae6c77 but found: 676a5fa720093d2807af03a5
+[INFO] 
+[ERROR] Tests run: 9, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.250 s
+[INFO] Finished at: 2025-12-26T23:04:18+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project MrYodaAPINew: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\RANJITH\Pictures\MrYodaAPINew\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

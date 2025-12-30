@@ -1,0 +1,14 @@
+com\mryoda\diagnostics\api\tests\LocationAPITest.class
+com\mryoda\diagnostics\api\tests\GetCartByIdAPITest.class
+com\mryoda\diagnostics\api\tests\SlotAndCartUpdateAPITest.class
+com\mryoda\diagnostics\api\tests\BrandAPITest.class
+com\mryoda\diagnostics\api\tests\LoginAPITest.class
+com\mryoda\diagnostics\api\tests\UserCreateAPITest.class
+com\mryoda\diagnostics\api\tests\AddressAPITest.class
+com\mryoda\diagnostics\api\tests\GetAddressByUserIdAPITest.class
+com\mryoda\diagnostics\api\tests\CreateOrderAPITest.class
+com\mryoda\diagnostics\api\base\BaseTest.class
+com\mryoda\diagnostics\api\tests\CreateOrderCODAPITest.class
+com\mryoda\diagnostics\api\tests\GetCentersByAddressAPITest.class
+com\mryoda\diagnostics\api\tests\GlobalSearchAPITest.class
+com\mryoda\diagnostics\api\tests\AddToCartAPITest.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SingleTest_COD_Flow]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="CreateOrderCODAPITest(failed)" verbose="0">
+    <classes>
+      <class name="com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest">
+        <methods>
+          <include name="testCOD_Flow_ForNewUser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest -->
+    </classes>
+  </test> <!-- CreateOrderCODAPITest(failed) -->
+</suite> <!-- Failed suite [SingleTest_COD_Flow] -->
