@@ -3924,3 +3924,1055 @@ Response Body:
 {"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NzQzLCJleHAiOjE3ODI5MDM5ODN9.xfT81OwWI_azCiVyK7Jg1QTVSxlEo_R_b6mbvUvhCK4","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTE3NzQzLCJleHAiOjE3OTg2NzUzNDN9.eqakoV6CW9oqKLhrtw6vs474grFIa9NYKnDwCIV2-NE"}}
 ========================================
 
+========================================
+Timestamp: 2025-12-31 11:49:37.768
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 292 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 11:49:38.098
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 301 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTYxOTc3LCJleHAiOjE3ODI5NDgyMTd9.UtOfXZ9AUZ1csn4Jkf1p_h-4w8LqtA1gCjabFvY97Uw","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTYxOTc3LCJleHAiOjE3OTg3MTk1Nzd9.BbRAEHjHB0iG9ZIPDUVJex4HIrthAD7ugzQjCjTDwqU"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 12:31:12.583
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 186 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 12:31:12.879
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 244 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTY0NDcyLCJleHAiOjE3ODI5NTA3MTJ9.tI9Nw_mGVzg3t3omttVHOUDFhSZqsj9lwY8Q-cUtM-A","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTY0NDcyLCJleHAiOjE3OTg3MjIwNzJ9.Imt1v9BDPUsQj2ZUjG7RAYBm3zlsfaiAczEJnMpOqp8"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 12:49:08.619
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 168 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 12:49:08.802
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 134 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTY1NTQ4LCJleHAiOjE3ODI5NTE3ODh9.bodOEVQWNX2bLvvrA3keiJRubtjunmCGASE25aX4Uws","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTY1NTQ4LCJleHAiOjE3OTg3MjMxNDh9.CNgwVYZvGJf2PasoMoQaOyuC8JzGgxoyGRuIBAsGTqM"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 13:03:04.283
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 145 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 13:03:04.505
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 190 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTY2MzgzLCJleHAiOjE3ODI5NTI2MjN9.zRItG0iIq7e-QFv8u-6P87z5KR7c8bG12Dxlb0XDDoQ","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTY2MzgzLCJleHAiOjE3OTg3MjM5ODN9.yDas08ErZlORnaQ0QnBS3x4cQEFwuyFdGXZc-8JDGWY"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 14:54:59.032
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 98 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 14:54:59.166
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 113 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczMDk4LCJleHAiOjE3ODI5NTkzMzh9.MRy1y5yfXMPiPJqOiCpeHcJa-hoE8SM9mDE495u3opk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczMDk4LCJleHAiOjE3OTg3MzA2OTh9.PIdURI9Wb5jSBytZ1a_InhcXAjNE8jBfmIcAKYNh8Vs"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 14:56:17.380
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 89 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 14:56:17.494
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 90 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczMTc2LCJleHAiOjE3ODI5NTk0MTZ9.cQvnzF_bauPOPE8NllUgYDhWosOe5tmG_T2fKN3nV8s","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczMTc2LCJleHAiOjE3OTg3MzA3NzZ9.sZ2pJE6Nlww0UftZNX-0RZfBg6R7UxPJfJcVKRvTlGo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 14:59:54.500
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 109 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 14:59:54.642
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 101 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczMzkzLCJleHAiOjE3ODI5NTk2MzN9.rQzBe-FCckasaI2W7-tbT_8g3_Yu6M6VuvXeoSbw9Qk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczMzkzLCJleHAiOjE3OTg3MzA5OTN9.qus6PhW0ux0lOetERcTqh4dPSCIdZFppraULppoGyHg"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:01:36.521
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 87 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:01:36.645
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 81 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczNDk1LCJleHAiOjE3ODI5NTk3MzV9.Fq2E_Hh3kquRmio5pkdE_AwIEGu1rOR6MwFrS_sHZY8","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczNDk1LCJleHAiOjE3OTg3MzEwOTV9.RtBFeDrO_lQKE7fo0rKSJDnls3v9X_7r_RdVJykvjoo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:03:20.251
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 94 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:03:20.378
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 102 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczNTk5LCJleHAiOjE3ODI5NTk4Mzl9.Wfw2_ANvqmKehYu_r4U1TPwUm1N3PoGNGhII7HGyNC0","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczNTk5LCJleHAiOjE3OTg3MzExOTl9.dlzQPDuaP0iex1x-sLm42ucuPgHxebyUYdCrGy9NzcQ"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:05:54.649
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 81 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:05:54.761
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 86 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczNzU0LCJleHAiOjE3ODI5NTk5OTR9.53CAvePqXuCdsx_InP_LD85olHgKFXhsV0fb2v5Zf3g","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTczNzU0LCJleHAiOjE3OTg3MzEzNTR9.EdGrU8j8JDmIMH4T5FQn3tJKfroVhSeEF7pdXkDEqNA"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:15:40.752
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 78 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:15:40.854
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 84 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc0MzQwLCJleHAiOjE3ODI5NjA1ODB9.Tp4SQZnM7Iyjn2Q61Vq5pTmNegrbS8s1VUrdjV_l7Hg","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc0MzQwLCJleHAiOjE3OTg3MzE5NDB9.RbPb1R1I9KmATQU0gGcvXu77I3WXua1WXvg5JEUSBAw"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:19:21.621
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 101 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:19:21.742
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 94 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc0NTYxLCJleHAiOjE3ODI5NjA4MDF9.VmqnpJWxcCR7y87ZUwru5EjqBNmN9j2Vh0Bx-b-fXbM","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc0NTYxLCJleHAiOjE3OTg3MzIxNjF9.wMKBfZkBgfP16hh8Baf1tinKIPjHzUvx_AmHGIR8rDI"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:24:06.672
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 502
+Response Time: 75 ms
+Response Body: 
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<title>yodaprojects.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+                <span class="inline-block">Bad gateway</span>
+                <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+                Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-12-31 09:54:06 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                    <div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Browser
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Hyderabad</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">dev-api-yodadiagnostics.yodaprojects.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Host
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">9b68e4c36f47557b</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">103.102.87.82</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:26:34.207
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 502
+Response Time: 66 ms
+Response Body: 
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<title>yodaprojects.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+                <span class="inline-block">Bad gateway</span>
+                <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+                Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-12-31 09:56:33 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                    <div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Browser
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Hyderabad</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">dev-api-yodadiagnostics.yodaprojects.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Host
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">9b68e85d6c017dbf</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">103.102.87.82</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:27:46.284
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 114 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:27:46.460
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 134 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1MDY1LCJleHAiOjE3ODI5NjEzMDV9.iMoTRNW6D8-U6gZn8f_mX1ikK-uTtatViac-54a4oSs","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1MDY1LCJleHAiOjE3OTg3MzI2NjV9.ddURebwTkvvl_B5-RSJy1A1-dW3sUu3cduEhnE-A8BE"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:32:53.479
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 113 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:32:53.614
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 109 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1MzcyLCJleHAiOjE3ODI5NjE2MTJ9.Sn_07xTC4NYt_J7AJDsK_7-25LwPloV_gcRJFrvZlKw","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1MzcyLCJleHAiOjE3OTg3MzI5NzJ9.ZbvGz3-oDc252k5RR67z5bomNF9BmT34QkbndWsHMpU"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:34:30.511
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 139 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:34:30.623
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 86 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1NDY5LCJleHAiOjE3ODI5NjE3MDl9.BaEQbKChv3FNJ1k83B4sxyx-bEfKOooavrOW3iA4bW0","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1NDY5LCJleHAiOjE3OTg3MzMwNjl9.VCCn_dSswQRlQXCenEl7o-6nd3TdjBRATSjDPNOHLgo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:41:45.056
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 409 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:41:45.350
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 266 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1OTA0LCJleHAiOjE3ODI5NjIxNDR9.2e3r6D9QEmP4M5eyXARbfibpin008ulii8A7h-yljZk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc1OTA0LCJleHAiOjE3OTg3MzM1MDR9.oN_WAcsmJ1TpcSPeNpGC44iWF9IdIo8vcXYNyvw_5TI"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:44:57.009
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 121 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:44:57.199
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 151 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc2MDk2LCJleHAiOjE3ODI5NjIzMzZ9.lCUOxbcqSqPsiXn861MKsLxYz4-giCaLjRrlih-oiv0","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc2MDk2LCJleHAiOjE3OTg3MzM2OTZ9.Kuul8ayyl-VKxJXiyjM2SbncQen9Tx7y3DxqRzRxTMo"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:46:21.530
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 245 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:46:21.766
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 210 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc2MTgxLCJleHAiOjE3ODI5NjI0MjF9.5nM9A9FGqYb0Y7hlkdd5_LrsUkTL0b7hVZrp7_frcsE","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc2MTgxLCJleHAiOjE3OTg3MzM3ODF9.jgm_CI-2rhOEGRnP_3QBsDyY073gffbYwvca01pHwdQ"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:47:17.795
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 346 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:47:18.092
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 262 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc2MjM3LCJleHAiOjE3ODI5NjI0Nzd9.lM3T4NQnrQI5gXf6lKTGDZQLb5R-z_fTHcvfSuq-u0g","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc2MjM3LCJleHAiOjE3OTg3MzM4Mzd9.yNU-RQUCbAouxxopjnpZ1B-iYmst2NpFhGxJbc5DZt0"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:50:28.586
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 502
+Response Time: 153 ms
+Response Body: 
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<title>yodaprojects.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+                <span class="inline-block">Bad gateway</span>
+                <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+                Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-12-31 10:20:27 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                    <div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Browser
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Hyderabad</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">dev-api-yodadiagnostics.yodaprojects.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Host
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">9b690b61df905403</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">103.102.87.82</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>
+========================================
+
+========================================
+Timestamp: 2025-12-31 15:51:44.481
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 502
+Response Time: 160 ms
+Response Body: 
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+<title>yodaprojects.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+</head>
+<body>
+<div id="cf-wrapper">
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+                <span class="inline-block">Bad gateway</span>
+                <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+                Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2025-12-31 10:21:43 UTC</div>
+        </header>
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                    <div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Browser
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Hyderabad</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+  </a>
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+  
+</div>
+                    <div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">dev-api-yodadiagnostics.yodaprojects.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+  
+    Host
+  
+  </h3>
+  
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+  
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+    <p class="text-13">
+      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">9b690d3c0b4fbd92</strong></span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+      <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+        Your IP:
+        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+        <span class="hidden" id="cf-footer-ip">103.102.87.82</span>
+        <span class="cf-footer-separator sm:hidden">&bull;</span>
+      </span>
+      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&#38;utm_campaign=dev-api-yodadiagnostics.yodaprojects.com" id="brand_link" target="_blank">Cloudflare</a></span>
+      
+    </p>
+    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+  </div><!-- /.error-footer -->
+
+    </div>
+</div>
+</body>
+</html>
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:00:57.624
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 104 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:00:57.745
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 107 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MDU3LCJleHAiOjE3ODI5NjMyOTd9._Jike3SrDyN1BpiDcWE0LShFXb-JGxaS3Tz-azGkxIs","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MDU3LCJleHAiOjE3OTg3MzQ2NTd9.dBBA-XNDfzX8yiTJF3mqvrI9nOjoXHHHvvkue9cpmlQ"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:02:05.334
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 112 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:02:05.537
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 177 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MTI0LCJleHAiOjE3ODI5NjMzNjR9.Tpd-IjJC2JV3sHEqkYDB0LxNBznS2WdT7JUlzRrnGw8","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MTI0LCJleHAiOjE3OTg3MzQ3MjR9.BCdicMoz8LIiLRUH46olWAvLgFdbHLcajOC1itg0DZQ"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:04:09.805
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 109 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:04:10.032
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 193 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MjQ5LCJleHAiOjE3ODI5NjM0ODl9.AuAZA0TffE5PE-qA4g5ukWpyymyTBrUUTykjM8fyBmg","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MjQ5LCJleHAiOjE3OTg3MzQ4NDl9.zVyKEVyGLsDEQf4Am_es2u2CFWNKbqsqzN_xC9M9Xp8"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:05:28.593
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 90 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:05:28.728
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 104 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MzI4LCJleHAiOjE3ODI5NjM1Njh9.Z-U0IsCCRZbuVSydY7hf8F2JJViw7kBj7vC2AShjN6E","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3MzI4LCJleHAiOjE3OTg3MzQ5Mjh9.mnpoVu1HxWhVABAxbkJaAuwr7ap2QXudOtE37-nA7XI"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:08:54.701
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 95 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:08:54.913
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 179 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3NTM0LCJleHAiOjE3ODI5NjM3NzR9.-_dJzBc6t-L42Us-RaNK4Rq4friQQNPDEVATsYgf1jM","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3NTM0LCJleHAiOjE3OTg3MzUxMzR9.F-h_on5eMuVaXiE4xxx42zGWYfDEQZYMoCpKrn1rUA4"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:14:05.333
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 83 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:14:05.464
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 101 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3ODQ0LCJleHAiOjE3ODI5NjQwODR9.VB_yWxoAAd82tskTe92ar7pm59E6XrGgpuStK73fPTs","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc3ODQ0LCJleHAiOjE3OTg3MzU0NDR9.3_eXovmp-asf5xTR5Tcj2bYJwFkEYS-kaBXmh8u0peA"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:17:24.294
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 95 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:17:24.440
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 121 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc4MDQzLCJleHAiOjE3ODI5NjQyODN9.6Yuki5bwHYlzHPh-xOAnEn571WZOglcCiiNEW2oOo8A","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc4MDQzLCJleHAiOjE3OTg3MzU2NDN9.27RKc7IPFtXmR2JqGaB2cs74kn3mTIDrjbKVoU4-630"}}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:21:28.052
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 110 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2025-12-31 16:21:28.185
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 106 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc4Mjg3LCJleHAiOjE3ODI5NjQ1Mjd9.oGRffQhxyMyPeh9fvjTwG0uc1O9a1YWpZzrbuqaZdh8","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTc4Mjg3LCJleHAiOjE3OTg3MzU4ODd9.1Be0fuOSRy1IV8vR4PAJgYUzNQ6TYurzB0SLpBpOFtc"}}
+========================================
+

@@ -1,0 +1,16 @@
+[2025-12-31 15:24:08] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
+[2025-12-31 15:26:35] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
+[2025-12-31 15:33:07] ? COD Flow Exception: Cannot invoke "String.equalsIgnoreCase(String)" because "expected" is null
+[2025-12-31 15:33:12] ? COD Flow Exception: Cannot invoke "String.equalsIgnoreCase(String)" because "expected" is null
+[2025-12-31 15:33:17] ? COD Flow Exception: Cannot invoke "String.equalsIgnoreCase(String)" because "expected" is null
+[2025-12-31 15:50:31] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
+[2025-12-31 15:51:47] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
+[2025-12-31 16:04:20] ? FAIL: User ID mismatch!
+[2025-12-31 16:04:20] ? COD Flow Exception: Cross-API validation failed: User ID mismatch
+[2025-12-31 16:04:24] ? FAIL: User ID mismatch!
+[2025-12-31 16:04:24] ? COD Flow Exception: Cross-API validation failed: User ID mismatch
+[2025-12-31 16:04:28] ? FAIL: User ID mismatch!
+[2025-12-31 16:04:28] ? COD Flow Exception: Cross-API validation failed: User ID mismatch
+[2025-12-31 16:05:38] ? FAIL: User ID mismatch!
+[2025-12-31 16:05:43] ? FAIL: User ID mismatch!
+[2025-12-31 16:05:48] ? FAIL: User ID mismatch!
