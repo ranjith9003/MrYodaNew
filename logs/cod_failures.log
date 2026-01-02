@@ -1,16 +1,17 @@
-[2025-12-31 15:24:08] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
-[2025-12-31 15:26:35] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
-[2025-12-31 15:33:07] ? COD Flow Exception: Cannot invoke "String.equalsIgnoreCase(String)" because "expected" is null
-[2025-12-31 15:33:12] ? COD Flow Exception: Cannot invoke "String.equalsIgnoreCase(String)" because "expected" is null
-[2025-12-31 15:33:17] ? COD Flow Exception: Cannot invoke "String.equalsIgnoreCase(String)" because "expected" is null
-[2025-12-31 15:50:31] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
-[2025-12-31 15:51:47] ? COD Flow Exception: Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.
-[2025-12-31 16:04:20] ? FAIL: User ID mismatch!
-[2025-12-31 16:04:20] ? COD Flow Exception: Cross-API validation failed: User ID mismatch
-[2025-12-31 16:04:24] ? FAIL: User ID mismatch!
-[2025-12-31 16:04:24] ? COD Flow Exception: Cross-API validation failed: User ID mismatch
-[2025-12-31 16:04:28] ? FAIL: User ID mismatch!
-[2025-12-31 16:04:28] ? COD Flow Exception: Cross-API validation failed: User ID mismatch
-[2025-12-31 16:05:38] ? FAIL: User ID mismatch!
-[2025-12-31 16:05:43] ? FAIL: User ID mismatch!
-[2025-12-31 16:05:48] ? FAIL: User ID mismatch!
+[2025-12-31 18:31:55] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:32:01] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:33:06] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:33:10] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:34:27] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:34:31] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:35:50] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:35:53] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:37:37] ? COD Flow Exception: No available slots found in the next 30 days.
+[2025-12-31 18:37:42] ? COD Flow Exception: No available slots found in the next 30 days.
+[2026-01-02 11:52:29] ? COD Flow Exception: No available slots found in the next 30 days.
+[2026-01-02 11:52:53] ? COD Flow Exception: No available slots found in the next 30 days.
+[2026-01-02 14:40:22] ? Assign Order API Failed with status: 404
+[2026-01-02 14:40:31] ? Assign Order API Failed with status: 404
+[2026-01-02 14:40:40] ? Assign Order API Failed with status: 404
+[2026-01-02 14:45:12] ? Assign Order API Failed with status: 404
+[2026-01-02 14:45:53] ? Assign Order API Failed with status: 404

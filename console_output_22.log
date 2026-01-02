@@ -1,0 +1,3664 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< MrYodaAPINew:MrYodaAPINew >----------------------
+[INFO] Building MrYodaAPINew 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MrYodaAPINew ---
+[INFO] skip non existing resourceDirectory C:\Users\RANJITH\Pictures\MrYodaAPINew\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MrYodaAPINew ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ MrYodaAPINew ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+...
+... TestNG 7.8.0 by CΘdric Beust (cedric@beust.com)
+...
+
+
+==========================================================
+           USER REGISTRATION TEST
+==========================================================
+
+? Generated Mobile: 9748069124
+
+?? USER REGISTRATION REQUEST:
+{
+  "country_code": "+91",
+  "gender": "female",
+  "dob": "1996-07-09",
+  "mobile": "9748069124",
+  "profile_pic": "https://cdn.test.com/img/75fba9.png",
+  "last_name": "Wilson",
+  "middle_name": "Z",
+  "first_name": "Arjun",
+  "alt_mobile": "6574585624",
+  "email": "auto_20474612@test.com"
+}
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/users/addUser
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "gender": "female",
+    "dob": "1996-07-09",
+    "mobile": "9748069124",
+    "profile_pic": "https://cdn.test.com/img/75fba9.png",
+    "last_name": "Wilson",
+    "middle_name": "Z",
+    "first_name": "Arjun",
+    "alt_mobile": "6574585624",
+    "email": "auto_20474612@test.com"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /users/addUser
+   Time    : ? 641 ms
+----------------------------
+
+
+? USER REGISTRATION RESPONSE RECEIVED
+
+? ===== EXTRACTED USER REGISTRATION DATA =====
+? User ID (GUID)  : 75883e78-1766-4171-9edd-fbab1c1f5a00
+? First Name      : Arjun
+? Last Name       : Wilson
+? Email           : auto_20474612@test.com
+?  Gender          : female
+? DOB             : 1996-07-09
+? Mobile          : 9748069124
+? Country Code    : +91
+? Status          : null
+? Created At      : null
+? Updated At      : null
+==============================================
+
+? STORED IN RequestContext (GENERIC):
+? User ID: 75883e78-1766-4171-9edd-fbab1c1f5a00
+? First Name: Arjun
+? Last Name: Wilson
+? Mobile: 9748069124 (already stored)
+
+==========================================================
+        USER REGISTRATION COMPLETED
+==========================================================
+
+==========================================================
+            MEMBER LOGIN TEST (Paid Member)
+==========================================================
+
+==================================================
+========== TOKEN GENERATION START (MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 119 ms
+----------------------------
+
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394",
+    "otp": "123456"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 96 ms
+----------------------------
+
+Token generated for MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+? MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+   Mobile: 9003730394 (Member Benefits Enabled)
+   Stored in: RequestContext.getMemberToken()
+   First Name: Ranjith
+   Last Name: Kumar
+   User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+
+==========================================================
+         NON-MEMBER LOGIN TEST (No Membership)
+==========================================================
+
+==================================================
+========== TOKEN GENERATION START (NON_MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9666666665"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 86 ms
+----------------------------
+
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9666666665",
+    "otp": "123456"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 155 ms
+----------------------------
+
+Token generated for NON_MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.7Ig1daLdixGMCTL2A6GEIam5DrqfAudo4dcXfEGkObA
+? NON-MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.7Ig1daLdixGMCTL2A6GEIam5DrqfAudo4dcXfEGkObA
+   Mobile: 8220220227 (NOT a paid member)
+   Stored in: RequestContext.getNonMemberToken()
+   First Name: Ranjith
+   Last Name: kumar
+   User ID: db682abb-31d1-44df-bf19-557b003a5c69
+
+==========================================================
+            NEW USER LOGIN TEST
+==========================================================
+
+==================================================
+========== TOKEN GENERATION START (NEW_USER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9748069124"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 81 ms
+----------------------------
+
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9748069124",
+    "otp": "123456"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 108 ms
+----------------------------
+
+Token generated for NEW_USER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+? NEW USER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+   Stored in: RequestContext.getNewUserToken()
+   First Name: Arjun
+   Last Name: Wilson
+   User ID: 75883e78-1766-4171-9edd-fbab1c1f5a00
+
+===== LOCATION API ù MEMBER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /tests/getlocations
+   Time    : ? 80 ms
+----------------------------
+
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Ameerpet (HQ)' found and stored: 64870066842708a0d5ae6c77
+   ? Ameerpet (HQ) Coordinates: Lat=17.4358447, Long=78.452737
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== LOCATION API ù NON-MEMBER (8220220227 - NOT a paid member) =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.7Ig1daLdixGMCTL2A6GEIam5DrqfAudo4dcXfEGkObA
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /tests/getlocations
+   Time    : ? 77 ms
+----------------------------
+
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Ameerpet (HQ)' found and stored: 64870066842708a0d5ae6c77
+   ? Ameerpet (HQ) Coordinates: Lat=17.4358447, Long=78.452737
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== LOCATION API ù NEW USER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /tests/getlocations
+   Time    : ? 74 ms
+----------------------------
+
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Ameerpet (HQ)' found and stored: 64870066842708a0d5ae6c77
+   ? Ameerpet (HQ) Coordinates: Lat=17.4358447, Long=78.452737
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== BRAND API ù MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+   Time    : ? 125 ms
+----------------------------
+
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+
+===== BRAND API ù NON-MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+   Time    : ? 90 ms
+----------------------------
+
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+
+===== BRAND API ù NEW USER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+   Time    : ? 93 ms
+----------------------------
+
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+Running Global Search as part of MEMBER flow...
+
+==========================================================
+         GLOBAL SEARCH API TEST - COMPLETE FLOW
+==========================================================
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Ameerpet (HQ)' validated from LocationAPI: 64870066842708a0d5ae6c77
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Glucose (Urine), Diabetes Monitor
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Ameerpet (HQ) ? 64870066842708a0d5ae6c77
+
+? Searching: Glucose (Urine)
+
+   ? Attempt 1/5
+   Search String: "Glucose (Urine)"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Glucose (Urine)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 227 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Glucose (Urine)":
+      Result 1:
+         test_name: Glucose (Urine)
+         _id: 675921110856fe1e1e992d5a
+         test_id: PATH006
+         slug: glucose-urine
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Glucose (Urine)
+      Test ID: PATH006
+      Product ID: 675921110856fe1e1e992d5a
+      ? SUCCESS with search variation: "Glucose (Urine)"
+
+? Searching: Diabetes Monitor
+
+   ? Attempt 1/5
+   Search String: "Diabetes Monitor"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 151 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Diabetes Monitor":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bee4
+         test_id: null
+         slug: diabetes-monitor
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bee4
+      Checking alternative fields...
+      ??  Constructed name from slug: Diabetes Monitor
+      ? Found alternative name: Diabetes Monitor
+   ? EXACT MATCH FOUND: Diabetes Monitor
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bee4
+      ? SUCCESS with search variation: "Diabetes Monitor"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 200 ms
+----------------------------
+
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Glucose (Urine)
+   Test ID       : PATH006
+   Product ID    : 675921110856fe1e1e992d5a
+   Price         : ?3
+   Original Price: ?60
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? MATCHED & STORED TEST: Diabetes Monitor
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bee4
+   Price         : ?800
+   Original Price: ?800
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Diabetes Monitor
+   ? Expected test: Glucose (Urine)
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Diabetes Monitor - Home Collection: AVAILABLE (type='home')
+   ? Glucose (Urine) - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 2
+   Tests WITHOUT home collection: 0
+
+? Validated stored test: Glucose (Urine)
+   Test ID: PATH006
+   Product ID: 675921110856fe1e1e992d5a
+
+? Validated stored test: Diabetes Monitor
+   Test ID: null
+   Product ID: 675921b2ba6f16b8c0d7bee4
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+Running Global Search as part of NON-MEMBER flow...
+
+==========================================================
+         GLOBAL SEARCH API TEST - COMPLETE FLOW
+==========================================================
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Ameerpet (HQ)' validated from LocationAPI: 64870066842708a0d5ae6c77
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Glucose (Urine), Diabetes Monitor
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Ameerpet (HQ) ? 64870066842708a0d5ae6c77
+
+? Searching: Glucose (Urine)
+
+   ? Attempt 1/5
+   Search String: "Glucose (Urine)"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Glucose (Urine)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 178 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Glucose (Urine)":
+      Result 1:
+         test_name: Glucose (Urine)
+         _id: 675921110856fe1e1e992d5a
+         test_id: PATH006
+         slug: glucose-urine
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Glucose (Urine)
+      Test ID: PATH006
+      Product ID: 675921110856fe1e1e992d5a
+      ? SUCCESS with search variation: "Glucose (Urine)"
+
+? Searching: Diabetes Monitor
+
+   ? Attempt 1/5
+   Search String: "Diabetes Monitor"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 188 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Diabetes Monitor":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bee4
+         test_id: null
+         slug: diabetes-monitor
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bee4
+      Checking alternative fields...
+      ??  Constructed name from slug: Diabetes Monitor
+      ? Found alternative name: Diabetes Monitor
+   ? EXACT MATCH FOUND: Diabetes Monitor
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bee4
+      ? SUCCESS with search variation: "Diabetes Monitor"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 180 ms
+----------------------------
+
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Glucose (Urine)
+   Test ID       : PATH006
+   Product ID    : 675921110856fe1e1e992d5a
+   Price         : ?3
+   Original Price: ?60
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? MATCHED & STORED TEST: Diabetes Monitor
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bee4
+   Price         : ?800
+   Original Price: ?800
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Diabetes Monitor
+   ? Expected test: Glucose (Urine)
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Diabetes Monitor - Home Collection: AVAILABLE (type='home')
+   ? Glucose (Urine) - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 2
+   Tests WITHOUT home collection: 0
+
+? Validated stored test: Glucose (Urine)
+   Test ID: PATH006
+   Product ID: 675921110856fe1e1e992d5a
+
+? Validated stored test: Diabetes Monitor
+   Test ID: null
+   Product ID: 675921b2ba6f16b8c0d7bee4
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+Running Global Search as part of NEW USER flow...
+
+==========================================================
+         GLOBAL SEARCH API TEST - COMPLETE FLOW
+==========================================================
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Ameerpet (HQ)' validated from LocationAPI: 64870066842708a0d5ae6c77
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: Glucose (Urine), Diabetes Monitor
+? Total Tests: 2
+
+? SEARCHING FOR 2 TESTS
+? LOCATION: Ameerpet (HQ) ? 64870066842708a0d5ae6c77
+
+? Searching: Glucose (Urine)
+
+   ? Attempt 1/5
+   Search String: "Glucose (Urine)"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Glucose (Urine)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 180 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Glucose (Urine)":
+      Result 1:
+         test_name: Glucose (Urine)
+         _id: 675921110856fe1e1e992d5a
+         test_id: PATH006
+         slug: glucose-urine
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: Glucose (Urine)
+      Test ID: PATH006
+      Product ID: 675921110856fe1e1e992d5a
+      ? SUCCESS with search variation: "Glucose (Urine)"
+
+? Searching: Diabetes Monitor
+
+   ? Attempt 1/5
+   Search String: "Diabetes Monitor"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 207 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "Diabetes Monitor":
+      Result 1:
+         test_name: null
+         _id: 675921b2ba6f16b8c0d7bee4
+         test_id: null
+         slug: diabetes-monitor
+         Type: diagnostics
+
+   ??  test_name is NULL for ID: 675921b2ba6f16b8c0d7bee4
+      Checking alternative fields...
+      ??  Constructed name from slug: Diabetes Monitor
+      ? Found alternative name: Diabetes Monitor
+   ? EXACT MATCH FOUND: Diabetes Monitor
+      Test ID: null
+      Product ID: 675921b2ba6f16b8c0d7bee4
+      ? SUCCESS with search variation: "Diabetes Monitor"
+
+? ========================================
+   TOTAL TESTS FOUND: 2 / 2
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "64870066842708a0d5ae6c77",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "Diabetes Monitor"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 211 ms
+----------------------------
+
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 2
+
+? MATCHED & STORED TEST: Glucose (Urine)
+   Test ID       : PATH006
+   Product ID    : 675921110856fe1e1e992d5a
+   Price         : ?3
+   Original Price: ?60
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? MATCHED & STORED TEST: Diabetes Monitor
+   Test ID       : null
+   Product ID    : 675921b2ba6f16b8c0d7bee4
+   Price         : ?800
+   Original Price: ?800
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: Diabetes Monitor
+   ? Expected test: Glucose (Urine)
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? Diabetes Monitor - Home Collection: AVAILABLE (type='home')
+   ? Glucose (Urine) - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 2
+   Tests WITH home collection: 2
+   Tests WITHOUT home collection: 0
+
+? Validated stored test: Glucose (Urine)
+   Test ID: PATH006
+   Product ID: 675921110856fe1e1e992d5a
+
+? Validated stored test: Diabetes Monitor
+   Test ID: null
+   Product ID: 675921b2ba6f16b8c0d7bee4
+
+? GLOBAL SEARCH COMPLETE (Stored 2 tests)
+
+--- AddToCart For Member ---
+
+? CLEARING PREVIOUS CART for User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 70 ms
+----------------------------
+
+   ? Cart clear API call successful.
+   ? Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":155,"guid":"d1455e07-a759-4598-8df6-1120e77dbae9","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e992d5a","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"],"location_id":"64870066842708a0d5ae6c77"},{"product_id":"675921b2ba6f16b8c0d7bee4","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"],"location_id":"64870066842708a0d5ae6c77"}],"screen_reason":"lab_location_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-09-04T14:10:07.596Z","updated_at":"2025-12-31T13:05:45.545Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":null,"rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":null,"total_orders":125}}
+
+? CUSTOM PAYLOAD BUILDER for 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+      ? Added test to payload: Diabetes Monitor (Type: home)
+      ? Added test to payload: Glucose (Urine) (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 100 ms
+----------------------------
+
+   ? Cart Data Stored for MEMBER (GUID: d1455e07-a759-4598-8df6-1120e77dbae9)
+
+--- AddToCart For Non-Member ---
+
+? CLEARING PREVIOUS CART for User ID: db682abb-31d1-44df-bf19-557b003a5c69
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.7Ig1daLdixGMCTL2A6GEIam5DrqfAudo4dcXfEGkObA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 83 ms
+----------------------------
+
+   ? Cart clear API call successful.
+   ? Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":490,"guid":"bb89d801-01f3-4a57-9df0-a1be84bb12cd","user_id":"db682abb-31d1-44df-bf19-557b003a5c69","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e9930d6","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["db682abb-31d1-44df-bf19-557b003a5c69"],"location_id":"676a5fa720093d2807af03a5"},{"product_id":"675921110856fe1e1e992d5a","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["db682abb-31d1-44df-bf19-557b003a5c69"],"location_id":"64870066842708a0d5ae6c77"},{"product_id":"675921b2ba6f16b8c0d7bee4","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["db682abb-31d1-44df-bf19-557b003a5c69"],"location_id":"64870066842708a0d5ae6c77"}],"screen_reason":"slot_time_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-12-01T14:08:26.496Z","updated_at":"2025-12-31T13:05:45.796Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":null,"rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":"99cfd160-72e2-4fcf-b2f4-56e5bbb49fea","total_orders":124}}
+
+? CUSTOM PAYLOAD BUILDER for db682abb-31d1-44df-bf19-557b003a5c69
+      ? Added test to payload: Diabetes Monitor (Type: home)
+      ? Added test to payload: Glucose (Urine) (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.7Ig1daLdixGMCTL2A6GEIam5DrqfAudo4dcXfEGkObA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "db682abb-31d1-44df-bf19-557b003a5c69",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "db682abb-31d1-44df-bf19-557b003a5c69"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "db682abb-31d1-44df-bf19-557b003a5c69"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 86 ms
+----------------------------
+
+   ? Cart Data Stored for NON_MEMBER (GUID: bb89d801-01f3-4a57-9df0-a1be84bb12cd)
+
+--- AddToCart For New User ---
+
+? CLEARING PREVIOUS CART for User ID: 75883e78-1766-4171-9edd-fbab1c1f5a00
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "75883e78-1766-4171-9edd-fbab1c1f5a00",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 82 ms
+----------------------------
+
+   ? Cart clear API call successful.
+   ? Response Body: {"status":201,"success":true,"msg":"Cart saved successfully","total_amount":0,"data":{"id":1029,"guid":"e605f0e4-dc35-42da-af4e-1e580aa3ee61","user_id":"75883e78-1766-4171-9edd-fbab1c1f5a00","_user_id":null,"product_details":[],"screen_reason":"home_or_lab_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-12-31T13:05:46.062Z","updated_at":"2025-12-31T13:05:46.062Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":null,"rewards_used":0,"lab_location_id":"64870066842708a0d5ae6c77","referal_doctor":null,"membership_id":null,"address_id":null,"total_orders":0}}
+
+? CUSTOM PAYLOAD BUILDER for 75883e78-1766-4171-9edd-fbab1c1f5a00
+      ? Added test to payload: Diabetes Monitor (Type: home)
+      ? Added test to payload: Glucose (Urine) (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "75883e78-1766-4171-9edd-fbab1c1f5a00",
+    "lab_location_id": "64870066842708a0d5ae6c77",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921b2ba6f16b8c0d7bee4",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "75883e78-1766-4171-9edd-fbab1c1f5a00"
+            ]
+        },
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992d5a",
+            "type": "home",
+            "location_id": "64870066842708a0d5ae6c77",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "75883e78-1766-4171-9edd-fbab1c1f5a00"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 80 ms
+----------------------------
+
+   ? Cart Data Stored for NEW_USER (GUID: e605f0e4-dc35-42da-af4e-1e580aa3ee61)
+
+>>> STARTING COD FLOW FOR NEW USER <<<
+
+==========================================================
+      CHECK MEMBERSHIP STATUS (getUser API)
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/75883e78-1766-4171-9edd-fbab1c1f5a00
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/75883e78-1766-4171-9edd-fbab1c1f5a00
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/75883e78-1766-4171-9edd-fbab1c1f5a00
+   Time    : ? 171 ms
+----------------------------
+
+Response Status: 200
+   Membership Expiry Date: null
+   ? User is a NON-MEMBER
+   Membership Verification: Confirmed Non-Member
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/75883e78-1766-4171-9edd-fbab1c1f5a00?location=64870066842708a0d5ae6c77&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=64870066842708a0d5ae6c77
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/75883e78-1766-4171-9edd-fbab1c1f5a00
+   Time    : ? 266 ms
+----------------------------
+
+Response Status: 200
+Cart Total Price: 1053
+Cart ID: e605f0e4-dc35-42da-af4e-1e580aa3ee61
+Slot GUID: null
+Lab Location ID: 64870066842708a0d5ae6c77
+Order Type: home
+Expected Product Names: []
+
+==========================================================
+      ADD ADDRESS API (Required for Home Order)
+==========================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9999999999",
+    "latitude": "17.4358447",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "75883e78-1766-4171-9edd-fbab1c1f5a00",
+    "address_line1": "Hyderabad",
+    "name": "Ameerpet (HQ)",
+    "receiver_name": "Test User",
+    "state": "Telangana",
+    "postal_code": "500016",
+    "longitude": "78.452737"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /address/addAddress
+   Time    : ? 80 ms
+----------------------------
+
+Response Status: 201
+Response Body: {"status":201,"success":true,"msg":"Address saved successfully","total_amount":0,"data":{"id":825,"guid":"3f530667-0a4c-4ec0-b519-5df8288a8b63","user_id":"75883e78-1766-4171-9edd-fbab1c1f5a00","_user_id":1040,"receiver_name":"Test User","recipient_mobile_number":"9999999999","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500016","name":"Ameerpet (HQ)","type":"home","latitude":"17.4358447","longitude":"78.452737","is_default":true,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-31T13:05:46.830Z","updated_at":"2025-12-31T13:05:46.830Z","deleted_at":null}}
+Created Address ID: 825
+? SEARCHING FOR AVAILABLE SLOTS...
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-31",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 76 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2025-12-31
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-01",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 124 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-01
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-02",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 86 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-02
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-03",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 112 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-03
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-04",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 73 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-04
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-05",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 67 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-05
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-06",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 104 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-06
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-07",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 95 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-07
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-08",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 61 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-08
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-09",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 113 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-09
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-10",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 70 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-10
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-11",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 76 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-11
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-12",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 110 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-12
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-13",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 65 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-13
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-14",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 104 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-14
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-15",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 73 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-15
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-16",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 74 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-16
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-17",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 116 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-17
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-18",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 133 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-18
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-19",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 59 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-19
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-20",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 73 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-20
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-21",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 69 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-21
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-22",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 97 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-22
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-23",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 78 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-23
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-24",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 72 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-24
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-25",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 131 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-25
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-26",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 60 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-26
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-27",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 71 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-27
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-28",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 98 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-28
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6Ijc1ODgzZTc4LTE3NjYtNDE3MS05ZWRkLWZiYWIxYzFmNWEwMCIsIm1vYmlsZSI6Ijk3NDgwNjkxMjQiLCJmaXJzdF9uYW1lIjoiQXJqdW4iLCJsYXN0X25hbWUiOiJXaWxzb24iLCJlbWFpbCI6ImF1dG9fMjA0NzQ2MTJAdGVzdC5jb20iLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.a03HWo9Ph8XksX_IQdSvOHyM7SDyuUGyzVp9y9JjfII
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-29",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3f530667-0a4c-4ec0-b519-5df8288a8b63"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 61 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-29
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+? COD Flow Exception: No available slots found in the next 30 days.
+
+>>> STARTING COD FLOW FOR MEMBER <<<
+
+==========================================================
+      CHECK MEMBERSHIP STATUS (getUser API)
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 58 ms
+----------------------------
+
+Response Status: 200
+   Membership Expiry Date: null
+   ? User is a NON-MEMBER
+   Membership Verification: Confirmed Non-Member
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3?location=64870066842708a0d5ae6c77&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=64870066842708a0d5ae6c77
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 226 ms
+----------------------------
+
+Response Status: 200
+Cart Total Price: 722
+Cart ID: d1455e07-a759-4598-8df6-1120e77dbae9
+Slot GUID: null
+Lab Location ID: 64870066842708a0d5ae6c77
+Order Type: home
+Expected Product Names: []
+
+==========================================================
+      ADD ADDRESS API (Required for Home Order)
+==========================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9999999999",
+    "latitude": "17.4358447",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "address_line1": "Hyderabad",
+    "name": "Ameerpet (HQ)",
+    "receiver_name": "Test User",
+    "state": "Telangana",
+    "postal_code": "500016",
+    "longitude": "78.452737"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /address/addAddress
+   Time    : ? 69 ms
+----------------------------
+
+Response Status: 409
+Response Body: {"status":409,"success":false,"msg":"Address already exists!"}
+Address already exists (409). Fetching existing address...
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 133 ms
+----------------------------
+
+Get Address Response Status: 200
+Using existing Address ID: 459
+? SEARCHING FOR AVAILABLE SLOTS...
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2025-12-31",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 55 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2025-12-31
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-01",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 55 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-01
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-02",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 68 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-02
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-03",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 105 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-03
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-04",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 85 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-04
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-05",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 101 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-05
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-06",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 156 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-06
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-07",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 123 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-07
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-08",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 119 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-08
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-09",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 93 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-09
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-10",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 55 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-10
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-11",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 65 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-11
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-12",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 101 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-12
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-13",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 59 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-13
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-14",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 116 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-14
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-15",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 122 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-15
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-16",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 65 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-16
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-17",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 65 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-17
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-18",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 173 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-18
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-19",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 74 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-19
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-20",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 165 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-20
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-21",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 93 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-21
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-22",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 110 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-22
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-23",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 65 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-23
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-24",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 122 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-24
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-25",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 65 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-25
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-26",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 122 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-26
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-27",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 62 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-27
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-28",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 115 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-28
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzM5LCJleHAiOjE3ODI5NzI1Nzl9.5qCnGmJ3m93a50GyxUUcbPKeWcEHsdiuhkb7f-dxBFI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-29",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 87 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-29
+Status Code: 500
+Response Body: {"status":500,"success":false,"msg":"column \"day\" does not exist"}
+--- End Slot Search ---
+? COD Flow Exception: No available slots found in the next 30 days.
+
+>>> STARTING COD FLOW FOR NON-MEMBER (EXISTING USER) <<<
+
+==========================================================
+      CHECK MEMBERSHIP STATUS (getUser API)
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/db682abb-31d1-44df-bf19-557b003a5c69
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/db682abb-31d1-44df-bf19-557b003a5c69
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.7Ig1daLdixGMCTL2A6GEIam5DrqfAudo4dcXfEGkObA
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/users/getUser/db682abb-31d1-44df-bf19-557b003a5c69
+   Time    : ? 76 ms
+----------------------------
+
+Response Status: 200
+   Membership Expiry Date: null
+   ? User is a NON-MEMBER
+   Membership Verification: Confirmed Non-Member
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/db682abb-31d1-44df-bf19-557b003a5c69?location=64870066842708a0d5ae6c77&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=64870066842708a0d5ae6c77
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6ImRiNjgyYWJiLTMxZDEtNDRkZi1iZjE5LTU1N2IwMDNhNWM2OSIsIm1vYmlsZSI6Ijk2NjY2NjY2NjUiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Imt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3MTg2MzQwLCJleHAiOjE3ODI5NzI1ODB9.7Ig1daLdixGMCTL2A6GEIam5DrqfAudo4dcXfEGkObA
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/db682abb-31d1-44df-bf19-557b003a5c69
+   Time    : ? 268 ms
+----------------------------
+
+Response Status: 200
+Cart Total Price: 8303
+Cart ID: bb89d801-01f3-4a57-9df0-a1be84bb12cd
+Slot GUID: null
+Lab Location ID: 64870066842708a0d5ae6c77
+Order Type: home
+Expected Product Names: []
+SKIPPING COD FLOW: Total Price 8303 >= 2500. COD not allowed.
+[ERROR] Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 18.30 s <<< FAILURE! -- in TestSuite
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNewUser -- Time elapsed: 3.506 s <<< FAILURE!
+java.lang.RuntimeException: No available slots found in the next 30 days.
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.findAvailableSlot(CreateOrderCODAPITest.java:1000)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.executeCODFlow(CreateOrderCODAPITest.java:1151)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForNewUser(CreateOrderCODAPITest.java:1065)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[ERROR] com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForMember -- Time elapsed: 3.729 s <<< FAILURE!
+java.lang.RuntimeException: No available slots found in the next 30 days.
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.findAvailableSlot(CreateOrderCODAPITest.java:1000)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.executeCODFlow(CreateOrderCODAPITest.java:1151)
+	at com.mryoda.diagnostics.api.tests.CreateOrderCODAPITest.testCOD_Flow_ForMember(CreateOrderCODAPITest.java:1078)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CreateOrderCODAPITest.testCOD_Flow_ForMember:1078->executeCODFlow:1151->findAvailableSlot:1000 Runtime No available slots found in the next 30 days.
+[ERROR]   CreateOrderCODAPITest.testCOD_Flow_ForNewUser:1065->executeCODFlow:1151->findAvailableSlot:1000 Runtime No available slots found in the next 30 days.
+[INFO] 
+[ERROR] Tests run: 19, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.674 s
+[INFO] Finished at: 2025-12-31T18:35:54+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project MrYodaAPINew: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\RANJITH\Pictures\MrYodaAPINew\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -42,4 +42,18 @@ public class APIEndpoints {
     public static final String PHLEBO_LOGIN = "/phlebo/loginPhlebo";
     public static final String RAZORPAY_WEBHOOK = "/gateway/razorpay/webhook";
 
+    // ========== BASE URLS ==========
+    public static final String MEMBER_BASE_URL = "https://dev-api-yodamembership.yodaprojects.com";
+    public static final String DIAGNOSTICS_BASE_URL = "https://dev-api-yodadiagnostics.yodaprojects.com";
+
+    // ========== MEMBERSHIP ==========
+    public static final String GET_USER = "/users/getUser/{user_id}";
+
+    // ========== ORDER & TRACKING ==========
+    public static final String ASSIGN_ORDER = "/order_tracking/assignOrder";
+    public static final String UPDATE_ORDER_TRACKING = "/order_tracking/updateOrderTracking";
+    public static final String GET_ORDER_TRACKING_STATUS = "/order_tracking/getOrderTrackingStatus/{guid}";
+
+    // ========== BRAND ==========
+    public static final String GET_ALL_BRANDS_PATH = "/brand/getAllBrands";
 }
