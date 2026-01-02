@@ -56,4 +56,6 @@ public class APIEndpoints {
 
     // ========== BRAND ==========
     public static final String GET_ALL_BRANDS_PATH = "/brand/getAllBrands";
+    public static final String ADMIN_VERIFY_OTP = "/order_tracking/admin/verifyotp";
+    public static final String GET_SAMPLE_TYPE = "/tests/getSampleType";
 }

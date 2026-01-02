@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Detailed COD Flow Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Detailed COD Steps(failed)" verbose="0">
+    <classes>
+      <class name="com.mryoda.diagnostics.api.tests.DetailedCODFlowTest">
+        <methods>
+          <include name="step02_VerifyCartAndPrice"/>
+          <include name="step14_VerifySamplesCollectedStatus"/>
+          <include name="step13_UpdateStatusSamplesCollected"/>
+          <include name="step01_LoginAndSetup"/>
+          <include name="step11_AdminVerifyOtp"/>
+          <include name="step08_VerifyStatusAssigned"/>
+          <include name="step03_AddAddressAndSlot"/>
+          <include name="step06_PhlebotomistLogin"/>
+          <include name="tearDown"/>
+          <include name="step07_AssignOrder"/>
+          <include name="step09_UpdateOrderTracking"/>
+          <include name="step12_GetSampleType"/>
+          <include name="step10_FinalVerification"/>
+          <include name="step04_VerifyPaymentPreCheck"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mryoda.diagnostics.api.tests.DetailedCODFlowTest -->
+    </classes>
+  </test> <!-- Detailed COD Steps(failed) -->
+</suite> <!-- Failed suite [Detailed COD Flow Suite] -->

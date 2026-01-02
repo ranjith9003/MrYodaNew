@@ -3,6 +3,7 @@ com\mryoda\diagnostics\api\tests\GetCartByIdAPITest.class
 com\mryoda\diagnostics\api\tests\SlotAndCartUpdateAPITest.class
 com\mryoda\diagnostics\api\tests\BrandAPITest.class
 com\mryoda\diagnostics\api\tests\LoginAPITest.class
+com\mryoda\diagnostics\api\tests\DetailedCODFlowTest.class
 com\mryoda\diagnostics\api\tests\UserCreateAPITest.class
 com\mryoda\diagnostics\api\tests\AddressAPITest.class
 com\mryoda\diagnostics\api\tests\GetAddressByUserIdAPITest.class

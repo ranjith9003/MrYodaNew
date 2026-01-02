@@ -34,7 +34,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Log Failures to File
     // -------------------------------
-    private void logFailure(String message) {
+    protected void logFailure(String message) {
         System.out.println(message); // Keep console logging
         try {
             java.io.File logDir = new java.io.File("logs");
@@ -56,7 +56,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Check if User is Member
     // -------------------------------
-    private boolean isMember(String token, String userId) {
+    protected boolean isMember(String token, String userId) {
         System.out.println("\n==========================================================");
         System.out.println("      CHECK MEMBERSHIP STATUS (getUser API)");
         System.out.println("==========================================================");
@@ -94,7 +94,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Get Cart API
     // -------------------------------
-    private Response callGetCartAPI(String token, String userId) {
+    protected Response callGetCartAPI(String token, String userId) {
         System.out.println("\n==========================================================");
         System.out.println("      GET CART API (Check Total for COD)");
         System.out.println("==========================================================");
@@ -120,7 +120,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Verify Payment API
     // -------------------------------
-    private Map<String, String> callVerifyPaymentAPI(String token, String userId, String cartId, String addressId,
+    protected Map<String, String> callVerifyPaymentAPI(String token, String userId, String cartId, String addressId,
             String slotGuid,
             String labLocationId, String orderType, int totalAmount, String date, String time, String source) {
         System.out.println("\n==========================================================");
@@ -190,7 +190,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Get Payment By ID API (Dev)
     // -------------------------------
-    private Response callGetPaymentByIdAPI(String token, String paymentId) {
+    protected Response callGetPaymentByIdAPI(String token, String paymentId) {
         System.out.println("\n==========================================================");
         System.out.println("      GET PAYMENT BY ID API (DEV)");
         System.out.println("==========================================================");
@@ -199,7 +199,8 @@ public class CreateOrderCODAPITest extends BaseTest {
         payload.put("id", paymentId);
 
         // Use DEV URL as per requirement
-        String getPaymentUrl = "https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById";
+        // Use DEV URL as per requirement - using Centralized Endpoint
+        String getPaymentUrl = APIEndpoints.DIAGNOSTICS_BASE_URL + APIEndpoints.GET_PAYMENT_BY_ID;
 
         System.out.println("Request Payload: " + payload);
         System.out.println("Target URL: " + getPaymentUrl);
@@ -222,7 +223,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Get Order By ID API
     // -------------------------------
-    private Response callGetOrderByIdAPI(String token, String orderId) {
+    protected Response callGetOrderByIdAPI(String token, String orderId) {
         System.out.println("\n==========================================================");
         System.out.println("      GET ORDER BY ID API");
         System.out.println("==========================================================");
@@ -260,7 +261,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // CROSS-API VALIDATIONS
     // -------------------------------
-    private void performCrossAPIValidations(Response cartResponse, Response paymentResponse,
+    protected void performCrossAPIValidations(Response cartResponse, Response paymentResponse,
             int expectedTotalPrice, String expectedCartId, String expectedPaymentId,
             String expectedUserId, String expectedAddressId, String expectedSlotGuid,
             List<String> expectedProductNames) {
@@ -431,7 +432,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Phlebotomist Login API
     // -------------------------------
-    private String callPhlebotomistLoginAPI() {
+    protected String callPhlebotomistLoginAPI() {
         System.out.println("\n==========================================================");
         System.out.println("      PHLEBOTOMIST LOGIN API");
         System.out.println("==========================================================");
@@ -490,7 +491,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Assign Order API
     // -------------------------------
-    private String callAssignOrderAPI(String orderId, String phlebotomistGuid, int expectedTotalPrice,
+    protected String callAssignOrderAPI(String orderId, String phlebotomistGuid, int expectedTotalPrice,
             String expectedPaymentId, String expectedAddressId, String expectedUserId, String expectedSlotGuid) {
         if (phlebotomistGuid == null || orderId == null) {
             System.out.println("⚠️ Cannot call Assign Order API - Missing GUID or Order ID");
@@ -622,7 +623,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Update Order Tracking API
     // -------------------------------
-    private void callUpdateOrderTrackingAPI(String orderTrackingId, String orderId, String lat, String lng,
+    protected void callUpdateOrderTrackingAPI(String orderTrackingId, String orderId, String lat, String lng,
             String addressName) {
         if (orderTrackingId == null || orderId == null) {
             System.out.println("⚠️ Skipping Update Order Tracking API - Missing Tracking ID or Order ID");
@@ -691,7 +692,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Get Order Tracking Status API
     // -------------------------------
-    private void callGetOrderTrackingStatusAPI(String orderTrackingId, String expectedStatus) {
+    protected void callGetOrderTrackingStatusAPI(String orderTrackingId, String expectedStatus) {
         if (orderTrackingId == null) {
             System.out.println("⚠️ Skipping Get Order Tracking Status - Missing Order Tracking ID");
             return;
@@ -737,7 +738,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Verify Phlebotomist Assignment via Get Order By ID
     // -------------------------------
-    private void verifyPhlebotomistAssignment(String token, String orderId, String expectedPhleboGuid) {
+    protected void verifyPhlebotomistAssignment(String token, String orderId, String expectedPhleboGuid) {
         System.out.println("\n==========================================================");
         System.out.println("      VERIFY PHLEBOTOMIST ASSIGNMENT (Get Order By ID)");
         System.out.println("==========================================================");
@@ -780,7 +781,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Get Centres By Address API
     // -------------------------------
-    private Response callGetCentresByAddressAPI(String token, String addressId, String labLocationId) {
+    protected Response callGetCentresByAddressAPI(String token, String addressId, String labLocationId) {
         System.out.println("\n==========================================================");
         System.out.println("      GET CENTRES BY ADDRESS API");
         System.out.println("==========================================================");
@@ -923,7 +924,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Call Add Address API
     // -------------------------------
-    private Map<String, String> callAddAddressAPI(String token, String userId) {
+    protected Map<String, String> callAddAddressAPI(String token, String userId) {
         System.out.println("\n==========================================================");
         System.out.println("      ADD ADDRESS API (Required for Home Order)");
         System.out.println("==========================================================");
@@ -1038,7 +1039,7 @@ public class CreateOrderCODAPITest extends BaseTest {
     // -------------------------------
     // HELPER: Find Available Slot
     // -------------------------------
-    private Map<String, String> findAvailableSlot(String token, String addressGuid) {
+    protected Map<String, String> findAvailableSlot(String token, String addressGuid) {
         System.out.println("? SEARCHING FOR AVAILABLE SLOTS...");
         LocalDate today = LocalDate.now();
 
@@ -1098,7 +1099,7 @@ public class CreateOrderCODAPITest extends BaseTest {
         throw new RuntimeException("No available slots found in the next 30 days.");
     }
 
-    private void updateCartWithSlot(String token, String userId, String slotGuid, String addressId) {
+    protected void updateCartWithSlot(String token, String userId, String slotGuid, String addressId) {
         System.out.println("\n? UPDATING CART WITH SLOT...");
 
         // Dynamically build product details from RequestContext
@@ -1189,17 +1190,26 @@ public class CreateOrderCODAPITest extends BaseTest {
         executeCODFlow(token, userId);
     }
 
-    private void executeCODFlow(String token, String userId) {
+    protected void executeCODFlow(String token, String userId) {
         try {
             if (token == null || userId == null) {
-                throw new RuntimeException(
-                        "Token or UserId not found in RequestContext. Ensure previous steps (Login) ran successfully.");
+                System.out.println("⚠️ Token or UserId not found in RequestContext. Attempting self-login...");
+                ensureLogin();
+                token = RequestContext.getToken();
+                userId = RequestContext.getUserId();
+
+                if (token == null || userId == null) {
+                    throw new RuntimeException("❌ Failed to obtain Token or UserId even after self-login.");
+                }
             }
 
             // 1. Get Cart and Check Total Price
             boolean isMember = isMember(token, userId);
             System.out
                     .println("   Membership Verification: " + (isMember ? "Confirmed Member" : "Confirmed Non-Member"));
+
+            // Ensure valid state by clearing any previous items
+            clearCart(token, userId);
 
             Response getCartResponse = callGetCartAPI(token, userId);
 
@@ -1307,6 +1317,17 @@ public class CreateOrderCODAPITest extends BaseTest {
 
                 // 10. Verify Phlebotomist Assignment (Final Check)
                 verifyPhlebotomistAssignment(token, orderId, phlebotomistGuid);
+
+                // 11. Admin Verify OTP
+                callAdminVerifyOtpAPI(orderTrackingId, orderId);
+
+                // 12. Get Sample Type
+                String sampleType = callGetSampleTypeAPI(token);
+
+                // 13. Update Status (Samples Collected)
+                if (sampleType != null) {
+                    callUpdateOrderSamplesCollectedAPI(orderTrackingId, sampleType);
+                }
             }
 
             /*
@@ -1336,5 +1357,237 @@ public class CreateOrderCODAPITest extends BaseTest {
             logFailure("❌ COD Flow Exception: " + e.getMessage());
             throw e; // Re-throw to fail the test
         }
+    }
+
+    // -------------------------------
+    // HELPER: Ensure Login (Self-Recovery)
+    // -------------------------------
+    protected void ensureLogin() {
+        System.out.println("\n==========================================================");
+        System.out.println("      SELF-LOGIN RECOVERY");
+        System.out.println("==========================================================");
+
+        // Use a default testing mobile number
+        String mobile = "9003730394";
+
+        // 1. Request OTP
+        Map<String, Object> otpPayload = new HashMap<>();
+        otpPayload.put("mobile", mobile);
+
+        String otpUrl = APIEndpoints.DIAGNOSTICS_BASE_URL + APIEndpoints.OTP_REQUEST;
+        new RequestBuilder().setEndpoint(otpUrl).setRequestBody(otpPayload).post();
+
+        // 2. Verify OTP (assuming default OTP 1234)
+        Map<String, Object> verifyPayload = new HashMap<>();
+        verifyPayload.put("mobile", mobile);
+        verifyPayload.put("otp", "123456");
+
+        String verifyUrl = APIEndpoints.DIAGNOSTICS_BASE_URL + APIEndpoints.OTP_VERIFY;
+        Response response = new RequestBuilder().setEndpoint(verifyUrl).setRequestBody(verifyPayload).post();
+
+        if (response.getStatusCode() == 200 && response.jsonPath().getBoolean("success")) {
+            String token = response.jsonPath().getString("data.token");
+            String userId = response.jsonPath().getString("data.guid");
+
+            RequestContext.setToken(token);
+            RequestContext.setUserId(userId);
+            System.out.println("✅ Self-Login Successful. Token & UserId set.");
+            System.out.println("   Token: " + token);
+            System.out.println("   UserId: " + userId);
+        } else {
+            System.out.println("❌ Self-Login Failed: " + response.getBody().asString());
+        }
+    }
+
+    // -------------------------------
+    // HELPER: Clear Cart (Previous Items)
+    // -------------------------------
+    protected void clearCart(String token, String userId) {
+        System.out.println("\n🧹 CLEARING PREVIOUS CART for User ID: " + userId);
+        String locationId = RequestContext.getLocationId(DEFAULT_LOCATION);
+
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("user_id", userId);
+        payload.put("product_details", new java.util.ArrayList<>()); // Empty list
+
+        if (locationId != null) {
+            payload.put("lab_location_id", locationId);
+            payload.put("order_type", "home");
+        } else {
+            System.out.println(
+                    "   ⚠️  Warning: Location ID not found in context. Clearing might fail if location required.");
+        }
+
+        Response response = new RequestBuilder()
+                .setEndpoint(APIEndpoints.ADD_TO_CART)
+                .addHeader("Authorization", token)
+                .setRequestBody(payload)
+                .post();
+
+        if (response.getStatusCode() == 200 || response.getStatusCode() == 201) {
+            System.out.println("   ✅ Cart Check/Clear API call successful.");
+        } else {
+            System.out.println("   ⚠️  Cart clear attempt returned status " + response.getStatusCode());
+        }
+    }
+
+    // -------------------------------
+    // HELPER: Call Admin Verify OTP API
+    // -------------------------------
+    protected void callAdminVerifyOtpAPI(String orderTrackingId, String orderId) {
+        System.out.println("\n==========================================================");
+        System.out.println("      ADMIN VERIFY OTP API");
+        System.out.println("==========================================================");
+
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("ordertrackingId", orderTrackingId);
+        payload.put("verifyOtpRemarks", "Test");
+        payload.put("orderid", orderId);
+
+        String endpoint = APIEndpoints.DIAGNOSTICS_BASE_URL + APIEndpoints.ADMIN_VERIFY_OTP;
+
+        System.out.println("Request Payload: " + payload);
+        System.out.println("Target URL: " + endpoint);
+
+        RequestBuilder builder = new RequestBuilder()
+                .setEndpoint(endpoint)
+                .setRequestBody(payload);
+
+        // Try Phlebotomist Token first
+        String phleboToken = System.getProperty("phlebo.token");
+        if (phleboToken != null && !phleboToken.isEmpty()) {
+            System.out.println("   Adding Phlebotomist Authorization Header");
+            builder.addHeader("Authorization", phleboToken);
+        } else {
+            System.out.println("⚠️ Warning: No Phlebotomist Token found. Trying with User Token.");
+            String userToken = RequestContext.getToken();
+            if (userToken != null)
+                builder.addHeader("Authorization", userToken);
+        }
+
+        Response response = builder.post();
+
+        System.out.println("Response Status: " + response.getStatusCode());
+        System.out.println("Response Body: " + response.getBody().asString());
+
+        AssertionUtil.verifyEquals(response.getStatusCode(), 200, "Admin Verify OTP should return 200");
+        boolean success = response.jsonPath().getBoolean("success");
+        AssertionUtil.verifyTrue(success, "Admin Verify OTP success flag should be true");
+        System.out.println("✅ Admin Verify OTP Successful");
+    }
+
+    // -------------------------------
+    // HELPER: Call Get Sample Type API
+    // -------------------------------
+    protected String callGetSampleTypeAPI(String userToken) {
+        System.out.println("\n==========================================================");
+        System.out.println("      GET SAMPLE TYPE API");
+        System.out.println("==========================================================");
+
+        String endpoint = APIEndpoints.DIAGNOSTICS_BASE_URL + APIEndpoints.GET_SAMPLE_TYPE;
+        System.out.println("Target URL: " + endpoint);
+
+        RequestBuilder builder = new RequestBuilder().setEndpoint(endpoint);
+
+        // Try Phlebotomist Token
+        String phleboToken = System.getProperty("phlebo.token");
+        System.out.println("DEBUG: System.getProperty('phlebo.token') = "
+                + (phleboToken != null ? "FOUND (len=" + phleboToken.length() + ")" : "NULL"));
+        System.out.println(
+                "DEBUG: userToken param = " + (userToken != null ? "FOUND (len=" + userToken.length() + ")" : "NULL"));
+
+        String finalToken = null;
+        if (phleboToken != null && !phleboToken.isEmpty()) {
+            finalToken = phleboToken;
+        } else {
+            finalToken = userToken;
+        }
+
+        if (finalToken != null) {
+            // For /tests/ APIs, try Bearer
+            if (!finalToken.startsWith("Bearer ")) {
+                builder.addHeader("Authorization", "Bearer " + finalToken);
+            } else {
+                builder.addHeader("Authorization", finalToken);
+            }
+        } else {
+            System.out.println("⚠️ Warning: No token found for GetSampleType API!");
+        }
+
+        Response response = builder.get();
+
+        System.out.println("Response Status: " + response.getStatusCode());
+        System.out.println("Response Body: " + response.getBody().asString());
+
+        AssertionUtil.verifyEquals(response.getStatusCode(), 200, "Get Sample Type should return 200");
+
+        List<Map<String, Object>> data = response.jsonPath().getList("data");
+        if (data != null && !data.isEmpty()) {
+            // Randomly select one
+            int randomIndex = new java.util.Random().nextInt(data.size());
+            String sampleName = (String) data.get(randomIndex).get("name");
+            System.out.println("✅ Selected Random Sample Type: " + sampleName);
+            return sampleName;
+        } else {
+            System.out.println("❌ No sample types found in response");
+            return null;
+        }
+    }
+
+    // -------------------------------
+    // HELPER: Call Update Order Tracking (Samples Collected)
+    // -------------------------------
+    protected void callUpdateOrderSamplesCollectedAPI(String orderTrackingId, String sampleType) {
+        System.out.println("\n==========================================================");
+        System.out.println("      UPDATE ORDER TRACKING (SAMPLES COLLECTED)");
+        System.out.println("==========================================================");
+
+        // Construct samples_collected list
+        // Assuming structure: [{"sample_type": "...", "quantity": 1}]
+        // OR as user said: samplesCollected.map((e) => e.toMap()).toList()
+        // We will make a guess on the map structure based on standard industry practice
+        // or minimal requirements
+        Map<String, Object> sampleMap = new HashMap<>();
+        sampleMap.put("sample_type", sampleType);
+        sampleMap.put("quantity", 1);
+
+        List<Map<String, Object>> samplesList = new java.util.ArrayList<>();
+        samplesList.add(sampleMap);
+
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("status", "samples_collected");
+        payload.put("order_tracking_id", orderTrackingId);
+        payload.put("samples_collected", samplesList);
+
+        String endpoint = APIEndpoints.DIAGNOSTICS_BASE_URL + APIEndpoints.UPDATE_ORDER_TRACKING;
+
+        System.out.println("Request Payload: " + payload);
+        System.out.println("Target URL: " + endpoint);
+
+        RequestBuilder builder = new RequestBuilder()
+                .setEndpoint(endpoint)
+                .setRequestBody(payload);
+
+        // Use Phlebotomist Token
+        String phleboToken = System.getProperty("phlebo.token");
+        if (phleboToken != null && !phleboToken.isEmpty()) {
+            builder.addHeader("Authorization", phleboToken);
+        } else {
+            System.out.println("⚠️ Warning: No Phlebotomist Token found. Using User Token.");
+            String userToken = RequestContext.getToken();
+            if (userToken != null)
+                builder.addHeader("Authorization", userToken);
+        }
+
+        Response response = builder.post();
+
+        System.out.println("Response Status: " + response.getStatusCode());
+        System.out.println("Response Body: " + response.getBody().asString());
+
+        AssertionUtil.verifyEquals(response.getStatusCode(), 200,
+                "Update Status (Samples Collected) should return 200");
+        boolean success = response.jsonPath().getBoolean("success");
+        AssertionUtil.verifyTrue(success, "Update Status success flag should be true");
+        System.out.println("✅ Order Status Updated to 'samples_collected'");
     }
 }
