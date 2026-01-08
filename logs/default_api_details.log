@@ -1,0 +1,790 @@
+========================================
+Timestamp: 2026-01-06 17:55:49.192
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 982 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:49.427
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 220 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:49.906
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 347 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:50.115
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 188 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:50.355
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 178 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:50.943
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 580 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:51.216
+Method: POST
+Endpoint: /address/addAddress
+Status Code: 401
+Response Time: 224 ms
+Response Body: 
+{"message":"Invalid token structure"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:51.585
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 341 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:51.766
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 165 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:52.156
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 352 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:52.375
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 203 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:52.739
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Status Code: 401
+Response Time: 331 ms
+Response Body: 
+{"message":"Invalid token structure"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:53.339
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 572 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:53.534
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 181 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:54.331
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+Status Code: 200
+Response Time: 769 ms
+Response Body: 
+{"status":200,"success":true,"msg":"User login success","total_amount":0,"data":{"id":18,"guid":"01b109b7-7706-43b0-acc8-3278f721f34d","name":"Ranjith kumar","mobile_number":"9360651932","password":"$2b$10$CNghj57YMelubC6FOCsTQOv3qCyuGUFF4//shjv9Of5V75ec1sOxC","employee_id":null,"zone_id":"676e886d854c2069a0d47703","profile_pic":null,"email":"ranjith10021996@gmail.com","firebase_token":"eyBJfNf5OENzvOWgJr_Sb5:APA91bFqNlUEDDDItKeE6HDuh3GWimlEZ2FjugSrVDPXRf2GP29drk_e_4SyaOqBW5KUBWLDQl4GmJTexeVR3nSFQiXFmZmmj966Iatq7kZqRW6FhTsVb1Q","is_active":true,"type":["phlebo"],"created_at":"2025-12-26T09:55:37.008Z","updated_at":"2026-01-06T12:00:55.837Z","deleted_at":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDIzNTMsImV4cCI6MTc4MzQ4ODU5M30.tm12N5LmY5mOjmFlBKX_9E9z2Km52fOvmMbXLSoiAsg","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDIzNTMsImV4cCI6MTc5OTI1OTk1M30.0UaBatsiWXFCj_oVDz-4Wp9AyHstkuRP_J7hlEX5Pm8"}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:55.210
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 176 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:55.530
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 311 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:55.735
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 176 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:56.303
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 556 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:56.513
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 178 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:56.680
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 159 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:57.027
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 298 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:57.215
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 180 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:57.831
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 576 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:58.010
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 170 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:59.086
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+Status Code: 404
+Response Time: 1056 ms
+Response Body: 
+{"status":404,"success":false,"msg":"Order not found."}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:59.484
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 386 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:59.654
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 161 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:55:59.878
+Method: GET
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+Status Code: 401
+Response Time: 198 ms
+Response Body: 
+{"message":"Token missing"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:00.080
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 188 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:00.271
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 183 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:00.625
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 326 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:00.934
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 303 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:01.136
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 172 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:01.301
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 154 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:01.508
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 179 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:01.687
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 172 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:57.822
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 951 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:58.029
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 191 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:58.305
+Method: POST
+Endpoint: /address/addAddress
+Status Code: 401
+Response Time: 176 ms
+Response Body: 
+{"message":"Invalid token structure"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:58.519
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Status Code: 401
+Response Time: 180 ms
+Response Body: 
+{"message":"Invalid token structure"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:56:58.854
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+Status Code: 200
+Response Time: 300 ms
+Response Body: 
+{"status":200,"success":true,"msg":"User login success","total_amount":0,"data":{"id":18,"guid":"01b109b7-7706-43b0-acc8-3278f721f34d","name":"Ranjith kumar","mobile_number":"9360651932","password":"$2b$10$CNghj57YMelubC6FOCsTQOv3qCyuGUFF4//shjv9Of5V75ec1sOxC","employee_id":null,"zone_id":"676e886d854c2069a0d47703","profile_pic":null,"email":"ranjith10021996@gmail.com","firebase_token":"eyBJfNf5OENzvOWgJr_Sb5:APA91bFqNlUEDDDItKeE6HDuh3GWimlEZ2FjugSrVDPXRf2GP29drk_e_4SyaOqBW5KUBWLDQl4GmJTexeVR3nSFQiXFmZmmj966Iatq7kZqRW6FhTsVb1Q","is_active":true,"type":["phlebo"],"created_at":"2025-12-26T09:55:37.008Z","updated_at":"2026-01-06T12:25:53.890Z","deleted_at":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI0MTgsImV4cCI6MTc4MzQ4ODY1OH0.HpvZFfazrqpNWxfXjvE1LXInzU-BBh-6iWfTSZ0wC5w","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI0MTgsImV4cCI6MTc5OTI2MDAxOH0.00UcS0gJhdiM4c9LMth-RBTIzCwOBT1PV_oGM8xCXGA"}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:57:00.544
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+Status Code: 404
+Response Time: 220 ms
+Response Body: 
+{"status":404,"success":false,"msg":"Order not found."}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:57:00.784
+Method: GET
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+Status Code: 401
+Response Time: 218 ms
+Response Body: 
+{"message":"Token missing"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:58:35.165
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 969 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:58:35.377
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Status Code: 500
+Response Time: 198 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Invalid mobile number"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:58:35.732
+Method: POST
+Endpoint: /address/addAddress
+Status Code: 401
+Response Time: 298 ms
+Response Body: 
+{"message":"Invalid token structure"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:58:36.150
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Status Code: 401
+Response Time: 356 ms
+Response Body: 
+{"message":"Invalid token structure"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:58:36.713
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+Status Code: 200
+Response Time: 539 ms
+Response Body: 
+{"status":200,"success":true,"msg":"User login success","total_amount":0,"data":{"id":18,"guid":"01b109b7-7706-43b0-acc8-3278f721f34d","name":"Ranjith kumar","mobile_number":"9360651932","password":"$2b$10$CNghj57YMelubC6FOCsTQOv3qCyuGUFF4//shjv9Of5V75ec1sOxC","employee_id":null,"zone_id":"676e886d854c2069a0d47703","profile_pic":null,"email":"ranjith10021996@gmail.com","firebase_token":"eyBJfNf5OENzvOWgJr_Sb5:APA91bFqNlUEDDDItKeE6HDuh3GWimlEZ2FjugSrVDPXRf2GP29drk_e_4SyaOqBW5KUBWLDQl4GmJTexeVR3nSFQiXFmZmmj966Iatq7kZqRW6FhTsVb1Q","is_active":true,"type":["phlebo"],"created_at":"2025-12-26T09:55:37.008Z","updated_at":"2026-01-06T12:26:58.568Z","deleted_at":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI1MTYsImV4cCI6MTc4MzQ4ODc1Nn0.F5YrXDl7B-BcmBSC-cWn5-dT5KaVj_D09S2dMo__fh8","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI1MTYsImV4cCI6MTc5OTI2MDExNn0.IDddEwvtCFdhQYU8C9alMd5_KMW-k2lHzBl-US4IDXU"}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:58:37.748
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+Status Code: 404
+Response Time: 358 ms
+Response Body: 
+{"status":404,"success":false,"msg":"Order not found."}
+========================================
+
+========================================
+Timestamp: 2026-01-06 17:58:37.946
+Method: GET
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+Status Code: 401
+Response Time: 176 ms
+Response Body: 
+{"message":"Token missing"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:09.459
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 1470 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:09.939
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 457 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzAyNjY5LCJleHAiOjE3ODM0ODg5MDl9.6S9sMRi8JaZVQs-F_MrvemWZugXz_ORFlzrvCLqr964","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzAyNjY5LCJleHAiOjE3OTkyNjAyNjl9.Tc0GkHp6pVznBn6Yda9ooqLQKsRLcoXR2opPmC27B1o"}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:11.571
+Method: POST
+Endpoint: /carts/v2/addCart
+Status Code: 400
+Response Time: 350 ms
+Response Body: 
+{"msg":"Please select lab location first"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:11.839
+Method: GET
+Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Status Code: 200
+Response Time: 225 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Cart details fetched successfully","total_amount":0,"data":null}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:12.146
+Method: POST
+Endpoint: /address/addAddress
+Status Code: 409
+Response Time: 233 ms
+Response Body: 
+{"status":409,"success":false,"msg":"Address already exists!"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:12.511
+Method: GET
+Endpoint: /address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Status Code: 200
+Response Time: 348 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Address details fetched successfully","total_amount":0,"data":[{"id":459,"guid":"3e7f93b5-6013-4385-995b-dfecc866c549","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Ranjith Kumar","recipient_mobile_number":"9003730394","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500033","name":"Madhapur","type":"home","latitude":"17.4406327","longitude":"78.3900194","is_default":true,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-23T10:52:16.531Z","updated_at":"2025-12-23T10:52:16.531Z","deleted_at":null},{"id":462,"guid":"95cefcdc-2659-4e41-8b70-7088811d6793","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Ranjith Kumar","recipient_mobile_number":"9003730394","address_line1":"Tirupati","address_line2":null,"land_mark":null,"city":"Tirupati","state":"Andhra Pradesh","country":"India","postal_code":"517501","name":"Work","type":"work","latitude":"13.6350832","longitude":"79.42642049999999","is_default":false,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-23T10:52:17.070Z","updated_at":"2025-12-23T10:52:17.070Z","deleted_at":null},{"id":528,"guid":"1a2f3f2c-f805-4225-9be2-568e8a70a6d3","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Ranjith Kumar","recipient_mobile_number":"9003730394","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500016","name":"Ameerpet (HQ)","type":"home","latitude":"17.4358447","longitude":"78.452737","is_default":false,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-26T17:22:24.289Z","updated_at":"2025-12-26T17:22:24.289Z","deleted_at":null},{"id":574,"guid":"fb1bf61a-1d19-4217-9925-5e621e343d08","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Test User","recipient_mobile_number":"9999999999","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500016","name":"Ameerpet (HQ)","type":"home","latitude":"17.4358447","longitude":"78.452737","is_default":false,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-29T10:58:17.745Z","updated_at":"2025-12-29T10:58:17.745Z","deleted_at":null}]}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:12.938
+Method: POST
+Endpoint: /slot/getSlotCountByTime
+Status Code: 200
+Response Time: 234 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Slots Fetched Successfully","total":23,"page":1,"limit":100,"total_pages":1,"total_amount":0,"data":[{"guid":"88785f05-ed91-41bb-8322-d607bbc63a39","type":"home","starttime":"2026-01-06 00:00:00","endtime":"2026-01-06 01:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"85caa9e2-614b-490a-98c7-0d2cbf3753b4","type":"home","starttime":"2026-01-06 01:00:00","endtime":"2026-01-06 02:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"f31ba82e-f5e2-4fc9-aca8-990c72dc71fa","type":"home","starttime":"2026-01-06 02:00:00","endtime":"2026-01-06 03:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"cf027b8c-2c31-4a5c-8455-1b146ffaa363","type":"home","starttime":"2026-01-06 03:00:00","endtime":"2026-01-06 04:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"926b8e09-b272-4425-a35d-9a9620b82501","type":"home","starttime":"2026-01-06 04:00:00","endtime":"2026-01-06 05:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"a4a4020e-a245-4a78-972a-89e9b1854a3b","type":"home","starttime":"2026-01-06 05:00:00","endtime":"2026-01-06 06:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"7f162274-b7ab-4af2-a820-f2eb81ad7aec","type":"home","starttime":"2026-01-06 06:00:00","endtime":"2026-01-06 07:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"834d1e1f-f679-4907-8d61-3055104bc4c7","type":"home","starttime":"2026-01-06 07:00:00","endtime":"2026-01-06 08:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"1eb907ea-3776-4a21-8ff9-c05b0fb2a06a","type":"home","starttime":"2026-01-06 08:00:00","endtime":"2026-01-06 09:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"cadb3902-4d67-4300-8832-7c911290dd21","type":"home","starttime":"2026-01-06 09:00:00","endtime":"2026-01-06 10:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"5e285521-cd01-4098-b163-7cc1b2ec1ed0","type":"home","starttime":"2026-01-06 10:00:00","endtime":"2026-01-06 11:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"f6b8a030-e105-40bc-9fd8-caf3af7ee952","type":"home","starttime":"2026-01-06 11:00:00","endtime":"2026-01-06 12:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"303777c7-dd29-4db4-95e2-c842a7ea9ec8","type":"home","starttime":"2026-01-06 12:00:00","endtime":"2026-01-06 13:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"70632a82-8dd8-4ca5-ab82-3b99d21969ea","type":"home","starttime":"2026-01-06 13:00:00","endtime":"2026-01-06 14:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"721966ab-0d82-4a7e-85c7-c9e9d702a3a0","type":"home","starttime":"2026-01-06 14:00:00","endtime":"2026-01-06 15:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"2d8125f6-9c26-4abf-a47c-8917a19a8c23","type":"home","starttime":"2026-01-06 15:00:00","endtime":"2026-01-06 16:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"f8c05fa5-0a16-4581-9e0f-9da75aed9451","type":"home","starttime":"2026-01-06 16:00:00","endtime":"2026-01-06 17:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"cfe4ba6e-4129-452c-99d0-629ae2e5e8e0","type":"home","starttime":"2026-01-06 17:00:00","endtime":"2026-01-06 18:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"b8ebbb56-d8e7-4ff8-bc16-38fb296aec6a","type":"home","starttime":"2026-01-06 18:00:00","endtime":"2026-01-06 19:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"66228c17-e9e3-46f4-b421-92089f658612","type":"home","starttime":"2026-01-06 19:00:00","endtime":"2026-01-06 20:00:00","count":28,"centerid":"676e886d854c2069a0d47703"},{"guid":"44b8d56f-c9af-461a-be92-7110ea417741","type":"home","starttime":"2026-01-06 20:00:00","endtime":"2026-01-06 21:00:00","count":30,"centerid":"676e886d854c2069a0d47703"},{"guid":"eb756bc7-c3f1-4c85-8384-b53289015cd9","type":"home","starttime":"2026-01-06 21:00:00","endtime":"2026-01-06 22:00:00","count":30,"centerid":"676e886d854c2069a0d47703"},{"guid":"841d7923-0f66-407e-87ef-d3b398188fc9","type":"home","starttime":"2026-01-06 22:00:00","endtime":"2026-01-06 23:00:00","count":27,"centerid":"676e886d854c2069a0d47703"}]}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:13.300
+Method: GET
+Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Status Code: 200
+Response Time: 328 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Cart details fetched successfully","total_amount":0,"data":null}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:13.550
+Method: POST
+Endpoint: /gateway/v2/VerifyPayment
+Status Code: 500
+Response Time: 211 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Cannot read properties of null (reading 'slot_guid')"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:13.920
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Status Code: 500
+Response Time: 355 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Cannot read properties of undefined (reading 'guid')"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:14.498
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+Status Code: 200
+Response Time: 559 ms
+Response Body: 
+{"status":200,"success":true,"msg":"User login success","total_amount":0,"data":{"id":18,"guid":"01b109b7-7706-43b0-acc8-3278f721f34d","name":"Ranjith kumar","mobile_number":"9360651932","password":"$2b$10$CNghj57YMelubC6FOCsTQOv3qCyuGUFF4//shjv9Of5V75ec1sOxC","employee_id":null,"zone_id":"676e886d854c2069a0d47703","profile_pic":null,"email":"ranjith10021996@gmail.com","firebase_token":"eyBJfNf5OENzvOWgJr_Sb5:APA91bFqNlUEDDDItKeE6HDuh3GWimlEZ2FjugSrVDPXRf2GP29drk_e_4SyaOqBW5KUBWLDQl4GmJTexeVR3nSFQiXFmZmmj966Iatq7kZqRW6FhTsVb1Q","is_active":true,"type":["phlebo"],"created_at":"2025-12-26T09:55:37.008Z","updated_at":"2026-01-06T12:28:36.261Z","deleted_at":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI2NzQsImV4cCI6MTc4MzQ4ODkxNH0.kcfg_a-Fzdoebb-znVP_IA63qpT66ie-Fs2z4rB92gg","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI2NzQsImV4cCI6MTc5OTI2MDI3NH0.2zNvYWBcXPcUxVCZHF3v9Syi_s0cW6rG0hUzDx5B6HM"}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:15.011
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+Status Code: 404
+Response Time: 396 ms
+Response Body: 
+{"status":404,"success":false,"msg":"Order not found."}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:15.593
+Method: GET
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+Status Code: 200
+Response Time: 567 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Sample types fetched successfully","total_amount":0,"data":[{"_id":"679b6f7cedfe4056bd7087b1","name":"Green Tube","active":true,"createdAt":"2025-01-30T12:24:28.249Z","updatedAt":"2025-01-30T12:24:28.249Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2aa","name":"Blood Culture Bottle","active":true,"createdAt":"2025-02-28T05:44:11.000Z","updatedAt":"2025-02-28T05:44:11.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a3","name":"Fluoride Tube (Grey Top)","active":true,"createdAt":"2025-02-28T05:44:04.000Z","updatedAt":"2025-02-28T05:44:04.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ad","name":"Urine Filter Paper","active":true,"createdAt":"2025-02-28T05:44:14.000Z","updatedAt":"2025-02-28T05:44:14.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a0","name":"Serun Separation Tube (Yellow Top)","active":true,"createdAt":"2025-02-28T05:44:01.000Z","updatedAt":"2025-02-28T05:44:01.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a4","name":"Urine Container","active":true,"createdAt":"2025-02-28T05:44:05.000Z","updatedAt":"2025-02-28T05:44:05.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ab","name":"NBS Card","active":true,"createdAt":"2025-02-28T05:44:12.000Z","updatedAt":"2025-02-28T05:44:12.000Z","__v":0},{"_id":"679768f2fe8bb09cf46c49f9","name":"Yellow Tube","active":true,"createdAt":"2025-01-27T11:07:30.602Z","updatedAt":"2025-01-30T12:24:17.705Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a8","name":"Lithium Heparin (Green Top)","active":true,"createdAt":"2025-02-28T05:44:09.000Z","updatedAt":"2025-02-28T05:44:09.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a7","name":"Sodium Heparin (Green Top)","active":true,"createdAt":"2025-02-28T05:44:08.000Z","updatedAt":"2025-02-28T05:44:08.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2af","name":"Others","active":true,"createdAt":"2025-02-28T05:44:16.000Z","updatedAt":"2025-02-28T05:44:16.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a6","name":"Stool Container","active":true,"createdAt":"2025-02-28T05:44:07.000Z","updatedAt":"2025-02-28T05:44:07.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a9","name":"NIPT Tube","active":true,"createdAt":"2025-02-28T05:44:10.000Z","updatedAt":"2025-02-28T05:44:10.000Z","__v":0},{"_id":"679768fafe8bb09cf46c49fe","name":"Red Tube","active":true,"createdAt":"2025-01-27T11:07:38.673Z","updatedAt":"2025-01-30T12:24:05.044Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a2","name":"Serum Tube (White Tube)","active":true,"createdAt":"2025-02-28T05:44:03.000Z","updatedAt":"2025-02-28T05:44:03.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ae","name":"LBC Container","active":true,"createdAt":"2025-02-28T05:44:15.000Z","updatedAt":"2025-02-28T05:44:15.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a1","name":"Plain Tube (Red Top)","active":true,"createdAt":"2025-02-28T05:44:02.000Z","updatedAt":"2025-02-28T05:44:02.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f29f","name":"EDTA (Purple Top)","active":true,"createdAt":"2025-02-28T05:44:00.000Z","updatedAt":"2025-02-28T05:44:00.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a5","name":"Sodium Citrate (Blue Top)","active":true,"createdAt":"2025-02-28T05:44:06.000Z","updatedAt":"2025-02-28T05:44:06.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ac","name":"Swab","active":true,"createdAt":"2025-02-28T05:44:13.000Z","updatedAt":"2025-02-28T05:44:13.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2b0","name":"Nasal Swab (RT-PCR)","active":true,"createdAt":"2025-02-28T05:44:17.000Z","updatedAt":"2025-02-28T05:44:17.000Z","__v":0}]}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:01:15.819
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+Status Code: 422
+Response Time: 193 ms
+Response Body: 
+{"status":422,"success":false,"msg":"Invalid data","error_data":{"order_tracking_id":["Order tracking ID must be a valid UUID."]}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:27.762
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 1499 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP sent successfully","total_amount":0}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:28.191
+Method: POST
+Endpoint: /otps/getOtp
+Status Code: 200
+Response Time: 395 ms
+Response Body: 
+{"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzAyNzQ3LCJleHAiOjE3ODM0ODg5ODd9.Nvd18388JI0MFJHELrw6r04RZvOfDqnGfK-T-c7u-MY","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzAyNzQ3LCJleHAiOjE3OTkyNjAzNDd9.srrCo4Nj8Cd5Kefrw7yy65xgJTHbi0wF8ZFxHgbF4oQ"}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:30.928
+Method: POST
+Endpoint: /carts/v2/addCart
+Status Code: 400
+Response Time: 209 ms
+Response Body: 
+{"msg":"Please select lab location first"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:31.322
+Method: GET
+Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Status Code: 200
+Response Time: 321 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Cart details fetched successfully","total_amount":0,"data":null}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:32.073
+Method: POST
+Endpoint: /address/addAddress
+Status Code: 409
+Response Time: 576 ms
+Response Body: 
+{"status":409,"success":false,"msg":"Address already exists!"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:32.403
+Method: GET
+Endpoint: /address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Status Code: 200
+Response Time: 312 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Address details fetched successfully","total_amount":0,"data":[{"id":459,"guid":"3e7f93b5-6013-4385-995b-dfecc866c549","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Ranjith Kumar","recipient_mobile_number":"9003730394","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500033","name":"Madhapur","type":"home","latitude":"17.4406327","longitude":"78.3900194","is_default":true,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-23T10:52:16.531Z","updated_at":"2025-12-23T10:52:16.531Z","deleted_at":null},{"id":462,"guid":"95cefcdc-2659-4e41-8b70-7088811d6793","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Ranjith Kumar","recipient_mobile_number":"9003730394","address_line1":"Tirupati","address_line2":null,"land_mark":null,"city":"Tirupati","state":"Andhra Pradesh","country":"India","postal_code":"517501","name":"Work","type":"work","latitude":"13.6350832","longitude":"79.42642049999999","is_default":false,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-23T10:52:17.070Z","updated_at":"2025-12-23T10:52:17.070Z","deleted_at":null},{"id":528,"guid":"1a2f3f2c-f805-4225-9be2-568e8a70a6d3","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Ranjith Kumar","recipient_mobile_number":"9003730394","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500016","name":"Ameerpet (HQ)","type":"home","latitude":"17.4358447","longitude":"78.452737","is_default":false,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-26T17:22:24.289Z","updated_at":"2025-12-26T17:22:24.289Z","deleted_at":null},{"id":574,"guid":"fb1bf61a-1d19-4217-9925-5e621e343d08","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":201,"receiver_name":"Test User","recipient_mobile_number":"9999999999","address_line1":"Hyderabad","address_line2":null,"land_mark":null,"city":"Hyderabad","state":"Telangana","country":"India","postal_code":"500016","name":"Ameerpet (HQ)","type":"home","latitude":"17.4358447","longitude":"78.452737","is_default":false,"serving_location":true,"country_code":"+91","floor_number":null,"created_at":"2025-12-29T10:58:17.745Z","updated_at":"2025-12-29T10:58:17.745Z","deleted_at":null}]}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:33.809
+Method: POST
+Endpoint: /slot/getSlotCountByTime
+Status Code: 200
+Response Time: 1086 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Slots Fetched Successfully","total":23,"page":1,"limit":100,"total_pages":1,"total_amount":0,"data":[{"guid":"88785f05-ed91-41bb-8322-d607bbc63a39","type":"home","starttime":"2026-01-06 00:00:00","endtime":"2026-01-06 01:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"85caa9e2-614b-490a-98c7-0d2cbf3753b4","type":"home","starttime":"2026-01-06 01:00:00","endtime":"2026-01-06 02:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"f31ba82e-f5e2-4fc9-aca8-990c72dc71fa","type":"home","starttime":"2026-01-06 02:00:00","endtime":"2026-01-06 03:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"cf027b8c-2c31-4a5c-8455-1b146ffaa363","type":"home","starttime":"2026-01-06 03:00:00","endtime":"2026-01-06 04:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"926b8e09-b272-4425-a35d-9a9620b82501","type":"home","starttime":"2026-01-06 04:00:00","endtime":"2026-01-06 05:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"a4a4020e-a245-4a78-972a-89e9b1854a3b","type":"home","starttime":"2026-01-06 05:00:00","endtime":"2026-01-06 06:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"7f162274-b7ab-4af2-a820-f2eb81ad7aec","type":"home","starttime":"2026-01-06 06:00:00","endtime":"2026-01-06 07:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"834d1e1f-f679-4907-8d61-3055104bc4c7","type":"home","starttime":"2026-01-06 07:00:00","endtime":"2026-01-06 08:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"1eb907ea-3776-4a21-8ff9-c05b0fb2a06a","type":"home","starttime":"2026-01-06 08:00:00","endtime":"2026-01-06 09:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"cadb3902-4d67-4300-8832-7c911290dd21","type":"home","starttime":"2026-01-06 09:00:00","endtime":"2026-01-06 10:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"5e285521-cd01-4098-b163-7cc1b2ec1ed0","type":"home","starttime":"2026-01-06 10:00:00","endtime":"2026-01-06 11:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"f6b8a030-e105-40bc-9fd8-caf3af7ee952","type":"home","starttime":"2026-01-06 11:00:00","endtime":"2026-01-06 12:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"303777c7-dd29-4db4-95e2-c842a7ea9ec8","type":"home","starttime":"2026-01-06 12:00:00","endtime":"2026-01-06 13:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"70632a82-8dd8-4ca5-ab82-3b99d21969ea","type":"home","starttime":"2026-01-06 13:00:00","endtime":"2026-01-06 14:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"721966ab-0d82-4a7e-85c7-c9e9d702a3a0","type":"home","starttime":"2026-01-06 14:00:00","endtime":"2026-01-06 15:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"2d8125f6-9c26-4abf-a47c-8917a19a8c23","type":"home","starttime":"2026-01-06 15:00:00","endtime":"2026-01-06 16:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"f8c05fa5-0a16-4581-9e0f-9da75aed9451","type":"home","starttime":"2026-01-06 16:00:00","endtime":"2026-01-06 17:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"cfe4ba6e-4129-452c-99d0-629ae2e5e8e0","type":"home","starttime":"2026-01-06 17:00:00","endtime":"2026-01-06 18:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"b8ebbb56-d8e7-4ff8-bc16-38fb296aec6a","type":"home","starttime":"2026-01-06 18:00:00","endtime":"2026-01-06 19:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"66228c17-e9e3-46f4-b421-92089f658612","type":"home","starttime":"2026-01-06 19:00:00","endtime":"2026-01-06 20:00:00","count":28,"centerid":"676e886d854c2069a0d47703"},{"guid":"44b8d56f-c9af-461a-be92-7110ea417741","type":"home","starttime":"2026-01-06 20:00:00","endtime":"2026-01-06 21:00:00","count":30,"centerid":"676e886d854c2069a0d47703"},{"guid":"eb756bc7-c3f1-4c85-8384-b53289015cd9","type":"home","starttime":"2026-01-06 21:00:00","endtime":"2026-01-06 22:00:00","count":30,"centerid":"676e886d854c2069a0d47703"},{"guid":"841d7923-0f66-407e-87ef-d3b398188fc9","type":"home","starttime":"2026-01-06 22:00:00","endtime":"2026-01-06 23:00:00","count":27,"centerid":"676e886d854c2069a0d47703"}]}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:34.341
+Method: GET
+Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Status Code: 200
+Response Time: 461 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Cart details fetched successfully","total_amount":0,"data":null}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:34.804
+Method: POST
+Endpoint: /gateway/v2/VerifyPayment
+Status Code: 500
+Response Time: 356 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Cannot read properties of null (reading 'slot_guid')"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:35.278
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Status Code: 500
+Response Time: 354 ms
+Response Body: 
+{"status":500,"success":false,"msg":"Cannot read properties of undefined (reading 'guid')"}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:35.772
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+Status Code: 200
+Response Time: 447 ms
+Response Body: 
+{"status":200,"success":true,"msg":"User login success","total_amount":0,"data":{"id":18,"guid":"01b109b7-7706-43b0-acc8-3278f721f34d","name":"Ranjith kumar","mobile_number":"9360651932","password":"$2b$10$CNghj57YMelubC6FOCsTQOv3qCyuGUFF4//shjv9Of5V75ec1sOxC","employee_id":null,"zone_id":"676e886d854c2069a0d47703","profile_pic":null,"email":"ranjith10021996@gmail.com","firebase_token":"eyBJfNf5OENzvOWgJr_Sb5:APA91bFqNlUEDDDItKeE6HDuh3GWimlEZ2FjugSrVDPXRf2GP29drk_e_4SyaOqBW5KUBWLDQl4GmJTexeVR3nSFQiXFmZmmj966Iatq7kZqRW6FhTsVb1Q","is_active":true,"type":["phlebo"],"created_at":"2025-12-26T09:55:37.008Z","updated_at":"2026-01-06T12:31:14.202Z","deleted_at":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI3NTUsImV4cCI6MTc4MzQ4ODk5NX0.Tb0v2Z1bJp6CHEKgdlEHjeM3ADiZlL05h795m6F4iKg","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3MDI3NTUsImV4cCI6MTc5OTI2MDM1NX0.0G77ftM_WY9wb-yfFsB0d1BNIUWLVp1O4Sa6kX1_-eM"}}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:36.245
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+Status Code: 404
+Response Time: 312 ms
+Response Body: 
+{"status":404,"success":false,"msg":"Order not found."}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:36.925
+Method: GET
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+Status Code: 200
+Response Time: 645 ms
+Response Body: 
+{"status":200,"success":true,"msg":"Sample types fetched successfully","total_amount":0,"data":[{"_id":"679b6f7cedfe4056bd7087b1","name":"Green Tube","active":true,"createdAt":"2025-01-30T12:24:28.249Z","updatedAt":"2025-01-30T12:24:28.249Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2aa","name":"Blood Culture Bottle","active":true,"createdAt":"2025-02-28T05:44:11.000Z","updatedAt":"2025-02-28T05:44:11.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a3","name":"Fluoride Tube (Grey Top)","active":true,"createdAt":"2025-02-28T05:44:04.000Z","updatedAt":"2025-02-28T05:44:04.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ad","name":"Urine Filter Paper","active":true,"createdAt":"2025-02-28T05:44:14.000Z","updatedAt":"2025-02-28T05:44:14.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a0","name":"Serun Separation Tube (Yellow Top)","active":true,"createdAt":"2025-02-28T05:44:01.000Z","updatedAt":"2025-02-28T05:44:01.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a4","name":"Urine Container","active":true,"createdAt":"2025-02-28T05:44:05.000Z","updatedAt":"2025-02-28T05:44:05.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ab","name":"NBS Card","active":true,"createdAt":"2025-02-28T05:44:12.000Z","updatedAt":"2025-02-28T05:44:12.000Z","__v":0},{"_id":"679768f2fe8bb09cf46c49f9","name":"Yellow Tube","active":true,"createdAt":"2025-01-27T11:07:30.602Z","updatedAt":"2025-01-30T12:24:17.705Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a8","name":"Lithium Heparin (Green Top)","active":true,"createdAt":"2025-02-28T05:44:09.000Z","updatedAt":"2025-02-28T05:44:09.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a7","name":"Sodium Heparin (Green Top)","active":true,"createdAt":"2025-02-28T05:44:08.000Z","updatedAt":"2025-02-28T05:44:08.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2af","name":"Others","active":true,"createdAt":"2025-02-28T05:44:16.000Z","updatedAt":"2025-02-28T05:44:16.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a6","name":"Stool Container","active":true,"createdAt":"2025-02-28T05:44:07.000Z","updatedAt":"2025-02-28T05:44:07.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a9","name":"NIPT Tube","active":true,"createdAt":"2025-02-28T05:44:10.000Z","updatedAt":"2025-02-28T05:44:10.000Z","__v":0},{"_id":"679768fafe8bb09cf46c49fe","name":"Red Tube","active":true,"createdAt":"2025-01-27T11:07:38.673Z","updatedAt":"2025-01-30T12:24:05.044Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a2","name":"Serum Tube (White Tube)","active":true,"createdAt":"2025-02-28T05:44:03.000Z","updatedAt":"2025-02-28T05:44:03.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ae","name":"LBC Container","active":true,"createdAt":"2025-02-28T05:44:15.000Z","updatedAt":"2025-02-28T05:44:15.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a1","name":"Plain Tube (Red Top)","active":true,"createdAt":"2025-02-28T05:44:02.000Z","updatedAt":"2025-02-28T05:44:02.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f29f","name":"EDTA (Purple Top)","active":true,"createdAt":"2025-02-28T05:44:00.000Z","updatedAt":"2025-02-28T05:44:00.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a5","name":"Sodium Citrate (Blue Top)","active":true,"createdAt":"2025-02-28T05:44:06.000Z","updatedAt":"2025-02-28T05:44:06.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ac","name":"Swab","active":true,"createdAt":"2025-02-28T05:44:13.000Z","updatedAt":"2025-02-28T05:44:13.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2b0","name":"Nasal Swab (RT-PCR)","active":true,"createdAt":"2025-02-28T05:44:17.000Z","updatedAt":"2025-02-28T05:44:17.000Z","__v":0}]}
+========================================
+
+========================================
+Timestamp: 2026-01-06 18:02:37.170
+Method: POST
+Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+Status Code: 422
+Response Time: 193 ms
+Response Body: 
+{"status":422,"success":false,"msg":"Invalid data","error_data":{"order_tracking_id":["Order tracking ID must be a valid UUID."]}}
+========================================
+

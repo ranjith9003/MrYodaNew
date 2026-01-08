@@ -1,0 +1,1207 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< MrYodaAPINew:MrYodaAPINew >----------------------
+[INFO] Building MrYodaAPINew 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MrYodaAPINew ---
+[INFO] skip non existing resourceDirectory C:\Users\RANJITH\Documents\MrYodaNew-main\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MrYodaAPINew ---
+[INFO] Copying 2 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ MrYodaAPINew ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J(W): Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J(W): Ignoring binding found at [jar:file:/C:/Users/RANJITH/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.20.0/log4j-slf4j-impl-2.20.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J(W): See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+...
+... TestNG 7.8.0 by CΘdric Beust (cedric@beust.com)
+...
+
+
+==========================================================
+            MEMBER LOGIN TEST (Paid Member)
+==========================================================
+
+==================================================
+========== TOKEN GENERATION START (MEMBER) ==========
+==================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 593 ms
+----------------------------
+
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/otps/getOtp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country_code": "+91",
+    "mobile": "9003730394",
+    "otp": "123456"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /otps/getOtp
+   Time    : ? 171 ms
+----------------------------
+
+Token generated for MEMBER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+? MEMBER LOGIN SUCCESS
+   Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+   Mobile: 9003730394 (Member Benefits Enabled)
+   Stored in: RequestContext.getMemberToken()
+   First Name: Ranjith
+   Last Name: Kumar
+   User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+
+>>> STEP 1: DETAILED FLOW - LOGIN & SETUP <<<
+   Test Configuration User Type: member
+   Using MEMBER credentials.
+? Token found from context.
+? Setup Complete for User: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+
+===== LOCATION API ù MEMBER =====
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getlocations
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /tests/getlocations
+   Time    : ? 172 ms
+----------------------------
+
+
+? Total Locations Found: 6
+   Location: Ameerpet (HQ) | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 64870066842708a0d5ae6c77
+   ? Coordinates: Lat=17.4358447, Long=78.452737
+? Stored: Ameerpet (HQ) ? ID: 64870066842708a0d5ae6c77 | City: Hyderabad | State: Telangana | Coordinates: (17.4358447, 78.452737)
+   Location: Guntur | City: Guntur | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c74
+   ? Coordinates: Lat=16.2992859, Long=80.4515523
+? Stored: Guntur ? ID: 64870066842708a0d5ae6c74 | City: Guntur | State: Andhra Pradesh | Coordinates: (16.2992859, 80.4515523)
+   Location: Khammam | City: Khammam | State: Telangana | Status: ACTIVE | ID: 68ecce703d573db19b650c76
+   ? Coordinates: Lat=17.248727, Long=80.1668882
+? Stored: Khammam ? ID: 68ecce703d573db19b650c76 | City: Khammam | State: Telangana | Coordinates: (17.248727, 80.1668882)
+   Location: Madhapur | City: Hyderabad | State: Telangana | Status: ACTIVE | ID: 676a5fa720093d2807af03a5
+   ? Coordinates: Lat=17.4406327, Long=78.3900194
+? Stored: Madhapur ? ID: 676a5fa720093d2807af03a5 | City: Hyderabad | State: Telangana | Coordinates: (17.4406327, 78.3900194)
+   Location: Tirupati | City: Tirupati | State: Andhra Pradesh | Status: ACTIVE | ID: 64870066842708a0d5ae6c75
+   ? Coordinates: Lat=13.6350832, Long=79.42642049999999
+? Stored: Tirupati ? ID: 64870066842708a0d5ae6c75 | City: Tirupati | State: Andhra Pradesh | Coordinates: (13.6350832, 79.42642049999999)
+   Location: Visakhapatnam | City: Visakhapatnam | State: Andhra Pradesh | Status: ACTIVE | ID: 67346a7655a51ec8ef586bb1
+   ? Coordinates: Lat=17.7087874, Long=83.3106882
+? Stored: Visakhapatnam ? ID: 67346a7655a51ec8ef586bb1 | City: Visakhapatnam | State: Andhra Pradesh | Coordinates: (17.7087874, 83.3106882)
+
+? Critical Location 'Madhapur' found and stored: 676a5fa720093d2807af03a5
+   ? Madhapur Coordinates: Lat=17.4406327, Long=78.3900194
+   This location will be used in GlobalSearch and AddToCart APIs
+
+? Locations stored for reuse in next APIs
+
+
+===== BRAND API ù MEMBER =====
+
+?? FETCHING ALL BRANDS...
+Request method:	GET
+Request URI:	https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodamembership.yodaprojects.com/brand/getAllBrands
+   Time    : ? 204 ms
+----------------------------
+
+?? API Failed with status: 404
+?? Using HARDCODED Brand ID for 'Diagnostics'
+Running Global Search as part of MEMBER flow...
+
+==========================================================
+         GLOBAL SEARCH API TEST - COMPLETE FLOW
+==========================================================
+? DEBUG ? STORED LOCATIONS: {Tirupati=64870066842708a0d5ae6c75, Visakhapatnam=67346a7655a51ec8ef586bb1, Khammam=68ecce703d573db19b650c76, Madhapur=676a5fa720093d2807af03a5, Ameerpet (HQ)=64870066842708a0d5ae6c77, Guntur=64870066842708a0d5ae6c74}
+
+? STEP 1: Validating Location from Previous API (LocationAPI)
+   ? Location 'Madhapur' validated from LocationAPI: 676a5fa720093d2807af03a5
+   ? This location will be used for Global Search
+
+??  IMPORTANT: We are NOT searching for CBC!
+   If CBC appears in results, it's a bug in the search logic.
+
+? Tests to Search: RANDOM BLOOD GLUCOSE (RBS)
+? Total Tests: 1
+
+? SEARCHING FOR 1 TESTS
+? LOCATION: Madhapur ? 676a5fa720093d2807af03a5
+
+? Searching: RANDOM BLOOD GLUCOSE (RBS)
+
+   ? Attempt 1/5
+   Search String: "RANDOM BLOOD GLUCOSE (RBS)"
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "RANDOM BLOOD GLUCOSE (RBS)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 653 ms
+----------------------------
+
+   ? API returned 1 results
+
+   ? DEBUG - ALL RESULTS for search "RANDOM BLOOD GLUCOSE (RBS)":
+      Result 1:
+         test_name: RANDOM BLOOD GLUCOSE (RBS)
+         _id: 675921110856fe1e1e992cf8
+         test_id: BIO274
+         slug: random-blood-glucose-rbs
+         Type: diagnostics
+
+   ? EXACT MATCH FOUND: RANDOM BLOOD GLUCOSE (RBS)
+      Test ID: BIO274
+      Product ID: 675921110856fe1e1e992cf8
+      ? SUCCESS with search variation: "RANDOM BLOOD GLUCOSE (RBS)"
+
+? ========================================
+   TOTAL TESTS FOUND: 1 / 1
+   ========================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/adminTests
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 50,
+    "location": "676a5fa720093d2807af03a5",
+    "page": 1,
+    "sort_by": "Type",
+    "search_string": "RANDOM BLOOD GLUCOSE (RBS)"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: tests/adminTests
+   Time    : ? 520 ms
+----------------------------
+
+
+? EXTRACTING & STORING TEST DETAILS
+   Tests already found: 1
+
+? MATCHED & STORED TEST: RANDOM BLOOD GLUCOSE (RBS)
+   Test ID       : BIO274
+   Product ID    : 675921110856fe1e1e992cf8
+   Price         : ?75
+   Original Price: ?75
+   Type          : diagnostics
+   Status        : ACTIVE
+   Home Collection: ? AVAILABLE
+
+? All requested tests extracted and stored successfully!
+
+? VALIDATING: Checking we only got the tests we searched for...
+   ? Expected test: RANDOM BLOOD GLUCOSE (RBS)
+
+? ANALYZING HOME COLLECTION STATUS FOR ALL TESTS
+   ? RANDOM BLOOD GLUCOSE (RBS) - Home Collection: AVAILABLE (type='home')
+
+? HOME COLLECTION ANALYSIS:
+   Total tests found: 1
+   Tests WITH home collection: 1
+   Tests WITHOUT home collection: 0
+
+? Validated stored test: RANDOM BLOOD GLUCOSE (RBS)
+   Test ID: BIO274
+   Product ID: 675921110856fe1e1e992cf8
+
+? GLOBAL SEARCH COMPLETE (Stored 1 tests)
+
+--- AddToCart For Member ---
+
+? CLEARING PREVIOUS CART for User ID: 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "676a5fa720093d2807af03a5",
+    "product_details": [
+        
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 135 ms
+----------------------------
+
+   ? Cart clear API call successful.
+   ? Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":155,"guid":"d1455e07-a759-4598-8df6-1120e77dbae9","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":null,"product_details":[],"screen_reason":"lab_location_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-09-04T14:10:07.596Z","updated_at":"2026-01-07T13:16:56.619Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":null,"rewards_used":0,"lab_location_id":"676a5fa720093d2807af03a5","referal_doctor":null,"membership_id":null,"address_id":null,"total_orders":193}}
+
+? CUSTOM PAYLOAD BUILDER for 6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+      ? Added test to payload: RANDOM BLOOD GLUCOSE (RBS) (Type: home)
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "lab_location_id": "676a5fa720093d2807af03a5",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992cf8",
+            "type": "home",
+            "location_id": "676a5fa720093d2807af03a5",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 132 ms
+----------------------------
+
+   ? Cart Data Stored for MEMBER (GUID: d1455e07-a759-4598-8df6-1120e77dbae9)
+
+>>> STEP 2: GET CART & VERIFY PRICE <<<
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3?location=676a5fa720093d2807af03a5&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=676a5fa720093d2807af03a5
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 446 ms
+----------------------------
+
+Response Status: 200
+   Cart Total: ?67
+   Cart ID: d1455e07-a759-4598-8df6-1120e77dbae9
+   Order Type: home
+
+>>> STEP 3: ADD ADDRESS & SLOT <<<
+
+==========================================================
+      ADD ADDRESS API (Required for Home Order)
+==========================================================
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/addAddress
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "country": "India",
+    "city": "Hyderabad",
+    "recipient_mobile_number": "9999999999",
+    "latitude": "17.4358447",
+    "type": "home",
+    "country_code": "+91",
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "address_line1": "Hyderabad",
+    "name": "Ameerpet (HQ)",
+    "receiver_name": "Test User",
+    "state": "Telangana",
+    "postal_code": "500016",
+    "longitude": "78.452737"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /address/addAddress
+   Time    : ? 148 ms
+----------------------------
+
+Response Status: 409
+Response Body: {"status":409,"success":false,"msg":"Address already exists!"}
+Address already exists (409). Fetching existing address...
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /address/getAddressByUserId/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 129 ms
+----------------------------
+
+Get Address Response Status: 200
+Using existing Address ID: 459
+? SEARCHING FOR AVAILABLE SLOTS...
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/slot/getSlotCountByTime
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "slot_start_time": "2026-01-07",
+    "limit": 100,
+    "page": 1,
+    "type": "home",
+    "addressguid": "3e7f93b5-6013-4385-995b-dfecc866c549"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /slot/getSlotCountByTime
+   Time    : ? 211 ms
+----------------------------
+
+--- Slot Search ---
+Date Searched: 2026-01-07
+Status Code: 200
+Response Body: {"status":200,"success":true,"msg":"Slots Fetched Successfully","total":23,"page":1,"limit":100,"total_pages":1,"total_amount":0,"data":[{"guid":"a4d3972c-184c-4ee6-ac25-744cd2173a52","type":"home","starttime":"2026-01-07 00:00:00","endtime":"2026-01-07 01:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"cc69c825-3bb5-4a4d-bf05-e6ca4df3ea10","type":"home","starttime":"2026-01-07 01:00:00","endtime":"2026-01-07 02:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"662dc393-9714-4fe4-9b30-d09897ecdea4","type":"home","starttime":"2026-01-07 02:00:00","endtime":"2026-01-07 03:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"ac4899b3-941f-421c-ad1d-19b89c4ee64a","type":"home","starttime":"2026-01-07 03:00:00","endtime":"2026-01-07 04:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"0ba841da-ccfd-403d-a09d-986d8047ad75","type":"home","starttime":"2026-01-07 04:00:00","endtime":"2026-01-07 05:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"5dec0f45-8296-46d0-a71d-a30856b6ec73","type":"home","starttime":"2026-01-07 05:00:00","endtime":"2026-01-07 06:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"1376e942-9ab9-4257-97c3-ddeadbebb16c","type":"home","starttime":"2026-01-07 06:00:00","endtime":"2026-01-07 07:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"16a09e7d-a6ef-4d1f-b78f-5e13254126a1","type":"home","starttime":"2026-01-07 07:00:00","endtime":"2026-01-07 08:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"010f48fd-5a53-4755-b2a9-ddf94917643f","type":"home","starttime":"2026-01-07 08:00:00","endtime":"2026-01-07 09:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"d50ad6d8-1c38-410a-8894-259a3a5a62a1","type":"home","starttime":"2026-01-07 09:00:00","endtime":"2026-01-07 10:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"936c9d38-54ea-4f67-b2ed-dca55878f3a9","type":"home","starttime":"2026-01-07 10:00:00","endtime":"2026-01-07 11:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"14a75218-1df5-4e6f-8156-c41ac4839f0c","type":"home","starttime":"2026-01-07 11:00:00","endtime":"2026-01-07 12:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"2bb8a839-c879-4518-9f5d-f73577623fbe","type":"home","starttime":"2026-01-07 12:00:00","endtime":"2026-01-07 13:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"908a63ff-2586-419f-998c-d1dff3f78d7b","type":"home","starttime":"2026-01-07 13:00:00","endtime":"2026-01-07 14:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"ebf0ed46-17cd-4f4d-b20e-1f3ef981a9c3","type":"home","starttime":"2026-01-07 14:00:00","endtime":"2026-01-07 15:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"32c9ae29-8370-44be-b3ed-4ea07470ce3f","type":"home","starttime":"2026-01-07 15:00:00","endtime":"2026-01-07 16:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"543dac9b-5834-4548-8962-754a056e91ae","type":"home","starttime":"2026-01-07 16:00:00","endtime":"2026-01-07 17:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"3c69ed4d-68ad-475a-84d5-9dd42041cbaf","type":"home","starttime":"2026-01-07 17:00:00","endtime":"2026-01-07 18:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"7e878278-bb5a-4070-bdd8-e534049fce82","type":"home","starttime":"2026-01-07 18:00:00","endtime":"2026-01-07 19:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"ccb9b960-cd80-41a9-a6a7-71f1da675490","type":"home","starttime":"2026-01-07 19:00:00","endtime":"2026-01-07 20:00:00","count":0,"centerid":"676e886d854c2069a0d47703"},{"guid":"a4b97ad1-550d-4b08-a12e-01e702f6f5f6","type":"home","starttime":"2026-01-07 20:00:00","endtime":"2026-01-07 21:00:00","count":26,"centerid":"676e886d854c2069a0d47703"},{"guid":"0d8f4ba2-7040-4ed5-95dc-f43758c05a00","type":"home","starttime":"2026-01-07 21:00:00","endtime":"2026-01-07 22:00:00","count":30,"centerid":"676e886d854c2069a0d47703"},{"guid":"901d9d42-19cb-4fdf-ae93-14d743db34a9","type":"home","starttime":"2026-01-07 22:00:00","endtime":"2026-01-07 23:00:00","count":23,"centerid":"676e886d854c2069a0d47703"}]}
+--- End Slot Search ---
+   ? Found Slot: 2026-01-07 20:00:00 - 2026-01-07 21:00:00
+
+? UPDATING CART WITH SLOT...
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/addCart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3",
+    "slot_guid": "a4b97ad1-550d-4b08-a12e-01e702f6f5f6",
+    "address_id": "3e7f93b5-6013-4385-995b-dfecc866c549",
+    "lab_location_id": "676a5fa720093d2807af03a5",
+    "product_details": [
+        {
+            "quantity": 1,
+            "product_id": "675921110856fe1e1e992cf8",
+            "type": "home",
+            "location_id": "676a5fa720093d2807af03a5",
+            "brand_id": "efb159ac-db7c-4b06-a79b-021a8b6d67e8",
+            "family_member_id": [
+                "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+            ]
+        }
+    ],
+    "order_type": "home"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /carts/v2/addCart
+   Time    : ? 166 ms
+----------------------------
+
+Update Cart Response Body: {"status":200,"success":true,"msg":"Cart updated successfully","total_amount":0,"data":{"id":155,"guid":"d1455e07-a759-4598-8df6-1120e77dbae9","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","_user_id":null,"product_details":[{"product_id":"675921110856fe1e1e992cf8","quantity":1,"brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","family_member_id":["6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"],"location_id":"676a5fa720093d2807af03a5"}],"screen_reason":"lab_location_screen","conversion_status":"no","reason_for_drop_order":null,"final_cart_status":"open","reason":null,"created_at":"2025-09-04T14:10:07.596Z","updated_at":"2026-01-07T13:16:58.217Z","deleted_at":null,"order_type":"home","coupon_guid":null,"slot_guid":"a4b97ad1-550d-4b08-a12e-01e702f6f5f6","rewards_used":0,"lab_location_id":"676a5fa720093d2807af03a5","referal_doctor":null,"membership_id":null,"address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","total_orders":193}}
+? Cart updated successfully with Slot: a4b97ad1-550d-4b08-a12e-01e702f6f5f6
+? Address & Slot Configured.
+
+>>> STEP 4: VERIFY PAYMENT (PRE-CHECK) <<<
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3?location=676a5fa720093d2807af03a5&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=676a5fa720093d2807af03a5
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 479 ms
+----------------------------
+
+Response Status: 200
+
+==========================================================
+      VERIFY PAYMENT API (COD PRE-CHECK)
+==========================================================
+Request Payload: {user_id=6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/v2/VerifyPayment
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/gateway/v2/VerifyPayment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: /gateway/v2/VerifyPayment
+   Time    : ? 1992 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Orders saved successfully.","total_amount":0,"data":[{"orderDetails":[{"id":3992,"guid":"f7a93245-a4f6-41e4-8617-2f6544975ce3","order_number":"01KEC9MYRYC9CPVYFD9Q49C726","brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","family_member_id":null,"total_price":"75","final_price":"75","rewards_used":"0","delivery_charge":"0","paid_amount":"67","order_status":"Pending","membership_discount":8,"membership_mobile_number":null,"sample_collection_by":null,"sample_collection_date":null,"payment_id":"bd885d9e-fedf-4171-8828-55cfcf42b406","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","lab_location_id":"676a5fa720093d2807af03a5","order_sample_number":"MY26AAA0270","visit_number":"","cancelled_date":null,"cancelled_by":null,"completed_date":null,"completed_by":null,"received_at":null,"slot_start_time":"2026-01-07T20:00:00.000Z","slot_end_time":"2026-01-07T21:00:00.000Z","slot_guid":"a4b97ad1-550d-4b08-a12e-01e702f6f5f6","reschedule_count":0,"order_created_by":null,"order_created_at":"2026-01-07T13:16:59.709Z","referal_doctor":null,"phlebo_id":null,"admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"rewards_gain":"4","cancel_order_remarks":null,"tube_barcode":null,"cancelled_by_user_at":null,"it_dose_order_status":null,"it_dose_order_updated_at":"2026-01-07T13:16:59.711Z","it_dose_order_item_status":null,"phlebo_otp":null,"phlebo_assigned_at":null,"inaugural_discount":0,"cart_id":"pb_ff035b29_mk41ltjk","created_at":"2026-01-07T13:16:59.711Z","updated_at":"2026-01-07T13:16:59.711Z","deleted_at":null,"coupon_code":null,"coupon_guid":null,"coupon_discount_amount":"0","doctors_discount":null,"orderFrom":null,"cancel_delivery_deducted":false,"refund_amount":"0","is_clinic":false}],"OrderItems":[{"id":6204,"guid":"7aec307d-32b8-4c06-807b-8f51d54b09a1","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","product_id":"675921110856fe1e1e992cf8","product_name":"RANDOM BLOOD GLUCOSE (RBS)","product_type":"{\"\\\"675697b0262d1460f8d55d7b\\\"\"}","product_code":"BIO274","quantity":"1","actual_price":"75","final_price":"67","original_price":"75","order_status":"Pending","family_member_id":null,"membership_discount":8,"order_item_number":"MY26AAA0270-1","cancelled_at":null,"admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"cancel_order_remarks":null,"created_at":"2026-01-07T13:16:59.711Z","deleted_at":null}],"membershipDetails":{"isMembershipOrder":false}}]}
+Extracted Payment ID: bd885d9e-fedf-4171-8828-55cfcf42b406
+Extracted Order ID: f7a93245-a4f6-41e4-8617-2f6544975ce3
+
+>>> STEP 5: CROSS-API VALIDATION <<<
+
+==========================================================
+      GET PAYMENT BY ID API (DEV)
+==========================================================
+Request Payload: {id=bd885d9e-fedf-4171-8828-55cfcf42b406}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "bd885d9e-fedf-4171-8828-55cfcf42b406"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+   Time    : ? 138 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Payment details fetched successfully","total_amount":0,"data":{"payments":{"guid":"bd885d9e-fedf-4171-8828-55cfcf42b406","amount":"67","payment_status":"Pending","payment_type":"COD","payment_details":null,"cod_approved_by":null,"cod_approved_date":null,"payment_gateway_id":null,"reference_id":null,"cancel_order_id":null,"delivery_charge":0,"paid_amount":67,"rewards_used":0,"total_mrp":75,"membership_discount":8,"total_discount":0,"net_payable":75,"inaugural_discount":0,"coupon_discount":0},"order_items":[{"id":6204,"guid":"7aec307d-32b8-4c06-807b-8f51d54b09a1","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","payment_guid":"bd885d9e-fedf-4171-8828-55cfcf42b406","product_id":"675921110856fe1e1e992cf8","product_name":"RANDOM BLOOD GLUCOSE (RBS)","product_type":"{\"\\\"675697b0262d1460f8d55d7b\\\"\"}","product_code":"BIO274","quantity":1,"actual_price":75,"original_price":75,"final_price":67,"family_member_id":"00000000-0000-0000-0000-000000000000","firstName":"Ranjith","lastName":"Kumar","order_sample_number":"MY26AAA0270","visit_number":""}]}}
+
+==========================================================
+      GET CART API (Check Total for COD)
+==========================================================
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3?location=676a5fa720093d2807af03a5&order_type=home
+Proxy:			<none>
+Request params:	<none>
+Query params:	location=676a5fa720093d2807af03a5
+				order_type=home
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /carts/v2/getCartById/6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3
+   Time    : ? 109 ms
+----------------------------
+
+Response Status: 200
+
+? ==========================================================
+         CROSS-API VALIDATION REPORT
+? ==========================================================
+
+? 1. TOTAL AMOUNT CONSISTENCY CHECK:
+   Expected Total (Cart): ?67
+   Payment Total (GetPayment): ?67
+   ? PASS: Cart total matches Payment total
+   (User ID and Address ID validations are covered in Assign Order step)
+
+? 2. PAYMENT ID CONSISTENCY CHECK:
+   Expected Payment ID: bd885d9e-fedf-4171-8828-55cfcf42b406
+   Actual Payment GUID: bd885d9e-fedf-4171-8828-55cfcf42b406
+   ? PASS: Payment ID matches across APIs
+   Expected Slot GUID: a4b97ad1-550d-4b08-a12e-01e702f6f5f6
+
+? 3. PAYMENT TYPE VALIDATION:
+   Payment Type: COD
+   ? PASS: Payment type is COD as expected
+
+? 4. ORDER ITEMS VALIDATION:
+   Total Order Items: 1
+   Item 1: RANDOM BLOOD GLUCOSE (RBS) | Qty: 1 | Price: ?67 | Total: ?67
+   Calculated Items Total: ?67
+   Net Payable (API): ?75
+   ??  INFO: Total difference may include delivery charges or discounts
+
+? 5. PAYMENT STATUS VALIDATION:
+   Payment Status: Pending
+   ? PASS: Payment status is Pending (expected for COD)
+
+? 6. DISCOUNT & MEMBERSHIP VALIDATION:
+   Membership Discount: ?8
+   Total Discount: ?0
+   ? INFO: Membership discount applied
+? ==========================================================
+         CROSS-API VALIDATION COMPLETED SUCCESSFULLY
+? ==========================================================
+
+>>> STEP 6: PHLEBOTOMIST LOGIN <<<
+
+==========================================================
+      PHLEBOTOMIST LOGIN API
+==========================================================
+Request Payload: {password=12345678, mobile=9360651932}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "12345678",
+    "mobile": 9360651932
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/phlebo/loginPhlebo
+   Time    : ? 313 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"User login success","total_amount":0,"data":{"id":18,"guid":"01b109b7-7706-43b0-acc8-3278f721f34d","name":"Ranjith kumar","mobile_number":"9360651932","password":"$2b$10$CNghj57YMelubC6FOCsTQOv3qCyuGUFF4//shjv9Of5V75ec1sOxC","employee_id":null,"zone_id":"676e886d854c2069a0d47703","profile_pic":null,"email":"ranjith10021996@gmail.com","firebase_token":"eyBJfNf5OENzvOWgJr_Sb5:APA91bFqNlUEDDDItKeE6HDuh3GWimlEZ2FjugSrVDPXRf2GP29drk_e_4SyaOqBW5KUBWLDQl4GmJTexeVR3nSFQiXFmZmmj966Iatq7kZqRW6FhTsVb1Q","is_active":true,"type":["phlebo"],"created_at":"2025-12-26T09:55:37.008Z","updated_at":"2026-01-07T13:08:31.304Z","deleted_at":null,"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3OTE4MjEsImV4cCI6MTc4MzU3ODA2MX0.lkwwMEFV3z14E97ycLTEj7wA99n8-Rhh-uWoZIAbMMg","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjAxYjEwOWI3LTc3MDYtNDNiMC1hY2M4LTMyNzhmNzIxZjM0ZCIsImVtYWlsIjoicmFuaml0aDEwMDIxOTk2QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyX29ubHkiLCJpYXQiOjE3Njc3OTE4MjEsImV4cCI6MTc5OTM0OTQyMX0.XavSbWaUj1agFGSABw2OCXqaEizJ1g2YfnbOzrqAolM"}}
+? Phlebotomist Login Successful
+   Phlebo Name: Ranjith kumar
+   Phlebo ID: 01b109b7-7706-43b0-acc8-3278f721f34d
+   Phlebo GUID: 01b109b7-7706-43b0-acc8-3278f721f34d
+   Phlebo Token: null
+
+>>> STEP 7: ASSIGN ORDER <<<
+
+==========================================================
+      ASSIGN ORDER API
+==========================================================
+Request Payload: {phlebo_id=01b109b7-7706-43b0-acc8-3278f721f34d, order_id=[f7a93245-a4f6-41e4-8617-2f6544975ce3]}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/assignOrder
+?? Warning: No Phlebotomist Token found for Assign Order
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/assignOrder
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phlebo_id": "01b109b7-7706-43b0-acc8-3278f721f34d",
+    "order_id": [
+        "f7a93245-a4f6-41e4-8617-2f6544975ce3"
+    ]
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/assignOrder
+   Time    : ? 707 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order has been successfully assigned to the phlebotomist.","total_amount":0,"data":{"updatedOrder":{"id":3992,"guid":"f7a93245-a4f6-41e4-8617-2f6544975ce3","order_number":"01KEC9MYRYC9CPVYFD9Q49C726","brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","family_member_id":null,"total_price":"75","final_price":"75","rewards_used":"0","delivery_charge":"0","paid_amount":"67","order_status":"Pending","membership_discount":8,"membership_mobile_number":null,"sample_collection_by":null,"sample_collection_date":null,"payment_id":"bd885d9e-fedf-4171-8828-55cfcf42b406","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","lab_location_id":"676a5fa720093d2807af03a5","order_sample_number":"MY26AAA0270","visit_number":"","cancelled_date":null,"cancelled_by":null,"completed_date":null,"completed_by":null,"received_at":null,"slot_start_time":"2026-01-07T20:00:00.000Z","slot_end_time":"2026-01-07T21:00:00.000Z","slot_guid":"a4b97ad1-550d-4b08-a12e-01e702f6f5f6","reschedule_count":0,"order_created_by":null,"order_created_at":"2026-01-07T13:16:59.709Z","referal_doctor":null,"phlebo_id":"01b109b7-7706-43b0-acc8-3278f721f34d","admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"rewards_gain":"4","cancel_order_remarks":null,"tube_barcode":null,"cancelled_by_user_at":null,"it_dose_order_status":null,"it_dose_order_updated_at":"2026-01-07T13:16:59.711Z","it_dose_order_item_status":null,"phlebo_otp":"978609","phlebo_assigned_at":"2026-01-07T13:17:01.675Z","inaugural_discount":0,"cart_id":"pb_ff035b29_mk41ltjk","created_at":"2026-01-07T13:16:59.711Z","updated_at":"2026-01-07T13:17:01.675Z","deleted_at":null,"coupon_code":null,"coupon_guid":null,"coupon_discount_amount":"0","doctors_discount":null,"orderFrom":null,"cancel_delivery_deducted":false,"refund_amount":"0","is_clinic":false},"orderTracking":{"id":683,"guid":"6d9bf02a-1ca8-4939-b400-52748008ed54","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","phlebo_id":"01b109b7-7706-43b0-acc8-3278f721f34d","assigned_date":"2026-01-07T13:17:01.696Z","pickup_location":"https://maps.google.com/?q=17.4406327,78.3900194","samples_picked":[],"samples_submitted":[],"status":[{"time":"2026-01-07T13:17:01.695Z","status":"open"}],"verifyOtpRemarks":null,"received_by":null,"otp_verified":false,"created_at":"2026-01-07T13:17:01.696Z","updated_at":"2026-01-07T13:17:01.696Z","deleted_at":null}}}
+? Order Assignment Successful
+   Order ID: f7a93245-a4f6-41e4-8617-2f6544975ce3
+   Assigned to Phlebo GUID: 01b109b7-7706-43b0-acc8-3278f721f34d
+
+? Verifying Assigned Order Details...
+   ? Slot Time Verified: 2026-01-07T20:00:00.000Z - 2026-01-07T21:00:00.000Z
+? All Order Details Verified Successfully in AssignOrder Response
+   Order Tracking ID: 6d9bf02a-1ca8-4939-b400-52748008ed54
+
+>>> STEP 8: VERIFY STATUS (ASSIGNED) <<<
+
+==========================================================
+      GET ORDER TRACKING STATUS API
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/getOrderTrackingStatus/6d9bf02a-1ca8-4939-b400-52748008ed54
+Expected Status: Phlebotomist assigned
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/getOrderTrackingStatus/6d9bf02a-1ca8-4939-b400-52748008ed54
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/getOrderTrackingStatus/6d9bf02a-1ca8-4939-b400-52748008ed54
+   Time    : ? 102 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order Tracking Status successfully","order_status":"open"}
+   Current Status: open
+   ?? Warning: Expected 'Phlebotomist assigned' but got 'open'
+
+>>> STEP 9: UPDATE ORDER TRACKING <<<
+
+==========================================================
+      UPDATE ORDER TRACKING API
+==========================================================
+Request Payload: {start_location={lng=78.3900194, lat=17.4406327}, pickup_location={lng=78.3900194, name=Madhapur, lat=17.4406327}, order_tracking_id=6d9bf02a-1ca8-4939-b400-52748008ed54, order_id=f7a93245-a4f6-41e4-8617-2f6544975ce3, status=inprogress, current_location={lng=78.3900194, lat=17.4406327}}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "start_location": {
+        "lng": "78.3900194",
+        "lat": "17.4406327"
+    },
+    "pickup_location": {
+        "lng": "78.3900194",
+        "name": "Madhapur",
+        "lat": "17.4406327"
+    },
+    "order_tracking_id": "6d9bf02a-1ca8-4939-b400-52748008ed54",
+    "order_id": "f7a93245-a4f6-41e4-8617-2f6544975ce3",
+    "status": "inprogress",
+    "current_location": {
+        "lng": "78.3900194",
+        "lat": "17.4406327"
+    }
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+   Time    : ? 188 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order Status Updated Successfully","total_amount":0,"data":[{"id":683,"guid":"6d9bf02a-1ca8-4939-b400-52748008ed54","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","phlebo_id":"01b109b7-7706-43b0-acc8-3278f721f34d","assigned_date":"2026-01-07T13:17:01.696Z","pickup_location":"https://maps.google.com/?q=17.4406327,78.3900194","samples_picked":[],"samples_submitted":[],"status":[{"time":"2026-01-07T13:17:01.695Z","status":"open"},{"time":"2026-01-07T13:17:02.568Z","status":"inprogress"}],"verifyOtpRemarks":null,"received_by":null,"otp_verified":false,"created_at":"2026-01-07T13:17:01.696Z","updated_at":"2026-01-07T13:17:01.696Z","deleted_at":null}]}
+? Order Tracking Updated Successfully
+
+>>> STEP 10: FINAL VERIFICATION (Status & Phlebo) <<<
+
+==========================================================
+      GET ORDER TRACKING STATUS API
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/getOrderTrackingStatus/6d9bf02a-1ca8-4939-b400-52748008ed54
+Expected Status: inprogress
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/getOrderTrackingStatus/6d9bf02a-1ca8-4939-b400-52748008ed54
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/getOrderTrackingStatus/6d9bf02a-1ca8-4939-b400-52748008ed54
+   Time    : ? 112 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order Tracking Status successfully","order_status":"inprogress"}
+   Current Status: inprogress
+   ? Order Status Verified: inprogress
+
+==========================================================
+      VERIFY PHLEBOTOMIST ASSIGNMENT (Get Order By ID)
+==========================================================
+
+==========================================================
+      GET ORDER BY ID API
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+   Time    : ? 385 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order details fetched successfully","total_amount":0,"data":[{"id":3992,"guid":"f7a93245-a4f6-41e4-8617-2f6544975ce3","order_number":"01KEC9MYRYC9CPVYFD9Q49C726","brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","family_member_id":null,"total_price":"75","final_price":"75","rewards_used":"0","delivery_charge":"0","paid_amount":"0","order_status":"Phlebotomist assigned","membership_discount":8,"membership_mobile_number":null,"sample_collection_by":null,"sample_collection_date":null,"payment_id":"bd885d9e-fedf-4171-8828-55cfcf42b406","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","lab_location_id":"676a5fa720093d2807af03a5","order_sample_number":"MY26AAA0270","visit_number":"","cancelled_date":null,"cancelled_by":null,"completed_date":null,"completed_by":null,"received_at":null,"slot_start_time":"2026-01-07T20:00:00.000Z","slot_end_time":"2026-01-07T21:00:00.000Z","slot_guid":"a4b97ad1-550d-4b08-a12e-01e702f6f5f6","reschedule_count":0,"order_created_by":null,"order_created_at":"2026-01-07T13:16:59.709Z","referal_doctor":null,"phlebo_id":"01b109b7-7706-43b0-acc8-3278f721f34d","admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"rewards_gain":"0","cancel_order_remarks":null,"tube_barcode":null,"cancelled_by_user_at":null,"it_dose_order_status":"Phlebotomist assigned","it_dose_order_updated_at":"2026-01-07T13:16:59.711Z","it_dose_order_item_status":null,"phlebo_otp":"978609","phlebo_assigned_at":"2026-01-07T13:17:01.675Z","inaugural_discount":0,"cart_id":"pb_ff035b29_mk41ltjk","created_at":"2026-01-07T13:16:59.711Z","updated_at":"2026-01-07T13:17:01.675Z","deleted_at":null,"coupon_code":null,"coupon_guid":null,"coupon_discount_amount":"0","doctors_discount":null,"orderFrom":null,"cancel_delivery_deducted":false,"refund_amount":"0","is_clinic":false,"discount":"0","actual_discount":8,"otp_verified":false,"samples_picked":[],"tracking_status":[{"time":"2026-01-07T13:17:01.695Z","status":"open"},{"time":"2026-01-07T13:17:02.568Z","status":"inprogress"}],"slot_start_times":"07-01-2026 08:00 PM","slot_end_times":"07-01-2026 09:00 PM","doctor_referral_amount":"0","doctor_name":null,"hospital_name":null,"order_items":[{"id":6204,"guid":"7aec307d-32b8-4c06-807b-8f51d54b09a1","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","product_id":"675921110856fe1e1e992cf8","product_name":"RANDOM BLOOD GLUCOSE (RBS)","product_type":"{\"\\\"675697b0262d1460f8d55d7b\\\"\"}","product_code":"BIO274","quantity":1,"actual_price":75,"final_price":67,"original_price":75,"order_status":"Phlebotomist assigned","family_member_id":null,"membership_discount":8,"order_item_number":"MY26AAA0270-1","cancelled_at":null,"admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"cancel_order_remarks":null,"created_at":"2026-01-07T13:16:59.711Z","deleted_at":null,"order_quantity":1,"price":67,"family_member_details":null,"status":"ACTIVE","it_dose_order_items_status":"Phlebotomist assigned"}],"user_details":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null},"addresses":{"latitude":"17.4406327","longitude":"78.3900194","address_name":"Hyderabad, Madhapur, Hyderabad, Telangana, India, 500033","receiver_details":"Ranjith Kumar, 500033"},"payment":{"payment_type":"COD","payment_mode":null,"payment_status":"Pending","payment_details":null},"home_sample":true,"sample_types":[],"due_amount":"67.00","lab_location_full_address":"The Square Building ,Plot No - 3,4,6 and 10 ,Inorbit Mall Road ,D Block ,Kavuri Hills ,Madhapur ,Rangareddy ,India, Hyderabad, Telangana, 500033","lab_lattitude":"17.4406327","lab_longitude":"78.3900194","lab_title":"Madhapur"}]}
+? Order details fetched successfully for Order ID: f7a93245-a4f6-41e4-8617-2f6544975ce3
+   Expected Phlebo GUID: 01b109b7-7706-43b0-acc8-3278f721f34d
+   Actual Phlebo GUID: 01b109b7-7706-43b0-acc8-3278f721f34d
+   ? Phlebotomist Assignment Verified Successfully
+? Detailed COD Flow Step 10 Completed.
+
+>>> STEP 11: ADMIN VERIFY OTP <<<
+
+==========================================================
+      ADMIN VERIFY OTP API
+==========================================================
+Request Payload: {ordertrackingId=6d9bf02a-1ca8-4939-b400-52748008ed54, verifyOtpRemarks=Test, orderid=f7a93245-a4f6-41e4-8617-2f6544975ce3}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+?? Warning: No Phlebotomist Token found. Trying with User Token.
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ordertrackingId": "6d9bf02a-1ca8-4939-b400-52748008ed54",
+    "verifyOtpRemarks": "Test",
+    "orderid": "f7a93245-a4f6-41e4-8617-2f6544975ce3"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/admin/verifyotp
+   Time    : ? 446 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"OTP verified successfully","total_amount":0,"data":{"message":"OTP marked as verified by admin."}}
+? Admin Verify OTP Successful
+? Detailed COD Flow Step 11 Completed.
+
+>>> STEP 12: GET SAMPLE TYPE <<<
+
+==========================================================
+      GET SAMPLE TYPE API
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+DEBUG: System.getProperty('phlebo.token') = FOUND (len=0)
+DEBUG: userToken param = FOUND (len=321)
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/tests/getSampleType
+   Time    : ? 105 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Sample types fetched successfully","total_amount":0,"data":[{"_id":"679b6f7cedfe4056bd7087b1","name":"Green Tube","active":true,"createdAt":"2025-01-30T12:24:28.249Z","updatedAt":"2025-01-30T12:24:28.249Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2aa","name":"Blood Culture Bottle","active":true,"createdAt":"2025-02-28T05:44:11.000Z","updatedAt":"2025-02-28T05:44:11.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a3","name":"Fluoride Tube (Grey Top)","active":true,"createdAt":"2025-02-28T05:44:04.000Z","updatedAt":"2025-02-28T05:44:04.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ad","name":"Urine Filter Paper","active":true,"createdAt":"2025-02-28T05:44:14.000Z","updatedAt":"2025-02-28T05:44:14.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a0","name":"Serun Separation Tube (Yellow Top)","active":true,"createdAt":"2025-02-28T05:44:01.000Z","updatedAt":"2025-02-28T05:44:01.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a4","name":"Urine Container","active":true,"createdAt":"2025-02-28T05:44:05.000Z","updatedAt":"2025-02-28T05:44:05.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ab","name":"NBS Card","active":true,"createdAt":"2025-02-28T05:44:12.000Z","updatedAt":"2025-02-28T05:44:12.000Z","__v":0},{"_id":"679768f2fe8bb09cf46c49f9","name":"Yellow Tube","active":true,"createdAt":"2025-01-27T11:07:30.602Z","updatedAt":"2025-01-30T12:24:17.705Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a8","name":"Lithium Heparin (Green Top)","active":true,"createdAt":"2025-02-28T05:44:09.000Z","updatedAt":"2025-02-28T05:44:09.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a7","name":"Sodium Heparin (Green Top)","active":true,"createdAt":"2025-02-28T05:44:08.000Z","updatedAt":"2025-02-28T05:44:08.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2af","name":"Others","active":true,"createdAt":"2025-02-28T05:44:16.000Z","updatedAt":"2025-02-28T05:44:16.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a6","name":"Stool Container","active":true,"createdAt":"2025-02-28T05:44:07.000Z","updatedAt":"2025-02-28T05:44:07.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a9","name":"NIPT Tube","active":true,"createdAt":"2025-02-28T05:44:10.000Z","updatedAt":"2025-02-28T05:44:10.000Z","__v":0},{"_id":"679768fafe8bb09cf46c49fe","name":"Red Tube","active":true,"createdAt":"2025-01-27T11:07:38.673Z","updatedAt":"2025-01-30T12:24:05.044Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a2","name":"Serum Tube (White Tube)","active":true,"createdAt":"2025-02-28T05:44:03.000Z","updatedAt":"2025-02-28T05:44:03.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ae","name":"LBC Container","active":true,"createdAt":"2025-02-28T05:44:15.000Z","updatedAt":"2025-02-28T05:44:15.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a1","name":"Plain Tube (Red Top)","active":true,"createdAt":"2025-02-28T05:44:02.000Z","updatedAt":"2025-02-28T05:44:02.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f29f","name":"EDTA (Purple Top)","active":true,"createdAt":"2025-02-28T05:44:00.000Z","updatedAt":"2025-02-28T05:44:00.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2a5","name":"Sodium Citrate (Blue Top)","active":true,"createdAt":"2025-02-28T05:44:06.000Z","updatedAt":"2025-02-28T05:44:06.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2ac","name":"Swab","active":true,"createdAt":"2025-02-28T05:44:13.000Z","updatedAt":"2025-02-28T05:44:13.000Z","__v":0},{"_id":"68afedcd9a19f71bc1d3f2b0","name":"Nasal Swab (RT-PCR)","active":true,"createdAt":"2025-02-28T05:44:17.000Z","updatedAt":"2025-02-28T05:44:17.000Z","__v":0}]}
+? Selected Random Sample Type: Serun Separation Tube (Yellow Top)
+? Sample Type Retrieved: Serun Separation Tube (Yellow Top)
+
+>>> STEP 13: UPDATE STATUS (SAMPLES COLLECTED) <<<
+
+==========================================================
+      UPDATE ORDER TRACKING (SAMPLES COLLECTED)
+==========================================================
+Request Payload: {samples_collected=[{quantity=1, sample_type=Serun Separation Tube (Yellow Top)}], order_tracking_id=6d9bf02a-1ca8-4939-b400-52748008ed54, status=samples_collected}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+?? Warning: No Phlebotomist Token found. Using User Token.
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "samples_collected": [
+        {
+            "quantity": 1,
+            "sample_type": "Serun Separation Tube (Yellow Top)"
+        }
+    ],
+    "order_tracking_id": "6d9bf02a-1ca8-4939-b400-52748008ed54",
+    "status": "samples_collected"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order_tracking/updateOrderTracking
+   Time    : ? 130 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order Status Updated Successfully","total_amount":0,"data":[{"id":683,"guid":"6d9bf02a-1ca8-4939-b400-52748008ed54","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","phlebo_id":"01b109b7-7706-43b0-acc8-3278f721f34d","assigned_date":"2026-01-07T13:17:01.696Z","pickup_location":"https://maps.google.com/?q=17.4406327,78.3900194","samples_picked":[{"quantity":1,"sample_type":"Serun Separation Tube (Yellow Top)"}],"samples_submitted":[],"status":[{"time":"2026-01-07T13:17:01.695Z","status":"open"},{"time":"2026-01-07T13:17:02.568Z","status":"inprogress"},{"time":"2026-01-07T13:17:03.898Z","status":"samples_collected"}],"verifyOtpRemarks":"Test","received_by":null,"otp_verified":true,"created_at":"2026-01-07T13:17:01.696Z","updated_at":"2026-01-07T13:17:01.696Z","deleted_at":null}]}
+? Order Status Updated to 'samples_collected'
+
+>>> STEP 14: VERIFY STATUS (SAMPLES COLLECTED) IN ORDER DETAILS <<<
+
+==========================================================
+      GET ORDER BY ID API
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+   Time    : ? 361 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order details fetched successfully","total_amount":0,"data":[{"id":3992,"guid":"f7a93245-a4f6-41e4-8617-2f6544975ce3","order_number":"01KEC9MYRYC9CPVYFD9Q49C726","brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","family_member_id":null,"total_price":"75","final_price":"75","rewards_used":"0","delivery_charge":"0","paid_amount":"0","order_status":"Sample Collected","membership_discount":8,"membership_mobile_number":null,"sample_collection_by":null,"sample_collection_date":"2026-01-07T13:17:03.307Z","payment_id":"bd885d9e-fedf-4171-8828-55cfcf42b406","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","lab_location_id":"676a5fa720093d2807af03a5","order_sample_number":"MY26AAA0270","visit_number":"","cancelled_date":null,"cancelled_by":null,"completed_date":null,"completed_by":null,"received_at":null,"slot_start_time":"2026-01-07T20:00:00.000Z","slot_end_time":"2026-01-07T21:00:00.000Z","slot_guid":"a4b97ad1-550d-4b08-a12e-01e702f6f5f6","reschedule_count":0,"order_created_by":null,"order_created_at":"2026-01-07T13:16:59.709Z","referal_doctor":null,"phlebo_id":"01b109b7-7706-43b0-acc8-3278f721f34d","admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"rewards_gain":"0","cancel_order_remarks":null,"tube_barcode":null,"cancelled_by_user_at":null,"it_dose_order_status":"Sample Collected","it_dose_order_updated_at":"2026-01-07T13:16:59.711Z","it_dose_order_item_status":null,"phlebo_otp":"978609","phlebo_assigned_at":"2026-01-07T13:17:01.675Z","inaugural_discount":0,"cart_id":"pb_ff035b29_mk41ltjk","created_at":"2026-01-07T13:16:59.711Z","updated_at":"2026-01-07T13:17:01.675Z","deleted_at":null,"coupon_code":null,"coupon_guid":null,"coupon_discount_amount":"0","doctors_discount":null,"orderFrom":null,"cancel_delivery_deducted":false,"refund_amount":"0","is_clinic":false,"discount":"0","actual_discount":8,"otp_verified":true,"samples_picked":[{"quantity":1,"sample_type":"Serun Separation Tube (Yellow Top)"}],"tracking_status":[{"time":"2026-01-07T13:17:01.695Z","status":"open"},{"time":"2026-01-07T13:17:02.568Z","status":"inprogress"},{"time":"2026-01-07T13:17:03.898Z","status":"samples_collected"}],"slot_start_times":"07-01-2026 08:00 PM","slot_end_times":"07-01-2026 09:00 PM","doctor_referral_amount":"0","doctor_name":null,"hospital_name":null,"order_items":[{"id":6204,"guid":"7aec307d-32b8-4c06-807b-8f51d54b09a1","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","product_id":"675921110856fe1e1e992cf8","product_name":"RANDOM BLOOD GLUCOSE (RBS)","product_type":"{\"\\\"675697b0262d1460f8d55d7b\\\"\"}","product_code":"BIO274","quantity":1,"actual_price":75,"final_price":67,"original_price":75,"order_status":"Sample Collected","family_member_id":null,"membership_discount":8,"order_item_number":"MY26AAA0270-1","cancelled_at":null,"admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"cancel_order_remarks":null,"created_at":"2026-01-07T13:16:59.711Z","deleted_at":null,"order_quantity":1,"price":67,"family_member_details":null,"status":"ACTIVE","it_dose_order_items_status":"Sample Collected"}],"user_details":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null},"addresses":{"latitude":"17.4406327","longitude":"78.3900194","address_name":"Hyderabad, Madhapur, Hyderabad, Telangana, India, 500033","receiver_details":"Ranjith Kumar, 500033"},"payment":{"payment_type":"COD","payment_mode":null,"payment_status":"Pending","payment_details":null},"home_sample":true,"sample_types":[],"due_amount":"67.00","lab_location_full_address":"The Square Building ,Plot No - 3,4,6 and 10 ,Inorbit Mall Road ,D Block ,Kavuri Hills ,Madhapur ,Rangareddy ,India, Hyderabad, Telangana, 500033","lab_lattitude":"17.4406327","lab_longitude":"78.3900194","lab_title":"Madhapur"}]}
+? Order details fetched successfully for Order ID: f7a93245-a4f6-41e4-8617-2f6544975ce3
+   Current Order Status (Raw): [Sample Collected]
+   Current Order Status (Extracted): Sample Collected
+? Order Status Verified: Sample Collected
+
+>>> STEP 15: APPROVE PAYMENT <<<
+
+==========================================================
+      APPROVE PAYMENT API
+==========================================================
+
+==========================================================
+      GET ORDER BY ID API
+==========================================================
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+Request method:	GET
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+--- ? PERFORMANCE STATS ---
+   Method  : GET
+   Endpoint: /order/getOrderById/f7a93245-a4f6-41e4-8617-2f6544975ce3
+   Time    : ? 323 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Order details fetched successfully","total_amount":0,"data":[{"id":3992,"guid":"f7a93245-a4f6-41e4-8617-2f6544975ce3","order_number":"01KEC9MYRYC9CPVYFD9Q49C726","brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","family_member_id":null,"total_price":"75","final_price":"75","rewards_used":"0","delivery_charge":"0","paid_amount":"0","order_status":"Sample Collected","membership_discount":8,"membership_mobile_number":null,"sample_collection_by":null,"sample_collection_date":"2026-01-07T13:17:03.307Z","payment_id":"bd885d9e-fedf-4171-8828-55cfcf42b406","address_id":"3e7f93b5-6013-4385-995b-dfecc866c549","lab_location_id":"676a5fa720093d2807af03a5","order_sample_number":"MY26AAA0270","visit_number":"","cancelled_date":null,"cancelled_by":null,"completed_date":null,"completed_by":null,"received_at":null,"slot_start_time":"2026-01-07T20:00:00.000Z","slot_end_time":"2026-01-07T21:00:00.000Z","slot_guid":"a4b97ad1-550d-4b08-a12e-01e702f6f5f6","reschedule_count":0,"order_created_by":null,"order_created_at":"2026-01-07T13:16:59.709Z","referal_doctor":null,"phlebo_id":"01b109b7-7706-43b0-acc8-3278f721f34d","admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"rewards_gain":"0","cancel_order_remarks":null,"tube_barcode":null,"cancelled_by_user_at":null,"it_dose_order_status":"Sample Collected","it_dose_order_updated_at":"2026-01-07T13:16:59.711Z","it_dose_order_item_status":null,"phlebo_otp":"978609","phlebo_assigned_at":"2026-01-07T13:17:01.675Z","inaugural_discount":0,"cart_id":"pb_ff035b29_mk41ltjk","created_at":"2026-01-07T13:16:59.711Z","updated_at":"2026-01-07T13:17:01.675Z","deleted_at":null,"coupon_code":null,"coupon_guid":null,"coupon_discount_amount":"0","doctors_discount":null,"orderFrom":null,"cancel_delivery_deducted":false,"refund_amount":"0","is_clinic":false,"discount":"0","actual_discount":8,"otp_verified":true,"samples_picked":[{"quantity":1,"sample_type":"Serun Separation Tube (Yellow Top)"}],"tracking_status":[{"time":"2026-01-07T13:17:01.695Z","status":"open"},{"time":"2026-01-07T13:17:02.568Z","status":"inprogress"},{"time":"2026-01-07T13:17:03.898Z","status":"samples_collected"}],"slot_start_times":"07-01-2026 08:00 PM","slot_end_times":"07-01-2026 09:00 PM","doctor_referral_amount":"0","doctor_name":null,"hospital_name":null,"order_items":[{"id":6204,"guid":"7aec307d-32b8-4c06-807b-8f51d54b09a1","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","product_id":"675921110856fe1e1e992cf8","product_name":"RANDOM BLOOD GLUCOSE (RBS)","product_type":"{\"\\\"675697b0262d1460f8d55d7b\\\"\"}","product_code":"BIO274","quantity":1,"actual_price":75,"final_price":67,"original_price":75,"order_status":"Sample Collected","family_member_id":null,"membership_discount":8,"order_item_number":"MY26AAA0270-1","cancelled_at":null,"admin_approval_status":null,"admin_approval_by":null,"admin_approval_at":null,"cancel_order_remarks":null,"created_at":"2026-01-07T13:16:59.711Z","deleted_at":null,"order_quantity":1,"price":67,"family_member_details":null,"status":"ACTIVE","it_dose_order_items_status":"Sample Collected"}],"user_details":{"id":201,"guid":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","first_name":"Ranjith","last_name":"Kumar","middle_name":"","gender":"Male","dob":"1996-10-10","country_code":"+91","mobile":"9003730394","alt_mobile":"","email":"","user_type":"Customer","profile_pic":null,"patient_id":null,"title":"Mr.","fcm_token":null,"created_at":"2025-09-04T14:10:05.429Z","updated_at":"2025-09-04T14:11:06.951Z","deleted_at":null,"deleted_reason":null},"addresses":{"latitude":"17.4406327","longitude":"78.3900194","address_name":"Hyderabad, Madhapur, Hyderabad, Telangana, India, 500033","receiver_details":"Ranjith Kumar, 500033"},"payment":{"payment_type":"COD","payment_mode":null,"payment_status":"Pending","payment_details":null},"home_sample":true,"sample_types":[],"due_amount":"67.00","lab_location_full_address":"The Square Building ,Plot No - 3,4,6 and 10 ,Inorbit Mall Road ,D Block ,Kavuri Hills ,Madhapur ,Rangareddy ,India, Hyderabad, Telangana, 500033","lab_lattitude":"17.4406327","lab_longitude":"78.3900194","lab_title":"Madhapur"}]}
+? Order details fetched successfully for Order ID: f7a93245-a4f6-41e4-8617-2f6544975ce3
+   Extracted Payment ID: bd885d9e-fedf-4171-8828-55cfcf42b406
+   Extracted Due Amount: 67.0
+   Order Total Amount: 0
+Request Payload: {approved_user_name=33e688a0-67ff-44bb-974b-f53dd17bf625, payment_details=[{amount=67.0, type=Cash, transactionId=, remarks=}], payment_id=bd885d9e-fedf-4171-8828-55cfcf42b406}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/order/approvepayment
+   Using User Token
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/order/approvepayment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "approved_user_name": "33e688a0-67ff-44bb-974b-f53dd17bf625",
+    "payment_details": [
+        {
+            "amount": 67.0,
+            "type": "Cash",
+            "transactionId": "",
+            "remarks": ""
+        }
+    ],
+    "payment_id": "bd885d9e-fedf-4171-8828-55cfcf42b406"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/order/approvepayment
+   Time    : ? 6421 ms
+   ??  WARNING: Response is becoming slow (6421ms)
+----------------------------
+
+Response Status: 201
+Response Body: {"status":201,"success":true,"msg":"Order payment approved successfully","total_amount":0,"data":{"0":{"Guid":"2b096355-8d6b-4520-aa9f-b75ae14a4098","mobile":"9003730394","customer_id":"4dcac470-0e44-413b-8b44-f820fce4d23a","brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","trnsc_id":"","order_id":"01KEC9MYRYC9CPVYFD9Q49C726","trnsc_amount":"67.00","remarks":null,"rewards_gain":"4.00","rewards_used":"0.00","is_reverted":false,"status":"Successful","reference_id":"","reference_code":"MY26AAA0270","payment_mode":null,"actual_price":"75.00","amount":null,"collected_by":null,"collected_at":null,"taking_rewards":"0.00","net_paid_amount":"0.00","created_by":"Ranjith","updated_by":null,"admin_approval_by":null,"admin_approval_at":null,"admin_approval_status":null,"deleted_by":null,"created_at":"2026-01-07 18:47:04+05:30","updated_at":"2026-01-07 18:47:04+05:30"},"order_guids":["f7a93245-a4f6-41e4-8617-2f6544975ce3"],"approvalPaymentData":[{"id":4217,"guid":"bd885d9e-fedf-4171-8828-55cfcf42b406","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","payment_gateway_id":null,"amount":"67","payment_type":"COD","payment_status":"Success","payment_details":[{"type":"Cash","amount":67,"remarks":"","transactionId":""}],"created_at":"2026-01-07T13:16:59.213Z","deleted_at":null,"reference_id":null,"cod_approved_date":"2026-01-07T13:17:04.936Z","cod_approved_by":"33e688a0-67ff-44bb-974b-f53dd17bf625","razorpay_status":null,"cancel_order_id":null,"refund_id":null,"payment_mode":null,"linked_membership_payment_id":null,"updated_amount":null}],"adminDetails":[{"user_id":12,"user_guid":"33e688a0-67ff-44bb-974b-f53dd17bf625","user_name":"Admin","mobile":null,"gender":null,"dob":null,"password":"$2a$10$HI5Q1OLxNEveOgm4OX0cYepmDpMl4J9BUENxJPOszNvqwmwKxJqh6","address_details":null,"email":"vinaykumar12345@gmail.com","location_id":null,"is_active":true,"role_id":"a885e3d6-92fd-412e-80ab-8f27d0284c5d","location_name":null,"created_at":"2025-04-25T12:03:24.069Z","updated_at":"2025-04-25T12:03:24.069Z","deleted_at":null,"fcm_token":"crmEqzt4Yq61Wl7CvfYjjD:APA91bExSHMwisanTUMp6BIz_8C3rPVvHOoqSlbYFQAiWIJSE3LmZ_1gS9A-92Iv3ouQNEDXpB_qQM43Er0p50uc7ZNzuCMW3rsR2TYa7nhlZ3IZ6XNTwSo"}]}}
+? Approve Payment HTTP Status: 201
+? Payment Approved Successfully
+?? Warning: Visit Number not found in Approve Payment response. Response: {"status":201,"success":true,"msg":"Order payment approved successfully","total_amount":0,"data":{"0":{"Guid":"2b096355-8d6b-4520-aa9f-b75ae14a4098","mobile":"9003730394","customer_id":"4dcac470-0e44-413b-8b44-f820fce4d23a","brand_id":"efb159ac-db7c-4b06-a79b-021a8b6d67e8","trnsc_id":"","order_id":"01KEC9MYRYC9CPVYFD9Q49C726","trnsc_amount":"67.00","remarks":null,"rewards_gain":"4.00","rewards_used":"0.00","is_reverted":false,"status":"Successful","reference_id":"","reference_code":"MY26AAA0270","payment_mode":null,"actual_price":"75.00","amount":null,"collected_by":null,"collected_at":null,"taking_rewards":"0.00","net_paid_amount":"0.00","created_by":"Ranjith","updated_by":null,"admin_approval_by":null,"admin_approval_at":null,"admin_approval_status":null,"deleted_by":null,"created_at":"2026-01-07 18:47:04+05:30","updated_at":"2026-01-07 18:47:04+05:30"},"order_guids":["f7a93245-a4f6-41e4-8617-2f6544975ce3"],"approvalPaymentData":[{"id":4217,"guid":"bd885d9e-fedf-4171-8828-55cfcf42b406","user_id":"6a7b0214-b5f0-4e9b-b6c4-cd6123898ed3","payment_gateway_id":null,"amount":"67","payment_type":"COD","payment_status":"Success","payment_details":[{"type":"Cash","amount":67,"remarks":"","transactionId":""}],"created_at":"2026-01-07T13:16:59.213Z","deleted_at":null,"reference_id":null,"cod_approved_date":"2026-01-07T13:17:04.936Z","cod_approved_by":"33e688a0-67ff-44bb-974b-f53dd17bf625","razorpay_status":null,"cancel_order_id":null,"refund_id":null,"payment_mode":null,"linked_membership_payment_id":null,"updated_amount":null}],"adminDetails":[{"user_id":12,"user_guid":"33e688a0-67ff-44bb-974b-f53dd17bf625","user_name":"Admin","mobile":null,"gender":null,"dob":null,"password":"$2a$10$HI5Q1OLxNEveOgm4OX0cYepmDpMl4J9BUENxJPOszNvqwmwKxJqh6","address_details":null,"email":"vinaykumar12345@gmail.com","location_id":null,"is_active":true,"role_id":"a885e3d6-92fd-412e-80ab-8f27d0284c5d","location_name":null,"created_at":"2025-04-25T12:03:24.069Z","updated_at":"2025-04-25T12:03:24.069Z","deleted_at":null,"fcm_token":"crmEqzt4Yq61Wl7CvfYjjD:APA91bExSHMwisanTUMp6BIz_8C3rPVvHOoqSlbYFQAiWIJSE3LmZ_1gS9A-92Iv3ouQNEDXpB_qQM43Er0p50uc7ZNzuCMW3rsR2TYa7nhlZ3IZ6XNTwSo"}]}}
+
+? Verifying Payment Status after Approval...
+
+==========================================================
+      GET PAYMENT BY ID API (DEV)
+==========================================================
+Request Payload: {id=bd885d9e-fedf-4171-8828-55cfcf42b406}
+Target URL: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Request method:	POST
+Request URI:	https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyR3VpZCI6IjZhN2IwMjE0LWI1ZjAtNGU5Yi1iNmM0LWNkNjEyMzg5OGVkMyIsIm1vYmlsZSI6IjkwMDM3MzAzOTQiLCJmaXJzdF9uYW1lIjoiUmFuaml0aCIsImxhc3RfbmFtZSI6Ikt1bWFyIiwiZW1haWwiOiIiLCJyb2xlIjoidXNlcl9vbmx5IiwiaWF0IjoxNzY3NzkxODEyLCJleHAiOjE3ODM1NzgwNTJ9.EQ3Krdc6gytnM57WehuB85g-Hf56h1mNe-Ynb-az_h4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "bd885d9e-fedf-4171-8828-55cfcf42b406"
+}
+
+--- ? PERFORMANCE STATS ---
+   Method  : POST
+   Endpoint: https://dev-api-yodadiagnostics.yodaprojects.com/gateway/getPaymentById
+   Time    : ? 114 ms
+----------------------------
+
+Response Status: 200
+Response Body: {"status":200,"success":true,"msg":"Payment details fetched successfully","total_amount":0,"data":{"payments":{"guid":"bd885d9e-fedf-4171-8828-55cfcf42b406","amount":"67","payment_status":"Success","payment_type":"COD","payment_details":[{"type":"Cash","amount":67,"remarks":"","transactionId":""}],"cod_approved_by":"33e688a0-67ff-44bb-974b-f53dd17bf625","cod_approved_date":"2026-01-07T13:17:04.936Z","payment_gateway_id":null,"reference_id":null,"cancel_order_id":null,"delivery_charge":0,"paid_amount":67,"rewards_used":0,"total_mrp":75,"membership_discount":8,"total_discount":0,"net_payable":75,"inaugural_discount":0,"coupon_discount":0},"order_items":[{"id":6204,"guid":"7aec307d-32b8-4c06-807b-8f51d54b09a1","order_id":"f7a93245-a4f6-41e4-8617-2f6544975ce3","payment_guid":"bd885d9e-fedf-4171-8828-55cfcf42b406","product_id":"675921110856fe1e1e992cf8","product_name":"RANDOM BLOOD GLUCOSE (RBS)","product_type":"{\"\\\"675697b0262d1460f8d55d7b\\\"\"}","product_code":"BIO274","quantity":1,"actual_price":75,"original_price":75,"final_price":67,"family_member_id":"00000000-0000-0000-0000-000000000000","firstName":"Ranjith","lastName":"Kumar","order_sample_number":"MY26AAA0270","visit_number":"MYD9117"}]}}
+   Post-Approval Payment Status: Success
+? VALIDATION PASSED: Payment Status is 'Success'
+   Payment Amount on Record: -1.0
+? Visit Number extracted from GetPaymentById: MYD9117
+>>> STORED VISIT NUMBER: MYD9117
+? Detailed COD Flow Step 15 Completed.
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.58 s -- in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.772 s
+[INFO] Finished at: 2026-01-07T18:47:12+05:30
+[INFO] ------------------------------------------------------------------------

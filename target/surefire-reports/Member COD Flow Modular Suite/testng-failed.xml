@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Member COD Flow Modular Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Member Modular COD Flow Steps(failed)" verbose="0">
+    <parameter name="userType" value="member"/>
+    <classes>
+      <class name="com.mryoda.diagnostics.api.tests.COD_99_TriggerUITest">
+        <methods>
+          <include name="triggerUIAutomation"/>
+        </methods>
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_99_TriggerUITest -->
+    </classes>
+  </test> <!-- Member Modular COD Flow Steps(failed) -->
+</suite> <!-- Failed suite [Member COD Flow Modular Suite] -->

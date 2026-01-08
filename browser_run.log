@@ -1,0 +1,110 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< MrYodaAPINew:MrYodaAPINew >----------------------
+[INFO] Building MrYodaAPINew 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MrYodaAPINew ---
+[INFO] skip non existing resourceDirectory C:\Users\RANJITH\Pictures\MrYodaAPINew\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MrYodaAPINew ---
+[INFO] Copying 2 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ MrYodaAPINew ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ MrYodaAPINew ---
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running COD Flow Sample Lifecycle
+
+@ITDose
+Scenario: Process COD order sample through full lab workflow # src/test/resources/Feature/01_COD_Flow.feature:4
+      java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'
+	at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:37)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:120)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:115)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.DriverFactory.getDriver(DriverFactory.java:55)
+	at hooks.Hooks.setUp(Hooks.java:60)
+
+  Given I am on the login page                               # stepDefinition.CodItDose.i_am_on_the_login_page()
+  When I enter valid credentials                             # stepDefinition.CodItDose.i_enter_valid_credentials()
+  Then I should be logged in successfully                    # stepDefinition.CodItDose.i_should_be_logged_in_successfully()
+  When I click on the Department button                      # stepDefinition.CodItDose.i_click_on_the_department_button()
+  And I click on the Laboratory button                       # stepDefinition.CodItDose.i_click_on_the_laboratory_button()
+  And I click on the list view button                        # stepDefinition.CodItDose.i_click_on_the_list_view_button()
+  And I click on the sample management button                # stepDefinition.CodItDose.i_click_on_the_sample_management_button()
+  And I click on the sample collection button                # stepDefinition.CodItDose.i_click_on_the_sample_collection_button()
+  And I select the laboratory name                           # stepDefinition.CodItDose.i_select_the_laboratory_name()
+  And I click on the visit number                            # stepDefinition.CodItDose.i_click_on_the_visit_number()
+  And I enter the visit number                               # stepDefinition.CodItDose.i_enter_the_visit_number()
+  And I click on the search button                           # stepDefinition.CodItDose.i_click_on_the_search_button()
+  And I click on the select checkbox                         # stepDefinition.CodItDose.i_click_on_the_select_checkbox()
+  And I select the sample type                               # stepDefinition.CodItDose.i_select_the_sample_type()
+  And I click on the collect button                          # stepDefinition.CodItDose.i_click_on_the_collect_button()
+  And I click on the list view button                        # stepDefinition.CodItDose.i_click_on_the_list_view_button()
+  And I click on the sample management button                # stepDefinition.CodItDose.i_click_on_the_sample_management_button()
+  And I click on the sample receive area                     # stepDefinition.CodItDose.i_click_on_the_sample_receive_area()
+  And I extract the SIN NO from the UI                       # stepDefinition.CodItDose.i_extract_the_sin_no_from_the_ui()
+  And I enter the SIN NO in the input box                    # stepDefinition.CodItDose.i_enter_the_sin_no_in_the_input_box()
+  And I click on the search button                           # stepDefinition.CodItDose.i_click_on_the_search_button()
+  And I click on the select checkbox                         # stepDefinition.CodItDose.i_click_on_the_select_checkbox()
+  And I click on the save button                             # stepDefinition.CodItDose.i_click_on_the_save_button()
+  And I click on the list view button                        # stepDefinition.CodItDose.i_click_on_the_list_view_button()
+  And I click on the sample management button                # stepDefinition.CodItDose.i_click_on_the_sample_management_button()
+  And I click on the Department receive button               # stepDefinition.CodItDose.i_click_on_the_department_receive_button()
+  And I select the SIN NO in the dropdown                    # stepDefinition.CodItDose.i_select_the_sin_no_in_the_dropdown()
+  And I enter the SIN NO in the input box                    # stepDefinition.CodItDose.i_enter_the_sin_no_in_the_input_box()
+  And I click on the search button                           # stepDefinition.CodItDose.i_click_on_the_search_button()
+  And I click on the sample receive checkbox                 # stepDefinition.CodItDose.i_click_on_the_sample_receive_checkbox()
+  And I click on the receive button                          # stepDefinition.CodItDose.i_click_on_the_receive_button()
+  And I click on the list view button                        # stepDefinition.CodItDose.i_click_on_the_list_view_button()
+  And I click on the sample processing button                # stepDefinition.CodItDose.i_click_on_the_sample_processing_button()
+  And I click on the result entry button                     # stepDefinition.CodItDose.i_click_on_the_result_entry_button()
+  And I enter the SIN NO in the input box                    # stepDefinition.CodItDose.i_enter_the_sin_no_in_the_input_box()
+  And I click on the search button                           # stepDefinition.CodItDose.i_click_on_the_search_button()
+  And I click on the visit number                            # stepDefinition.CodItDose.i_click_on_the_visit_number()
+  And I enter the value of the tests                         # stepDefinition.CodItDose.i_enter_the_value_of_the_tests()
+  And I click on the approve button                          # stepDefinition.CodItDose.i_click_on_the_approve_button()
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.206 s <<< FAILURE! -- in COD Flow Sample Lifecycle
+[ERROR] COD Flow Sample Lifecycle.Process COD order sample through full lab workflow -- Time elapsed: 1.314 s <<< ERROR!
+java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'
+	at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:37)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:120)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:115)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:105)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.DriverFactory.getDriver(DriverFactory.java:55)
+	at hooks.Hooks.setUp(Hooks.java:60)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'
+[INFO] 
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[ERROR] 
+
+Please refer to C:\Users\RANJITH\Pictures\MrYodaAPINew\target\surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.819 s
+[INFO] Finished at: 2026-01-07T14:23:07+05:30
+[INFO] ------------------------------------------------------------------------

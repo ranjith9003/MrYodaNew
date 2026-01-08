@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="20" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-08T16:03:19 IST" name="Member COD Flow Modular Suite" finished-at="2026-01-08T16:04:01 IST" duration-ms="42668">
+    <groups>
+    </groups>
+    <test started-at="2026-01-08T16:03:19 IST" name="Member Modular COD Flow Steps" finished-at="2026-01-08T16:04:01 IST" duration-ms="42668">
+      <class name="com.mryoda.diagnostics.api.tests.COD_15_ApprovePaymentTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_15_ApprovePaymentTest@23202fce]" started-at="2026-01-08T16:03:37 IST" name="setUp" finished-at="2026-01-08T16:03:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step15_ApprovePayment()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_15_ApprovePaymentTest@23202fce]" started-at="2026-01-08T16:03:37 IST" name="step15_ApprovePayment" finished-at="2026-01-08T16:03:43 IST" duration-ms="6300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step15_ApprovePayment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_15_ApprovePaymentTest@23202fce]" started-at="2026-01-08T16:03:44 IST" name="tearDown" finished-at="2026-01-08T16:03:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_15_ApprovePaymentTest -->
+      <class name="com.mryoda.diagnostics.api.tests.LocationAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@7bf3a5d8]" started-at="2026-01-08T16:03:23 IST" name="setUp" finished-at="2026-01-08T16:03:23 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetLocations_ForMember()[pri:5, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@7bf3a5d8]" started-at="2026-01-08T16:03:23 IST" name="testGetLocations_ForMember" finished-at="2026-01-08T16:03:24 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LoginAPITest.testLoginWithOTP" duration-ms="1128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLocations_ForMember -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.LocationAPITest@7bf3a5d8]" started-at="2026-01-08T16:03:24 IST" name="tearDown" finished-at="2026-01-08T16:03:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.LocationAPITest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_14_VerifySamplesCollectedStatusTest">
+        <test-method signature="step14_VerifySamplesCollectedStatus()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_14_VerifySamplesCollectedStatusTest@1df8b5b8]" started-at="2026-01-08T16:03:37 IST" name="step14_VerifySamplesCollectedStatus" finished-at="2026-01-08T16:03:37 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step14_VerifySamplesCollectedStatus -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_14_VerifySamplesCollectedStatusTest@1df8b5b8]" started-at="2026-01-08T16:03:37 IST" name="setUp" finished-at="2026-01-08T16:03:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_14_VerifySamplesCollectedStatusTest@1df8b5b8]" started-at="2026-01-08T16:03:37 IST" name="tearDown" finished-at="2026-01-08T16:03:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_14_VerifySamplesCollectedStatusTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_09_UpdateOrderTrackingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_09_UpdateOrderTrackingTest@239105a8]" started-at="2026-01-08T16:03:34 IST" name="setUp" finished-at="2026-01-08T16:03:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step09_UpdateOrderTracking()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_09_UpdateOrderTrackingTest@239105a8]" started-at="2026-01-08T16:03:34 IST" name="step09_UpdateOrderTracking" finished-at="2026-01-08T16:03:34 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step09_UpdateOrderTracking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_09_UpdateOrderTrackingTest@239105a8]" started-at="2026-01-08T16:03:34 IST" name="tearDown" finished-at="2026-01-08T16:03:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_09_UpdateOrderTrackingTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_03_AddAddressAndSlotTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_03_AddAddressAndSlotTest@72ef8d15]" started-at="2026-01-08T16:03:28 IST" name="setUp" finished-at="2026-01-08T16:03:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step03_AddAddressAndSlot()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_03_AddAddressAndSlotTest@72ef8d15]" started-at="2026-01-08T16:03:28 IST" name="step03_AddAddressAndSlot" finished-at="2026-01-08T16:03:29 IST" duration-ms="1011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step03_AddAddressAndSlot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_03_AddAddressAndSlotTest@72ef8d15]" started-at="2026-01-08T16:03:29 IST" name="tearDown" finished-at="2026-01-08T16:03:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_03_AddAddressAndSlotTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_13_UpdateStatusSamplesCollectedTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_13_UpdateStatusSamplesCollectedTest@560348e6]" started-at="2026-01-08T16:03:36 IST" name="setUp" finished-at="2026-01-08T16:03:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step13_UpdateStatusSamplesCollected()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_13_UpdateStatusSamplesCollectedTest@560348e6]" started-at="2026-01-08T16:03:36 IST" name="step13_UpdateStatusSamplesCollected" finished-at="2026-01-08T16:03:37 IST" duration-ms="1295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step13_UpdateStatusSamplesCollected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_13_UpdateStatusSamplesCollectedTest@560348e6]" started-at="2026-01-08T16:03:37 IST" name="tearDown" finished-at="2026-01-08T16:03:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_13_UpdateStatusSamplesCollectedTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_08_VerifyStatusAssignedTest">
+        <test-method signature="step08_VerifyStatusAssigned()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_08_VerifyStatusAssignedTest@72ade7e3]" started-at="2026-01-08T16:03:33 IST" name="step08_VerifyStatusAssigned" finished-at="2026-01-08T16:03:34 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step08_VerifyStatusAssigned -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_08_VerifyStatusAssignedTest@72ade7e3]" started-at="2026-01-08T16:03:33 IST" name="setUp" finished-at="2026-01-08T16:03:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_08_VerifyStatusAssignedTest@72ade7e3]" started-at="2026-01-08T16:03:34 IST" name="tearDown" finished-at="2026-01-08T16:03:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_08_VerifyStatusAssignedTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_11_AdminVerifyOtpTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_11_AdminVerifyOtpTest@609bcfb6]" started-at="2026-01-08T16:03:34 IST" name="setUp" finished-at="2026-01-08T16:03:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step11_AdminVerifyOtp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_11_AdminVerifyOtpTest@609bcfb6]" started-at="2026-01-08T16:03:34 IST" name="step11_AdminVerifyOtp" finished-at="2026-01-08T16:03:35 IST" duration-ms="979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step11_AdminVerifyOtp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_11_AdminVerifyOtpTest@609bcfb6]" started-at="2026-01-08T16:03:35 IST" name="tearDown" finished-at="2026-01-08T16:03:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_11_AdminVerifyOtpTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_10_FinalVerificationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_10_FinalVerificationTest@3fce8fd9]" started-at="2026-01-08T16:03:34 IST" name="setUp" finished-at="2026-01-08T16:03:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step10_FinalVerification()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_10_FinalVerificationTest@3fce8fd9]" started-at="2026-01-08T16:03:34 IST" name="step10_FinalVerification" finished-at="2026-01-08T16:03:34 IST" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step10_FinalVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_10_FinalVerificationTest@3fce8fd9]" started-at="2026-01-08T16:03:34 IST" name="tearDown" finished-at="2026-01-08T16:03:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_10_FinalVerificationTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_02_GetCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_02_GetCartTest@2205a05d]" started-at="2026-01-08T16:03:28 IST" name="setUp" finished-at="2026-01-08T16:03:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step02_VerifyCartAndPrice()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_02_GetCartTest@2205a05d]" started-at="2026-01-08T16:03:28 IST" name="step02_VerifyCartAndPrice" finished-at="2026-01-08T16:03:28 IST" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step02_VerifyCartAndPrice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_02_GetCartTest@2205a05d]" started-at="2026-01-08T16:03:28 IST" name="tearDown" finished-at="2026-01-08T16:03:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_02_GetCartTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_04_VerifyPaymentPreCheckTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_04_VerifyPaymentPreCheckTest@6aa8e115]" started-at="2026-01-08T16:03:29 IST" name="setUp" finished-at="2026-01-08T16:03:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step04_VerifyPaymentPreCheck()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_04_VerifyPaymentPreCheckTest@6aa8e115]" started-at="2026-01-08T16:03:29 IST" name="step04_VerifyPaymentPreCheck" finished-at="2026-01-08T16:03:32 IST" duration-ms="2725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step04_VerifyPaymentPreCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_04_VerifyPaymentPreCheckTest@6aa8e115]" started-at="2026-01-08T16:03:32 IST" name="tearDown" finished-at="2026-01-08T16:03:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_04_VerifyPaymentPreCheckTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_06_PhlebotomistLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_06_PhlebotomistLoginTest@51a9ad5e]" started-at="2026-01-08T16:03:32 IST" name="setUp" finished-at="2026-01-08T16:03:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step06_PhlebotomistLogin()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_06_PhlebotomistLoginTest@51a9ad5e]" started-at="2026-01-08T16:03:32 IST" name="step06_PhlebotomistLogin" finished-at="2026-01-08T16:03:33 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step06_PhlebotomistLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_06_PhlebotomistLoginTest@51a9ad5e]" started-at="2026-01-08T16:03:33 IST" name="tearDown" finished-at="2026-01-08T16:03:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_06_PhlebotomistLoginTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_05_CrossApiValidationTest">
+        <test-method signature="step05_CrossApiValidation()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_05_CrossApiValidationTest@5e21e98f]" started-at="2026-01-08T16:03:32 IST" name="step05_CrossApiValidation" finished-at="2026-01-08T16:03:32 IST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step05_CrossApiValidation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_05_CrossApiValidationTest@5e21e98f]" started-at="2026-01-08T16:03:32 IST" name="setUp" finished-at="2026-01-08T16:03:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_05_CrossApiValidationTest@5e21e98f]" started-at="2026-01-08T16:03:32 IST" name="tearDown" finished-at="2026-01-08T16:03:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_05_CrossApiValidationTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_07_AssignOrderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_07_AssignOrderTest@5f20155b]" started-at="2026-01-08T16:03:33 IST" name="setUp" finished-at="2026-01-08T16:03:33 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step07_AssignOrder()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_07_AssignOrderTest@5f20155b]" started-at="2026-01-08T16:03:33 IST" name="step07_AssignOrder" finished-at="2026-01-08T16:03:33 IST" duration-ms="764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step07_AssignOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_07_AssignOrderTest@5f20155b]" started-at="2026-01-08T16:03:33 IST" name="tearDown" finished-at="2026-01-08T16:03:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_07_AssignOrderTest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_01_LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_01_LoginTest@189cbd7c]" started-at="2026-01-08T16:03:23 IST" name="setUp" finished-at="2026-01-08T16:03:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="step01_LoginAndSetup()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_01_LoginTest@189cbd7c]" started-at="2026-01-08T16:03:23 IST" name="step01_LoginAndSetup" finished-at="2026-01-08T16:03:23 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step01_LoginAndSetup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_01_LoginTest@189cbd7c]" started-at="2026-01-08T16:03:23 IST" name="tearDown" finished-at="2026-01-08T16:03:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_01_LoginTest -->
+      <class name="com.mryoda.diagnostics.api.tests.BrandAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@42e25b0b]" started-at="2026-01-08T16:03:24 IST" name="setUp" finished-at="2026-01-08T16:03:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetBrands_ForMember()[pri:6, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@42e25b0b]" started-at="2026-01-08T16:03:24 IST" name="testGetBrands_ForMember" finished-at="2026-01-08T16:03:25 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.LocationAPITest.testGetLocations_ForMember" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBrands_ForMember -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.BrandAPITest@42e25b0b]" started-at="2026-01-08T16:03:25 IST" name="tearDown" finished-at="2026-01-08T16:03:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.BrandAPITest -->
+      <class name="com.mryoda.diagnostics.api.tests.AddToCartAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@44be0077]" started-at="2026-01-08T16:03:26 IST" name="setUp" finished-at="2026-01-08T16:03:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCart_ForMember()[pri:8, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@44be0077]" started-at="2026-01-08T16:03:26 IST" name="testAddToCart_ForMember" finished-at="2026-01-08T16:03:28 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest.testGlobalSearch_ForMember" duration-ms="2046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart_ForMember -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.AddToCartAPITest@44be0077]" started-at="2026-01-08T16:03:28 IST" name="tearDown" finished-at="2026-01-08T16:03:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.AddToCartAPITest -->
+      <class name="com.mryoda.diagnostics.api.tests.LoginAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@26adfd2d]" started-at="2026-01-08T16:03:19 IST" name="setUp" finished-at="2026-01-08T16:03:20 IST" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithOTP()[pri:1, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@26adfd2d]" started-at="2026-01-08T16:03:20 IST" name="testLoginWithOTP" finished-at="2026-01-08T16:03:23 IST" duration-ms="2979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithOTP -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.LoginAPITest@26adfd2d]" started-at="2026-01-08T16:03:23 IST" name="tearDown" finished-at="2026-01-08T16:03:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.LoginAPITest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_99_TriggerUITest">
+        <test-method signature="triggerUIAutomation()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_99_TriggerUITest@7b993c65]" started-at="2026-01-08T16:03:44 IST" name="triggerUIAutomation" finished-at="2026-01-08T16:04:01 IST" duration-ms="17826" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[UI Automation Failed via JUnitCore Trigger]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: UI Automation Failed via JUnitCore Trigger
+at com.mryoda.diagnostics.api.tests.COD_99_TriggerUITest.triggerUIAutomation(COD_99_TriggerUITest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- triggerUIAutomation -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_99_TriggerUITest -->
+      <class name="com.mryoda.diagnostics.api.tests.GlobalSearchAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@39b43d60]" started-at="2026-01-08T16:03:25 IST" name="setUp" finished-at="2026-01-08T16:03:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGlobalSearch_ForMember()[pri:7, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@39b43d60]" started-at="2026-01-08T16:03:25 IST" name="testGlobalSearch_ForMember" finished-at="2026-01-08T16:03:26 IST" depends-on-methods="com.mryoda.diagnostics.api.tests.BrandAPITest.testGetBrands_ForMember" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGlobalSearch_ForMember -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.GlobalSearchAPITest@39b43d60]" started-at="2026-01-08T16:03:26 IST" name="tearDown" finished-at="2026-01-08T16:03:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.GlobalSearchAPITest -->
+      <class name="com.mryoda.diagnostics.api.tests.COD_12_GetSampleTypeTest">
+        <test-method signature="step12_GetSampleType()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_12_GetSampleTypeTest@7d94beb9]" started-at="2026-01-08T16:03:35 IST" name="step12_GetSampleType" finished-at="2026-01-08T16:03:36 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step12_GetSampleType -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_12_GetSampleTypeTest@7d94beb9]" started-at="2026-01-08T16:03:35 IST" name="setUp" finished-at="2026-01-08T16:03:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mryoda.diagnostics.api.tests.COD_12_GetSampleTypeTest@7d94beb9]" started-at="2026-01-08T16:03:36 IST" name="tearDown" finished-at="2026-01-08T16:03:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mryoda.diagnostics.api.tests.COD_12_GetSampleTypeTest -->
+    </test> <!-- Member Modular COD Flow Steps -->
+  </suite> <!-- Member COD Flow Modular Suite -->
+</testng-results>
